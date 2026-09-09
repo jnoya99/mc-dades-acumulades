@@ -1,0 +1,42 @@
+name: hourly-escat
+
+"on":
+  schedule:
+    # Every hour at minute 0 UTC (≈ Europe/Madrid hour boundary ±0..1h DST)
+    - cron: "0 * * * *"
+  workflow_dispatch:
+
+concurrency:
+  group: hourly-escat
+  cancel-in-progress: false
+
+permissions:
+  contents: write
+
+jobs:
+  capture:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Capture ESCAT hourly + rebuild hourly_rain.json
+        run: python scripts/capture_hourly.py --force
+
+      - name: Commit hourly archive + derived JSON
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data/hourly docs/hourly_rain.json
+          if git diff --staged --quiet; then
+            echo "No changes to commit"
+          else
+            git commit -m "data: hourly ESCAT rain [skip ci]"
+            git pull --rebase origin main
+            git push
+          fi
