@@ -11,7 +11,7 @@ https://<user>.github.io/bolets-mc-data/panel.json
 Exemple (substituïu `<user>` pel vostre usuari o org de GitHub):
 
 ```text
-https://jordi-noya.github.io/bolets-mc-data/panel.json
+https://jnoya99.github.io/bolets-mc-data/panel.json
 ```
 
 ## Fetch en viu
