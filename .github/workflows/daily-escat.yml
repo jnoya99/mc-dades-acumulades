@@ -1,0 +1,38 @@
+name: daily-escat
+
+"on":
+  schedule:
+    # 21:30 UTC ≈ 23:30 Europe/Madrid in summer (CEST); ≈ 22:30 in winter (CET).
+    # See README for DST note.
+    - cron: "30 21 * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  capture:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Capture ESCAT + rebuild panel
+        run: python scripts/capture_escat.py --force
+
+      - name: Commit archive + panel
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data/daily docs/panel.json
+          if git diff --staged --quiet; then
+            echo "No changes to commit"
+          else
+            git commit -m "data: daily ESCAT snapshot [skip ci]"
+            git push
+          fi
