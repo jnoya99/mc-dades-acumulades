@@ -7,6 +7,10 @@ name: daily-escat
     - cron: "30 21 * * *"
   workflow_dispatch:
 
+concurrency:
+  group: daily-escat
+  cancel-in-progress: false
+
 permissions:
   contents: write
 
@@ -34,5 +38,6 @@ jobs:
             echo "No changes to commit"
           else
             git commit -m "data: daily ESCAT snapshot [skip ci]"
+            git pull --rebase origin main
             git push
           fi
