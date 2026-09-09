@@ -1,4 +1,4 @@
-# bolets-mc-data
+# mc-dades-acumulades
 
 Arxiu públic d’**ESCAT (Meteoclimatic)** per al [Bolets Explorador](https://github.com/).  
 Public ESCAT snapshot archive + GitHub Pages CDN for `panel.json`, `hourly_rain.json` and `hourly_meteo.json`.
@@ -30,7 +30,7 @@ La mateixa captura horària desa també snapshots d’humitat, vent i temperatur
 ## Ús local
 
 ```bash
-cd bolets-mc-data
+cd mc-dades-acumulades
 # panell diari
 python3 scripts/build_panel.py
 python3 scripts/capture_escat.py
@@ -95,15 +95,15 @@ Producte únic amb pluja horària **i** snapshots meteo:
 ## Explorador
 
 ```text
-https://jnoya99.github.io/bolets-mc-data/panel.json
-https://jnoya99.github.io/bolets-mc-data/hourly_rain.json
-https://jnoya99.github.io/bolets-mc-data/hourly_meteo.json
+https://jnoya99.github.io/mc-dades-acumulades/panel.json
+https://jnoya99.github.io/mc-dades-acumulades/hourly_rain.json
+https://jnoya99.github.io/mc-dades-acumulades/hourly_meteo.json
 ```
 
 ```js
-window.__MC_REMOTE_URL = "https://jnoya99.github.io/bolets-mc-data/panel.json";
-window.__MC_HOURLY_URL = "https://jnoya99.github.io/bolets-mc-data/hourly_rain.json";
-window.__MC_HOURLY_METEO_URL = "https://jnoya99.github.io/bolets-mc-data/hourly_meteo.json";
+window.__MC_REMOTE_URL = "https://jnoya99.github.io/mc-dades-acumulades/panel.json";
+window.__MC_HOURLY_URL = "https://jnoya99.github.io/mc-dades-acumulades/hourly_rain.json";
+window.__MC_HOURLY_METEO_URL = "https://jnoya99.github.io/mc-dades-acumulades/hourly_meteo.json";
 ```
 
 Vegeu [`docs/explorer-integration.md`](docs/explorer-integration.md).

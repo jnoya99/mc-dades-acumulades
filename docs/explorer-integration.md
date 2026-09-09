@@ -5,17 +5,17 @@
 Després d’activar GitHub Pages (branch `main` / carpeta `/docs`):
 
 ```text
-https://jnoya99.github.io/bolets-mc-data/panel.json
-https://jnoya99.github.io/bolets-mc-data/hourly_rain.json
-https://jnoya99.github.io/bolets-mc-data/hourly_meteo.json
+https://jnoya99.github.io/mc-dades-acumulades/panel.json
+https://jnoya99.github.io/mc-dades-acumulades/hourly_rain.json
+https://jnoya99.github.io/mc-dades-acumulades/hourly_meteo.json
 ```
 
 ## Fetch en viu
 
 ```js
-window.__MC_REMOTE_URL = "https://jnoya99.github.io/bolets-mc-data/panel.json";
-window.__MC_HOURLY_URL = "https://jnoya99.github.io/bolets-mc-data/hourly_rain.json";
-window.__MC_HOURLY_METEO_URL = "https://jnoya99.github.io/bolets-mc-data/hourly_meteo.json";
+window.__MC_REMOTE_URL = "https://jnoya99.github.io/mc-dades-acumulades/panel.json";
+window.__MC_HOURLY_URL = "https://jnoya99.github.io/mc-dades-acumulades/hourly_rain.json";
+window.__MC_HOURLY_METEO_URL = "https://jnoya99.github.io/mc-dades-acumulades/hourly_meteo.json";
 ```
 
 Després, en el boot / bridge MC:

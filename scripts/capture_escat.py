@@ -32,7 +32,7 @@ sys.path.insert(0, str(Path(__file__).resolve().parent))
 from build_panel import build_payload, load_keep, write_panel  # noqa: E402
 
 CCAA = "ESCAT"
-UA = "bolets-mc-data/1.0 (+https://github.com/bolets-mc-data; daily archive)"
+UA = "mc-dades-acumulades/1.0 (+https://github.com/mc-dades-acumulades; daily archive)"
 XML_URL = "https://www.meteoclimatic.net/feed/xml/{id}"
 RSS_URL = "https://www.meteoclimatic.net/feed/rss/{id}"
 MADRID = ZoneInfo("Europe/Madrid")
