@@ -1,0 +1,1392 @@
+{
+  "version": 1,
+  "n": 86,
+  "stations": [
+    {
+      "id": "MG_97",
+      "source": "Meteoguilleries",
+      "name": "Bagà - Niu de l'Àliga",
+      "url": "https://www.meteoguilleries.cat/ca/estacions/niu.html",
+      "elev_m": 2537.0,
+      "lat": 42.319722222222225,
+      "lon": 1.8936111111111111,
+      "rain_available": true,
+      "reliability_notes": "idEstacioMeteo=97; observador=Meteoguilleries; model=Importació tipus Meteoclimatic; espai=parc natural del Cadí Moixeró; Meteoguilleries Importació tipus Meteoclimatic parc natural del Cadí Moixeró",
+      "near_mc_keep": {
+        "id": "ESCAT0800000008695H",
+        "name": "Bagà (refugi Rebost) PN (Barcelona)",
+        "km": 3.32
+      },
+      "extra": {}
+    },
+    {
+      "id": "CMI_CAT_23011254800",
+      "source": "ClimaMeteoInfo",
+      "name": "Setcases - Vallter 2000",
+      "url": "https://www.climameteoinfo.com/webest/id.CAT_23011254800.html",
+      "elev_m": 2535.0,
+      "lat": 42.425861,
+      "lon": 2.2447,
+      "rain_available": true,
+      "reliability_notes": "CMI webest id=CAT_23011254800; model=Davis Vantage Pro2 · WeatherLinkLIVE · Pluviò; updated=15:15 // 15-09-2026; climameteoinfo.com (climameteoinfo.eu DNS dead)",
+      "near_mc_keep": {
+        "id": "ESCAT1700000017534E",
+        "name": "Queralbs - Coma de Vaca (Girona)",
+        "km": 4.47
+      },
+      "extra": {}
+    },
+    {
+      "id": "CMI_CAT_232003437927",
+      "source": "ClimaMeteoInfo",
+      "name": "Cadí Est-PN Cadí-Moixeró",
+      "url": "https://www.climameteoinfo.com/webest/id.CAT_232003437927.html",
+      "elev_m": 2440.0,
+      "lat": 42.284988,
+      "lon": 1.736694,
+      "rain_available": true,
+      "reliability_notes": "CMI webest id=CAT_232003437927; model=Davis Vantage Vue · WeatherLinkLIVE · Pluviòm; updated=15:15 // 15-09-2026; climameteoinfo.com (climameteoinfo.eu DNS dead)",
+      "near_mc_keep": {
+        "id": "ESCAT0800000008695G",
+        "name": "Cadí Est- PN Cadí-Moixeró (Barcelona)",
+        "km": 0.62
+      },
+      "extra": {}
+    },
+    {
+      "id": "MCADI_001D0A80A3BE",
+      "source": "Meteocadí",
+      "name": "Cadí-Tancalaporta",
+      "url": "https://meteocadi.com/embeddablePage/show/3f700b96e6724ccbbb3689307dc59c4d/wide_ext_iframe/",
+      "elev_m": 2440.0,
+      "lat": 42.284988,
+      "lon": 1.736694,
+      "rain_available": true,
+      "reliability_notes": "WeatherLink deviceId=001D0A80A3BE; token=3f700b96e6724ccbbb3689307dc59c4d; summaryData https://www.weatherlink.com/embeddablePage/summaryData/3f700b96e6724ccbbb3689307dc59c4d (public, live rain); hosted on meteocadi.com/estacions/; Davis Vue/VP2",
+      "near_mc_keep": {
+        "id": "ESCAT0800000008695G",
+        "name": "Cadí Est- PN Cadí-Moixeró (Barcelona)",
+        "km": 0.62
+      },
+      "extra": {}
+    },
+    {
+      "id": "CMI_CAT_19121140186",
+      "source": "ClimaMeteoInfo",
+      "name": "Refugi d'Amitges - CEC",
+      "url": "https://www.climameteoinfo.com/webest/id.CAT_19121140186.html",
+      "elev_m": 2380.0,
+      "lat": 42.596798,
+      "lon": 0.984504,
+      "rain_available": true,
+      "reliability_notes": "CMI webest id=CAT_19121140186; model=Davis Vantage Pro2 · WeatherLinkIP · Pluviòme; updated=15:21 // 15-09-2026; climameteoinfo.com (climameteoinfo.eu DNS dead)",
+      "near_mc_keep": null,
+      "extra": {}
+    },
+    {
+      "id": "CMI_88",
+      "source": "ClimaMeteoInfo",
+      "name": "Refugi J.M. Blanc (CEC)",
+      "url": "https://www.climameteoinfo.com/webest/id.88.html",
+      "elev_m": 2350.0,
+      "lat": 42.545834,
+      "lon": 1.044167,
+      "rain_available": true,
+      "reliability_notes": "CMI webest id=88; model=Davis Vantage Pro · WeatherLinkIP · Pluviòmet; updated=15:21 // 15-09-2026; climameteoinfo.com (climameteoinfo.eu DNS dead)",
+      "near_mc_keep": null,
+      "extra": {}
+    },
+    {
+      "id": "MG_99",
+      "source": "Meteoguilleries",
+      "name": "Espot Esquí 2300",
+      "url": "https://www.meteoguilleries.cat/ca/estacions/espot2300.html",
+      "elev_m": 2295.0,
+      "lat": 42.543055555555554,
+      "lon": 1.0688888888888888,
+      "rain_available": true,
+      "reliability_notes": "idEstacioMeteo=99; observador=None; model=Importació API FGC; espai=Parc natural fd'Aigüestortes; Importació API FGC Parc natural fd'Aigüestortes; data via FGC API import on MG (not Meteocat XEMA scrape target)",
+      "near_mc_keep": null,
+      "extra": {}
+    },
+    {
+      "id": "MG_95",
+      "source": "Meteoguilleries",
+      "name": "Vallter",
+      "url": "https://www.meteoguilleries.cat/ca/estacions/vallter.html",
+      "elev_m": 2161.0,
+      "lat": 42.42722222222222,
+      "lon": 2.265,
+      "rain_available": true,
+      "reliability_notes": "idEstacioMeteo=95; observador=Meteoguilleries; model=Importació API FGC; espai=P.N.de les capçaleres del Ter i el Freser; Meteoguilleries Importació API FGC P.N.de les capçaleres del Ter i el Freser; data via FGC API import on MG (not Meteocat XEMA scrape target)",
+      "near_mc_keep": {
+        "id": "ESCAT1700000017534E",
+        "name": "Queralbs - Coma de Vaca (Girona)",
+        "km": 5.55
+      },
+      "extra": {}
+    },
+    {
+      "id": "MG_87",
+      "source": "Meteoguilleries",
+      "name": "Estany Gento",
+      "url": "https://www.meteoguilleries.cat/ca/estacions/estany-gento.html",
+      "elev_m": 2141.0,
+      "lat": 42.5075,
+      "lon": 1.0027777777777778,
+      "rain_available": true,
+      "reliability_notes": "idEstacioMeteo=87; observador=Lluís Pla-Meteopirineu; model=Importació tipus Meteoclimatic; espai=Vall Fosca; Lluís Pla-Meteopirineu Importació tipus Meteoclimatic Vall Fosca",
+      "near_mc_keep": {
+        "id": "ESCAT2500000025515A",
+        "name": "La Torre de Cabdella  (Lleida)",
+        "km": 4.3
+      },
+      "extra": {}
+    },
+    {
+      "id": "CMI_CAT_240105836048",
+      "source": "ClimaMeteoInfo",
+      "name": "Puigllançada- Coll de Pal",
+      "url": "https://www.climameteoinfo.com/webest/id.CAT_240105836048.html",
+      "elev_m": 2092.0,
+      "lat": 42.296436,
+      "lon": 1.926212,
+      "rain_available": true,
+      "reliability_notes": "CMI webest id=CAT_240105836048; model=Davis Vantage Vue · WeatherLinkLIVE · Pluviòm; updated=15:15 // 15-09-2026; climameteoinfo.com (climameteoinfo.eu DNS dead)",
+      "near_mc_keep": {
+        "id": "ESCAT0800000008695H",
+        "name": "Bagà (refugi Rebost) PN (Barcelona)",
+        "km": 3.06
+      },
+      "extra": {}
+    },
+    {
+      "id": "MCADI_001D0A80A0CD",
+      "source": "Meteocadí",
+      "name": "Puigllançada-Coll de Pal",
+      "url": "https://meteocadi.com/embeddablePage/show/822a2a10e8684ebe986f76d9fd51f323/wide_ext_iframe/",
+      "elev_m": 2092,
+      "lat": 42.296436,
+      "lon": 1.926212,
+      "rain_available": true,
+      "reliability_notes": "WeatherLink deviceId=001D0A80A0CD; token=822a2a10e8684ebe986f76d9fd51f323; summaryData https://www.weatherlink.com/embeddablePage/summaryData/822a2a10e8684ebe986f76d9fd51f323 (public, live rain); hosted on meteocadi.com/estacions/; Davis Vue/VP2",
+      "near_mc_keep": {
+        "id": "ESCAT0800000008695H",
+        "name": "Bagà (refugi Rebost) PN (Barcelona)",
+        "km": 3.06
+      },
+      "extra": {}
+    },
+    {
+      "id": "MG_101",
+      "source": "Meteoguilleries",
+      "name": "Boí Taüll",
+      "url": "https://www.meteoguilleries.cat/ca/estacions/boitaull.html",
+      "elev_m": 2000.0,
+      "lat": 42.4775,
+      "lon": 0.8694444444444445,
+      "rain_available": true,
+      "reliability_notes": "idEstacioMeteo=101; observador=Meteoguilleries; model=Importació API FGC; espai=Parc natural d'Aigüestortes; Meteoguilleries Importació API FGC Parc natural d'Aigüestortes; data via FGC API import on MG (not Meteocat XEMA scrape target)",
+      "near_mc_keep": {
+        "id": "ESCAT2500000025527A",
+        "name": "Barruera (Lleida)",
+        "km": 6.22
+      },
+      "extra": {}
+    },
+    {
+      "id": "MG_96",
+      "source": "Meteoguilleries",
+      "name": "Núria",
+      "url": "https://www.meteoguilleries.cat/ca/estacions/nuria.html",
+      "elev_m": 2000.0,
+      "lat": 42.39722222222222,
+      "lon": 2.154444444444444,
+      "rain_available": true,
+      "reliability_notes": "idEstacioMeteo=96; observador=Meteoguilleries; model=Importació API FGC; espai=P.N. de les capçaleres del Ter i el Freser; Meteoguilleries Importació API FGC P.N. de les capçaleres del Ter i el Freser; data via FGC API import on MG (not Meteocat XEMA scrape target)",
+      "near_mc_keep": {
+        "id": "ESCAT1700000017534E",
+        "name": "Queralbs - Coma de Vaca (Girona)",
+        "km": 5.44
+      },
+      "extra": {}
+    },
+    {
+      "id": "MG_94",
+      "source": "Meteoguilleries",
+      "name": "Port Ainé",
+      "url": "https://www.meteoguilleries.cat/ca/estacions/portaine.html",
+      "elev_m": 2000.0,
+      "lat": 42.42833333333333,
+      "lon": 1.2119444444444445,
+      "rain_available": true,
+      "reliability_notes": "idEstacioMeteo=94; observador=Meteoguilleries; model=Importació API FGC; espai=P.N.del Alt Pirineu; Meteoguilleries Importació API FGC P.N.del Alt Pirineu; data via FGC API import on MG (not Meteocat XEMA scrape target)",
+      "near_mc_keep": {
+        "id": "ESCAT2500000025566A",
+        "name": "Rubió (Lleida)",
+        "km": 5.41
+      },
+      "extra": {}
+    },
+    {
+      "id": "MG_86",
+      "source": "Meteoguilleries",
+      "name": "Cabana de Filià",
+      "url": "https://www.meteoguilleries.cat/ca/estacions/filia.html",
+      "elev_m": 1960.0,
+      "lat": 42.46083333333333,
+      "lon": 0.9488888888888889,
+      "rain_available": true,
+      "reliability_notes": "idEstacioMeteo=86; observador=Lluís Pla-Meteopirineu; model=Davis Vantage; espai=Pallars Jussà; Lluís Pla-Meteopirineu Davis Vantage Pallars Jussà",
+      "near_mc_keep": {
+        "id": "ESCAT2500000025515A",
+        "name": "La Torre de Cabdella  (Lleida)",
+        "km": 3.52
+      },
+      "extra": {}
+    },
+    {
+      "id": "MG_100",
+      "source": "Meteoguilleries",
+      "name": "Espot 2000",
+      "url": "https://www.meteoguilleries.cat/ca/estacions/espot2000.html",
+      "elev_m": 1930.0,
+      "lat": 42.55027777777777,
+      "lon": 1.081388888888889,
+      "rain_available": true,
+      "reliability_notes": "idEstacioMeteo=100; observador=Meteoguilleries; model=Davis Vantage; espai=Parc natural d'Aigüestortes; Meteoguilleries Davis Vantage Parc natural d'Aigüestortes",
+      "near_mc_keep": null,
+      "extra": {}
+    },
+    {
+      "id": "MG_93",
+      "source": "Meteoguilleries",
+      "name": "La Molina",
+      "url": "https://www.meteoguilleries.cat/ca/estacions/lamolina.html",
+      "elev_m": 1650.0,
+      "lat": 42.335,
+      "lon": 1.9461111111111111,
+      "rain_available": true,
+      "reliability_notes": "idEstacioMeteo=93; observador=Meteoguilleries; model=Importació API FGC; espai=La molina; Meteoguilleries Importació API FGC La molina; data via FGC API import on MG (not Meteocat XEMA scrape target)",
+      "near_mc_keep": {
+        "id": "ESCAT1700000017537A",
+        "name": "La Molina (Girona)",
+        "km": 0.75
+      },
+      "extra": {}
+    },
+    {
+      "id": "CMI_CAT_24050747648",
+      "source": "ClimaMeteoInfo",
+      "name": "Meranges - La Cerdanya",
+      "url": "https://www.climameteoinfo.com/webest/id.CAT_24050747648.html",
+      "elev_m": 1570.0,
+      "lat": 42.447254,
+      "lon": 1.784951,
+      "rain_available": true,
+      "reliability_notes": "CMI webest id=CAT_24050747648; model=Davis Vantage Pro2 · WeatherLinkLIVE · Pluviò; updated=15:15 // 15-09-2026; climameteoinfo.com (climameteoinfo.eu DNS dead)",
+      "near_mc_keep": {
+        "id": "ESCAT1700000017539B",
+        "name": "Ger (Girona)",
+        "km": 6.76
+      },
+      "extra": {}
+    },
+    {
+      "id": "MG_146",
+      "source": "Meteoguilleries",
+      "name": "Les Planes de Son MNP",
+      "url": "https://www.meteoguilleries.cat/ca/estacions/les-planes-de-son-mnp.html",
+      "elev_m": 1537.0,
+      "lat": 42.6175,
+      "lon": 1.0788888888888888,
+      "rain_available": true,
+      "reliability_notes": "idEstacioMeteo=146; observador=Lluís Pla-Meteopirineu; model=Davis Vantage; espai=Mon Natura Pirineus; Lluís Pla-Meteopirineu Davis Vantage Mon Natura Pirineus",
+      "near_mc_keep": null,
+      "extra": {}
+    },
+    {
+      "id": "MG_135",
+      "source": "Meteoguilleries",
+      "name": "Llessui",
+      "url": "https://www.meteoguilleries.cat/ca/estacions/llessui.html",
+      "elev_m": 1516.0,
+      "lat": 42.480555555555554,
+      "lon": 1.0591666666666668,
+      "rain_available": true,
+      "reliability_notes": "idEstacioMeteo=135; observador=None; model=Davis Vantage; espai=Vall d'Àssua; Davis Vantage Vall d'Àssua",
+      "near_mc_keep": {
+        "id": "ESCAT2500000025515A",
+        "name": "La Torre de Cabdella  (Lleida)",
+        "km": 5.79
+      },
+      "extra": {}
+    },
+    {
+      "id": "MG_133",
+      "source": "Meteoguilleries",
+      "name": "Ancs",
+      "url": "https://www.meteoguilleries.cat/ca/estacions/ancs.html",
+      "elev_m": 1464.0,
+      "lat": 42.382777777777775,
+      "lon": 1.0174999999999998,
+      "rain_available": true,
+      "reliability_notes": "idEstacioMeteo=133; observador=Lluís Pla-Meteopirineu; model=Davis Vantage; espai=Baix Pallars; Lluís Pla-Meteopirineu Davis Vantage Baix Pallars",
+      "near_mc_keep": null,
+      "extra": {}
+    },
+    {
+      "id": "CMI_CAT_24050825033",
+      "source": "ClimaMeteoInfo",
+      "name": "Gisclareny - Les Orenetes",
+      "url": "https://www.climameteoinfo.com/webest/id.CAT_24050825033.html",
+      "elev_m": 1339.0,
+      "lat": 42.250187,
+      "lon": 1.786684,
+      "rain_available": true,
+      "reliability_notes": "CMI webest id=CAT_24050825033; model=Froggit · WeatherCMI · Pluviòmetre: N; updated=15:24 // 15-09-2026; climameteoinfo.com (climameteoinfo.eu DNS dead)",
+      "near_mc_keep": {
+        "id": "ESCAT0800000008695G",
+        "name": "Cadí Est- PN Cadí-Moixeró (Barcelona)",
+        "km": 5.86
+      },
+      "extra": {}
+    },
+    {
+      "id": "MO_140",
+      "source": "MeteOsona",
+      "name": "Santuari de Cabrera",
+      "url": "https://www.meteosona.com/estacio/SantuariCabrera/",
+      "elev_m": 1307.0,
+      "lat": 42.073308,
+      "lon": 2.407734,
+      "rain_available": true,
+      "reliability_notes": "id=140; dades_disponibles=True; bloquejada=False; JSON in /estacio/<slug>/ as var estacio",
+      "near_mc_keep": null,
+      "extra": {}
+    },
+    {
+      "id": "MG_145",
+      "source": "Meteoguilleries",
+      "name": "Llagunes",
+      "url": "https://www.meteoguilleries.cat/ca/estacions/llagunes.html",
+      "elev_m": 1300.0,
+      "lat": 42.35305555555556,
+      "lon": 1.1902777777777778,
+      "rain_available": true,
+      "reliability_notes": "idEstacioMeteo=145; observador=Lluís Pla-Meteopirineu; model=Davis Vantage; espai=Pallars Sobirá; Lluís Pla-Meteopirineu Davis Vantage Pallars Sobirá",
+      "near_mc_keep": {
+        "id": "ESCAT2500000025566A",
+        "name": "Rubió (Lleida)",
+        "km": 3.87
+      },
+      "extra": {}
+    },
+    {
+      "id": "MG_21",
+      "source": "Meteoguilleries",
+      "name": "Bellmunt",
+      "url": "https://www.meteoguilleries.cat/ca/estacions/mdb.html",
+      "elev_m": 1241.0,
+      "lat": 42.10138888888889,
+      "lon": 2.2938888888888886,
+      "rain_available": true,
+      "reliability_notes": "idEstacioMeteo=21; observador=meteoguilleries; model=Davis Vantage; espai=Osona; meteoguilleries Davis Vantage Osona",
+      "near_mc_keep": {
+        "id": "ESCAT0800000008572B",
+        "name": "Bellmunt (Barcelona)",
+        "km": 0.36
+      },
+      "extra": {}
+    },
+    {
+      "id": "MG_59",
+      "source": "Meteoguilleries",
+      "name": "Estació municipal de Queralbs (Ripollès, P.N.de les capçaleres del Ter i el Fres",
+      "url": "https://www.meteoguilleries.cat/ca/estacions/qrs.html",
+      "elev_m": 1241.0,
+      "lat": 42.348888888888894,
+      "lon": 2.161388888888889,
+      "rain_available": true,
+      "reliability_notes": "idEstacioMeteo=59; observador=Meteoguilleries; model=Campbell Scientifics CR310; espai=P.N.de les capçaleres del Ter i el Freser; Meteoguilleries Campbell Scientifics CR310 P.N.de les capçaleres del Ter i el Freser",
+      "near_mc_keep": {
+        "id": "ESCAT1700000017535C",
+        "name": "Planoles - Càmping (Girona)",
+        "km": 5.98
+      },
+      "extra": {}
+    },
+    {
+      "id": "CMI_133",
+      "source": "ClimaMeteoInfo",
+      "name": "Queralbs",
+      "url": "https://www.climameteoinfo.com/webest/id.133.html",
+      "elev_m": 1241.0,
+      "lat": 42.348888,
+      "lon": 2.161389,
+      "rain_available": true,
+      "reliability_notes": "CMI webest id=133; model=Davis Vantage Pro2 · WeatherLinkIP · Pluviòme; updated=15:20 // 15-09-2026; climameteoinfo.com (climameteoinfo.eu DNS dead)",
+      "near_mc_keep": {
+        "id": "ESCAT1700000017535C",
+        "name": "Planoles - Càmping (Girona)",
+        "km": 5.98
+      },
+      "extra": {}
+    },
+    {
+      "id": "CMI_CAT_220404291884",
+      "source": "ClimaMeteoInfo",
+      "name": "Castellar del Riu",
+      "url": "https://www.climameteoinfo.com/webest/id.CAT_220404291884.html",
+      "elev_m": 1200.0,
+      "lat": 42.113045,
+      "lon": 1.800091,
+      "rain_available": true,
+      "reliability_notes": "CMI webest id=CAT_220404291884; model=Froggit · WeatherCMI · Pluviòmetre: N; updated=13:23 // 15-09-2026; climameteoinfo.com (climameteoinfo.eu DNS dead)",
+      "near_mc_keep": {
+        "id": "ESCAT0800000008600A",
+        "name": "Berga (Barcelona)",
+        "km": 4.37
+      },
+      "extra": {}
+    },
+    {
+      "id": "MO_48",
+      "source": "MeteOsona",
+      "name": "Ciuret",
+      "url": "https://www.meteosona.com/estacio/Ciuret/",
+      "elev_m": 1174.0,
+      "lat": 42.144209,
+      "lon": 2.334513,
+      "rain_available": true,
+      "reliability_notes": "id=48; dades_disponibles=True; bloquejada=False; JSON in /estacio/<slug>/ as var estacio",
+      "near_mc_keep": {
+        "id": "ESCAT0800000008572B",
+        "name": "Bellmunt (Barcelona)",
+        "km": 6.14
+      },
+      "extra": {}
+    },
+    {
+      "id": "CMI_CAT_242801909377",
+      "source": "ClimaMeteoInfo",
+      "name": "Ribes de Fresser - Serrat Vent",
+      "url": "https://www.climameteoinfo.com/webest/id.CAT_242801909377.html",
+      "elev_m": 1140.0,
+      "lat": 42.317871,
+      "lon": 2.177822,
+      "rain_available": true,
+      "reliability_notes": "CMI webest id=CAT_242801909377; model=Froggit · WeatherCMI · Pluviòmetre: N; updated=13:24 // 15-09-2026; climameteoinfo.com (climameteoinfo.eu DNS dead)",
+      "near_mc_keep": {
+        "id": "ESCAT1700000017535C",
+        "name": "Planoles - Càmping (Girona)",
+        "km": 6.4
+      },
+      "extra": {}
+    },
+    {
+      "id": "MG_82",
+      "source": "Meteoguilleries",
+      "name": "Montseny - Sta. Fe del Montseny",
+      "url": "https://www.meteoguilleries.cat/ca/estacions/msylle.html",
+      "elev_m": 1129.0,
+      "lat": 41.775,
+      "lon": 2.466111111111111,
+      "rain_available": true,
+      "reliability_notes": "idEstacioMeteo=82; observador=Meteoguilleries; model=Campbell Scientifics CR310; espai=P.N.del Montseny; Meteoguilleries Campbell Scientifics CR310 P.N.del Montseny",
+      "near_mc_keep": {
+        "id": "ESCAT0800000008469A",
+        "name": "Montseny - Les Arrels (Barcelona)",
+        "km": 6.15
+      },
+      "extra": {}
+    },
+    {
+      "id": "CMI_CAT_23131243676",
+      "source": "ClimaMeteoInfo",
+      "name": "Susqueda - Santuari  del Far",
+      "url": "https://www.climameteoinfo.com/webest/id.CAT_23131243676.html",
+      "elev_m": 1121.0,
+      "lat": 42.021236,
+      "lon": 2.536068,
+      "rain_available": true,
+      "reliability_notes": "CMI webest id=CAT_23131243676; model=Davis Vantage Pro2 · WeatherLink · Pluviòmetr; updated=13:20 // 15-09-2026; climameteoinfo.com (climameteoinfo.eu DNS dead)",
+      "near_mc_keep": {
+        "id": "ESCAT1700000017174A",
+        "name": "Sant Feliu de Pallerols (Girona)",
+        "km": 6.88
+      },
+      "extra": {}
+    },
+    {
+      "id": "MG_8",
+      "source": "Meteoguilleries",
+      "name": "Susqueda - Veïnat del Far",
+      "url": "https://www.meteoguilleries.cat/ca/estacions/vdf.html",
+      "elev_m": 1121.0,
+      "lat": 42.02111111111111,
+      "lon": 2.535833333333333,
+      "rain_available": true,
+      "reliability_notes": "idEstacioMeteo=8; observador=meteoguilleries; model=Davis Vantage; espai=La Selva; meteoguilleries Davis Vantage La Selva",
+      "near_mc_keep": {
+        "id": "ESCAT1700000017174A",
+        "name": "Sant Feliu de Pallerols (Girona)",
+        "km": 6.89
+      },
+      "extra": {}
+    },
+    {
+      "id": "MG_147",
+      "source": "Meteoguilleries",
+      "name": "Tavascan",
+      "url": "https://www.meteoguilleries.cat/ca/estacions/tavascan.html",
+      "elev_m": 1120.0,
+      "lat": 42.64555555555555,
+      "lon": 1.2594444444444444,
+      "rain_available": true,
+      "reliability_notes": "idEstacioMeteo=147; observador=Lluís Pla-Meteopirineu; model=Davis Vantage; espai=Pallars Sobirá; Lluís Pla-Meteopirineu Davis Vantage Pallars Sobirá",
+      "near_mc_keep": null,
+      "extra": {}
+    },
+    {
+      "id": "MG_144",
+      "source": "Meteoguilleries",
+      "name": "Lladorre",
+      "url": "https://www.meteoguilleries.cat/ca/estacions/lladorre.html",
+      "elev_m": 1061.0,
+      "lat": 42.61972222222222,
+      "lon": 1.2497222222222222,
+      "rain_available": true,
+      "reliability_notes": "idEstacioMeteo=144; observador=Lluís Pla-Meteopirineu; model=Davis Vantage; espai=Pallars Sobirá; Lluís Pla-Meteopirineu Davis Vantage Pallars Sobirá",
+      "near_mc_keep": null,
+      "extra": {}
+    },
+    {
+      "id": "MG_90",
+      "source": "Meteoguilleries",
+      "name": "Montseny - St.Marçal",
+      "url": "https://www.meteoguilleries.cat/ca/estacions/sant-marcal.html",
+      "elev_m": 1061.0,
+      "lat": 41.8,
+      "lon": 2.424444444444444,
+      "rain_available": true,
+      "reliability_notes": "idEstacioMeteo=90; observador=Meteoguilleries; model=Campbell Scientifics CR310; espai=P.N.del Montseny; Meteoguilleries Campbell Scientifics CR310 P.N.del Montseny",
+      "near_mc_keep": {
+        "id": "ESCAT0800000008469A",
+        "name": "Montseny - Les Arrels (Barcelona)",
+        "km": 5.92
+      },
+      "extra": {}
+    },
+    {
+      "id": "MO_102",
+      "source": "MeteOsona",
+      "name": "Els Munts-S.Agustí",
+      "url": "https://www.meteosona.com/estacio/ElsmuntssantagustiMobil/",
+      "elev_m": 1059.0,
+      "lat": 42.078498,
+      "lon": 2.152287,
+      "rain_available": true,
+      "reliability_notes": "id=102; dades_disponibles=True; bloquejada=False; JSON in /estacio/<slug>/ as var estacio",
+      "near_mc_keep": {
+        "id": "ESCAT0800000008588A",
+        "name": "Cussons - Sora (Barcelona)",
+        "km": 4.61
+      },
+      "extra": {}
+    },
+    {
+      "id": "MG_142",
+      "source": "Meteoguilleries",
+      "name": "Alins",
+      "url": "https://www.meteoguilleries.cat/ca/estacions/alins.html",
+      "elev_m": 1049.0,
+      "lat": 42.54888888888889,
+      "lon": 1.3166666666666667,
+      "rain_available": true,
+      "reliability_notes": "idEstacioMeteo=142; observador=Lluís Pla-Meteopirineu; model=Davis Vantage; espai=Vall Ferrera; Lluís Pla-Meteopirineu Davis Vantage Vall Ferrera",
+      "near_mc_keep": null,
+      "extra": {}
+    },
+    {
+      "id": "CMI_CAT_231908538640",
+      "source": "ClimaMeteoInfo",
+      "name": "Vallcebre - El Comellar",
+      "url": "https://www.climameteoinfo.com/webest/id.CAT_231908538640.html",
+      "elev_m": 1045.0,
+      "lat": 42.206821,
+      "lon": 1.831406,
+      "rain_available": true,
+      "reliability_notes": "CMI webest id=CAT_231908538640; model=Froggit · WeatherCMI · Pluviòmetre: N; updated=13:23 // 15-09-2026; climameteoinfo.com (climameteoinfo.eu DNS dead)",
+      "near_mc_keep": {
+        "id": "ESCAT0800000008694C",
+        "name": "Guardiola de Berguedà (Barcelona)",
+        "km": 4.76
+      },
+      "extra": {}
+    },
+    {
+      "id": "MO_96",
+      "source": "MeteOsona",
+      "name": "L'Avenc - Tavertet",
+      "url": "https://www.meteosona.com/estacio/Lavenc/",
+      "elev_m": 1038.0,
+      "lat": 42.005531,
+      "lon": 2.44122,
+      "rain_available": true,
+      "reliability_notes": "id=96; dades_disponibles=True; bloquejada=False; JSON in /estacio/<slug>/ as var estacio",
+      "near_mc_keep": {
+        "id": "ESCAT0800000008519C",
+        "name": "Tavèrnoles - El Raurell (Barcelona)",
+        "km": 7.09
+      },
+      "extra": {}
+    },
+    {
+      "id": "MG_65",
+      "source": "Meteoguilleries",
+      "name": "Estació municipal de Susqueda - Veïnat del Coll (La Selva, )",
+      "url": "https://www.meteoguilleries.cat/ca/estacions/sbe.html",
+      "elev_m": 1037.0,
+      "lat": 41.95416666666667,
+      "lon": 2.5166666666666666,
+      "rain_available": true,
+      "reliability_notes": "idEstacioMeteo=65; observador=Meteoguilleries; model=Campbell Scientifics CR310; espai=; Meteoguilleries Campbell Scientifics CR310",
+      "near_mc_keep": null,
+      "extra": {}
+    },
+    {
+      "id": "MO_176",
+      "source": "MeteOsona",
+      "name": "Bracons",
+      "url": "https://www.meteosona.com/estacio/Bracons/",
+      "elev_m": 1035.0,
+      "lat": 42.10785,
+      "lon": 2.36845,
+      "rain_available": true,
+      "reliability_notes": "id=176; dades_disponibles=True; bloquejada=False; JSON in /estacio/<slug>/ as var estacio",
+      "near_mc_keep": {
+        "id": "ESCAT0800000008572B",
+        "name": "Bellmunt (Barcelona)",
+        "km": 6.53
+      },
+      "extra": {}
+    },
+    {
+      "id": "MG_132",
+      "source": "Meteoguilleries",
+      "name": "St. Julià de Cerdanyola-Forcat",
+      "url": "https://www.meteoguilleries.cat/ca/estacions/forcat.html",
+      "elev_m": 1035.0,
+      "lat": 42.22888888888889,
+      "lon": 1.8852777777777778,
+      "rain_available": true,
+      "reliability_notes": "idEstacioMeteo=132; observador=Meteocadí; model=Davis Vantage; espai=parc natural del Cadí Moixeró; Meteocadí Davis Vantage parc natural del Cadí Moixeró",
+      "near_mc_keep": {
+        "id": "ESCAT0800000008694D",
+        "name": "St.J.Cerdanyola-Forcat (Barcelona)",
+        "km": 0.41
+      },
+      "extra": {}
+    },
+    {
+      "id": "MG_32",
+      "source": "Meteoguilleries",
+      "name": "Els Cortals - St. Hilari Sacalm",
+      "url": "https://www.meteoguilleries.cat/ca/estacions/cor.html",
+      "elev_m": 985.0,
+      "lat": 41.86805555555556,
+      "lon": 2.468611111111111,
+      "rain_available": true,
+      "reliability_notes": "idEstacioMeteo=32; observador=Meteoguilleries; model=Davis Vantage; espai=Guilleries; Meteoguilleries Davis Vantage Guilleries",
+      "near_mc_keep": {
+        "id": "ESCAT1700000017405A",
+        "name": "Espinelves (Girona)",
+        "km": 4.03
+      },
+      "extra": {}
+    },
+    {
+      "id": "MO_28",
+      "source": "MeteOsona",
+      "name": "Vidrà",
+      "url": "https://www.meteosona.com/estacio/Vidra/",
+      "elev_m": 985.0,
+      "lat": 42.12472,
+      "lon": 2.312414,
+      "rain_available": true,
+      "reliability_notes": "id=28; dades_disponibles=True; bloquejada=False; JSON in /estacio/<slug>/ as var estacio",
+      "near_mc_keep": {
+        "id": "ESCAT0800000008572B",
+        "name": "Bellmunt (Barcelona)",
+        "km": 3.31
+      },
+      "extra": {}
+    },
+    {
+      "id": "MO_100",
+      "source": "MeteOsona",
+      "name": "Puigsagordi NE",
+      "url": "https://www.meteosona.com/estacio/Puigsagordi/",
+      "elev_m": 977.0,
+      "lat": 41.797047,
+      "lon": 2.198137,
+      "rain_available": true,
+      "reliability_notes": "id=100; dades_disponibles=True; bloquejada=False; JSON in /estacio/<slug>/ as var estacio",
+      "near_mc_keep": {
+        "id": "ESCAT0800000008540C",
+        "name": "Centelles - Oest (Barcelona)",
+        "km": 2.66
+      },
+      "extra": {}
+    },
+    {
+      "id": "MO_151",
+      "source": "MeteOsona",
+      "name": "Cantonigròs",
+      "url": "https://www.meteosona.com/estacio/Cantonigros2/",
+      "elev_m": 964.0,
+      "lat": 42.040005,
+      "lon": 2.41037,
+      "rain_available": true,
+      "reliability_notes": "id=151; dades_disponibles=True; bloquejada=False; JSON in /estacio/<slug>/ as var estacio",
+      "near_mc_keep": {
+        "id": "ESCAT0800000008510C",
+        "name": "Sant Pere de Casserres (Barcelona)",
+        "km": 7.32
+      },
+      "extra": {}
+    },
+    {
+      "id": "MO_162",
+      "source": "MeteOsona",
+      "name": "Sobremunt",
+      "url": "https://www.meteosona.com/estacio/Sobremunt/",
+      "elev_m": 959.0,
+      "lat": 42.030892,
+      "lon": 2.187194,
+      "rain_available": true,
+      "reliability_notes": "id=162; dades_disponibles=False; bloquejada=False; JSON in /estacio/<slug>/ as var estacio",
+      "near_mc_keep": {
+        "id": "ESCAT0800000008509A",
+        "name": "Santa Cecília de Voltregà (Barcelona)",
+        "km": 2.55
+      },
+      "extra": {}
+    },
+    {
+      "id": "MO_175",
+      "source": "MeteOsona",
+      "name": "Camprodon (Ripollès)",
+      "url": "https://www.meteosona.com/estacio/Camprodon/",
+      "elev_m": 958.0,
+      "lat": 42.314381,
+      "lon": 2.377218,
+      "rain_available": true,
+      "reliability_notes": "id=175; dades_disponibles=True; bloquejada=False; JSON in /estacio/<slug>/ as var estacio",
+      "near_mc_keep": null,
+      "extra": {}
+    },
+    {
+      "id": "MG_143",
+      "source": "Meteoguilleries",
+      "name": "Sellui",
+      "url": "https://www.meteoguilleries.cat/ca/estacions/sellui.html",
+      "elev_m": 953.0,
+      "lat": 42.34722222222222,
+      "lon": 1.1297222222222223,
+      "rain_available": true,
+      "reliability_notes": "idEstacioMeteo=143; observador=Lluís Pla-Meteopirineu; model=Davis Vantage; espai=Pallars Sobirá; Lluís Pla-Meteopirineu Davis Vantage Pallars Sobirá",
+      "near_mc_keep": null,
+      "extra": {}
+    },
+    {
+      "id": "MG_124",
+      "source": "Meteoguilleries",
+      "name": "Castellar de n'Hug",
+      "url": "https://www.meteoguilleries.cat/ca/estacions/hug.html",
+      "elev_m": 944.0,
+      "lat": 42.259166666666665,
+      "lon": 1.9758333333333336,
+      "rain_available": true,
+      "reliability_notes": "idEstacioMeteo=124; observador=None; model=Importació API ACA; espai=Llobregat; Importació API ACA Llobregat",
+      "near_mc_keep": {
+        "id": "ESCAT0800000008696A",
+        "name": "La Pobla de Lillet (Barcelona)",
+        "km": 1.08
+      },
+      "extra": {}
+    },
+    {
+      "id": "MO_49",
+      "source": "MeteOsona",
+      "name": "Muntanyola \"Fontanelles\"",
+      "url": "https://www.meteosona.com/estacio/Muntanyola/",
+      "elev_m": 944.0,
+      "lat": 41.857585,
+      "lon": 2.180351,
+      "rain_available": true,
+      "reliability_notes": "id=49; dades_disponibles=True; bloquejada=False; JSON in /estacio/<slug>/ as var estacio",
+      "near_mc_keep": {
+        "id": "ESCAT0800000008178B",
+        "name": "Collsuspina - Centre (Barcelona)",
+        "km": 3.07
+      },
+      "extra": {}
+    },
+    {
+      "id": "MG_34",
+      "source": "Meteoguilleries",
+      "name": "St. Llorenç del Munt i l'Obac",
+      "url": "https://www.meteoguilleries.cat/ca/estacions/lmt.html",
+      "elev_m": 912.0,
+      "lat": 41.665277777777774,
+      "lon": 1.9905555555555556,
+      "rain_available": true,
+      "reliability_notes": "idEstacioMeteo=34; observador=Meteoguilleries; model=Campbell Scientifics CR310; espai=P.N.de Sant Llorenç del Munt i l'Obac; Meteoguilleries Campbell Scientifics CR310 P.N.de Sant Llorenç del Munt i l'Obac",
+      "near_mc_keep": {
+        "id": "ESCAT0800000008230C",
+        "name": "Matadepera-La Muntanyeta (Barcelona)",
+        "km": 7.96
+      },
+      "extra": {}
+    },
+    {
+      "id": "MO_173",
+      "source": "MeteOsona",
+      "name": "St.Bartomeu del Grau",
+      "url": "https://www.meteosona.com/estacio/SantBartomeuGrau/",
+      "elev_m": 878.0,
+      "lat": 41.979992,
+      "lon": 2.178029,
+      "rain_available": true,
+      "reliability_notes": "id=173; dades_disponibles=True; bloquejada=False; JSON in /estacio/<slug>/ as var estacio",
+      "near_mc_keep": {
+        "id": "ESCAT0800000008509A",
+        "name": "Santa Cecília de Voltregà (Barcelona)",
+        "km": 3.8
+      },
+      "extra": {}
+    },
+    {
+      "id": "MO_161",
+      "source": "MeteOsona",
+      "name": "St.Pau de Segúries (Ripollès)",
+      "url": "https://www.meteosona.com/estacio/SantPauSeguries_Altres/",
+      "elev_m": 875.0,
+      "lat": 42.260605,
+      "lon": 2.368356,
+      "rain_available": true,
+      "reliability_notes": "id=161; dades_disponibles=True; bloquejada=False; JSON in /estacio/<slug>/ as var estacio",
+      "near_mc_keep": null,
+      "extra": {}
+    },
+    {
+      "id": "MO_53",
+      "source": "MeteOsona",
+      "name": "Alpens",
+      "url": "https://www.meteosona.com/estacio/Alpens/",
+      "elev_m": 871.0,
+      "lat": 42.120762,
+      "lon": 2.100802,
+      "rain_available": true,
+      "reliability_notes": "id=53; dades_disponibles=True; bloquejada=False; JSON in /estacio/<slug>/ as var estacio; nearest keep Cussons - Sora (Barcelona) @ 8.5 km (gap if >8)",
+      "near_mc_keep": null,
+      "extra": {}
+    },
+    {
+      "id": "MG_79",
+      "source": "Meteoguilleries",
+      "name": "Estació municipal de El Brull (Osona, P.N. del Montseny)",
+      "url": "https://www.meteoguilleries.cat/ca/estacions/brull.html",
+      "elev_m": 871.0,
+      "lat": 41.816111111111105,
+      "lon": 2.3097222222222222,
+      "rain_available": true,
+      "reliability_notes": "idEstacioMeteo=79; observador=Meteoguilleries; model=Campbell Scientifics CR310; espai=P.N. del Montseny; Meteoguilleries Campbell Scientifics CR310 P.N. del Montseny",
+      "near_mc_keep": {
+        "id": "ESCAT0800000008553A",
+        "name": "Seva (Barcelona)",
+        "km": 3.62
+      },
+      "extra": {}
+    },
+    {
+      "id": "MG_103",
+      "source": "Meteoguilleries",
+      "name": "Bagà",
+      "url": "https://www.meteoguilleries.cat/ca/estacions/baga.html",
+      "elev_m": 865.0,
+      "lat": 42.2575,
+      "lon": 1.8597222222222223,
+      "rain_available": true,
+      "reliability_notes": "idEstacioMeteo=103; observador=Meteocadí; model=Davis Vantage; espai=P.N.del Cadí Moixeró; Meteocadí Davis Vantage P.N.del Cadí Moixeró",
+      "near_mc_keep": {
+        "id": "ESCAT0800000008695A",
+        "name": "Bagà (nord) (Barcelona)",
+        "km": 0.28
+      },
+      "extra": {}
+    },
+    {
+      "id": "MO_36",
+      "source": "MeteOsona",
+      "name": "Els Munts Guilleries",
+      "url": "https://www.meteosona.com/estacio/Elsmuntsguilleries/",
+      "elev_m": 863.0,
+      "lat": 41.936436,
+      "lon": 2.367735,
+      "rain_available": true,
+      "reliability_notes": "id=36; dades_disponibles=False; bloquejada=False; JSON in /estacio/<slug>/ as var estacio",
+      "near_mc_keep": {
+        "id": "ESCAT0800000008519B",
+        "name": "Tavèrnoles (Barcelona)",
+        "km": 3.47
+      },
+      "extra": {}
+    },
+    {
+      "id": "MO_38",
+      "source": "MeteOsona",
+      "name": "Sta.Maria de Besora",
+      "url": "https://www.meteosona.com/estacio/SantaMariaBesora/",
+      "elev_m": 862.0,
+      "lat": 42.126259,
+      "lon": 2.257497,
+      "rain_available": true,
+      "reliability_notes": "id=38; dades_disponibles=True; bloquejada=False; JSON in /estacio/<slug>/ as var estacio",
+      "near_mc_keep": {
+        "id": "ESCAT0800000008572B",
+        "name": "Bellmunt (Barcelona)",
+        "km": 3.96
+      },
+      "extra": {}
+    },
+    {
+      "id": "MO_51",
+      "source": "MeteOsona",
+      "name": "Tavertet",
+      "url": "https://www.meteosona.com/estacio/Tavertet/",
+      "elev_m": 862.0,
+      "lat": 41.99693,
+      "lon": 2.419145,
+      "rain_available": true,
+      "reliability_notes": "id=51; dades_disponibles=True; bloquejada=False; JSON in /estacio/<slug>/ as var estacio",
+      "near_mc_keep": {
+        "id": "ESCAT0800000008519C",
+        "name": "Tavèrnoles - El Raurell (Barcelona)",
+        "km": 5.05
+      },
+      "extra": {}
+    },
+    {
+      "id": "MO_167",
+      "source": "MeteOsona",
+      "name": "El Brull",
+      "url": "https://www.meteosona.com/estacio/Elbrull1/",
+      "elev_m": 843.0,
+      "lat": 41.8162,
+      "lon": 2.3099,
+      "rain_available": true,
+      "reliability_notes": "id=167; dades_disponibles=True; bloquejada=False; JSON in /estacio/<slug>/ as var estacio",
+      "near_mc_keep": {
+        "id": "ESCAT0800000008553A",
+        "name": "Seva (Barcelona)",
+        "km": 3.63
+      },
+      "extra": {}
+    },
+    {
+      "id": "MO_12",
+      "source": "MeteOsona",
+      "name": "Rupit",
+      "url": "https://www.meteosona.com/estacio/Rupit/",
+      "elev_m": 842.0,
+      "lat": 42.0265,
+      "lon": 2.465,
+      "rain_available": true,
+      "reliability_notes": "id=12; dades_disponibles=True; bloquejada=False; JSON in /estacio/<slug>/ as var estacio",
+      "near_mc_keep": {
+        "id": "ESCAT1700000017174A",
+        "name": "Sant Feliu de Pallerols (Girona)",
+        "km": 7.01
+      },
+      "extra": {}
+    },
+    {
+      "id": "MG_26",
+      "source": "Meteoguilleries",
+      "name": "Estació municipal de Susqueda - St. Martí Sacalm (La Selva, )",
+      "url": "https://www.meteoguilleries.cat/ca/estacions/smsacalm.html",
+      "elev_m": 831.0,
+      "lat": 42.01444444444444,
+      "lon": 2.5452777777777778,
+      "rain_available": true,
+      "reliability_notes": "idEstacioMeteo=26; observador=Meteoguilleries; model=Campbell Scientifics CR310; espai=; Meteoguilleries Campbell Scientifics CR310",
+      "near_mc_keep": {
+        "id": "ESCAT1700000017166E",
+        "name": "El Pasteral  (Girona)",
+        "km": 6.0
+      },
+      "extra": {}
+    },
+    {
+      "id": "MG_31",
+      "source": "Meteoguilleries",
+      "name": "Estació municipal de St. Hilari Sacalm (La Selva, Guilleries)",
+      "url": "https://www.meteoguilleries.cat/ca/estacions/shs2.html",
+      "elev_m": 826.0,
+      "lat": 41.87916666666667,
+      "lon": 2.5194444444444444,
+      "rain_available": true,
+      "reliability_notes": "idEstacioMeteo=31; observador=Meteoguilleries; model=Campbell Scientifics CR310; espai=Guilleries; Meteoguilleries Campbell Scientifics CR310 Guilleries",
+      "near_mc_keep": null,
+      "extra": {}
+    },
+    {
+      "id": "MG_106",
+      "source": "Meteoguilleries",
+      "name": "La Llosa del Cavall-Navès",
+      "url": "https://www.meteoguilleries.cat/ca/estacions/llo.html",
+      "elev_m": 814.0,
+      "lat": 42.10027777777778,
+      "lon": 1.5811111111111111,
+      "rain_available": true,
+      "reliability_notes": "idEstacioMeteo=106; observador=Meteoguilleries; model=Importació API ACA; espai=Vall del Lord; Meteoguilleries Importació API ACA Vall del Lord",
+      "near_mc_keep": null,
+      "extra": {}
+    },
+    {
+      "id": "MG_98",
+      "source": "Meteoguilleries",
+      "name": "Parc Astronòmic del Montsec",
+      "url": "https://www.meteoguilleries.cat/ca/estacions/pam.html",
+      "elev_m": 813.0,
+      "lat": 42.02472222222222,
+      "lon": 0.7366666666666666,
+      "rain_available": true,
+      "reliability_notes": "idEstacioMeteo=98; observador=Meteoguilleries; model=Importació API FGC; espai=Parc Astronòmic del Montsec; Meteoguilleries Importació API FGC Parc Astronòmic del Montsec; data via FGC API import on MG (not Meteocat XEMA scrape target)",
+      "near_mc_keep": null,
+      "extra": {}
+    },
+    {
+      "id": "MO_9",
+      "source": "MeteOsona",
+      "name": "St.Boi de Lluçanès",
+      "url": "https://www.meteosona.com/estacio/SantBoiLlucanes/",
+      "elev_m": 810.0,
+      "lat": 42.058184,
+      "lon": 2.151777,
+      "rain_available": true,
+      "reliability_notes": "id=9; dades_disponibles=True; bloquejada=False; JSON in /estacio/<slug>/ as var estacio",
+      "near_mc_keep": {
+        "id": "ESCAT0800000008588A",
+        "name": "Cussons - Sora (Barcelona)",
+        "km": 6.12
+      },
+      "extra": {}
+    },
+    {
+      "id": "MO_103",
+      "source": "MeteOsona",
+      "name": "Viladrau",
+      "url": "https://www.meteosona.com/estacio/Viladrau/",
+      "elev_m": 798.0,
+      "lat": 41.851029,
+      "lon": 2.391475,
+      "rain_available": true,
+      "reliability_notes": "id=103; dades_disponibles=True; bloquejada=False; JSON in /estacio/<slug>/ as var estacio",
+      "near_mc_keep": {
+        "id": "ESCAT1700000017405A",
+        "name": "Espinelves (Girona)",
+        "km": 3.17
+      },
+      "extra": {}
+    },
+    {
+      "id": "MG_102",
+      "source": "Meteoguilleries",
+      "name": "Montseny - Mas Joan",
+      "url": "https://www.meteoguilleries.cat/ca/estacions/masjoan.html",
+      "elev_m": 765.0,
+      "lat": 41.74138888888889,
+      "lon": 2.3916666666666666,
+      "rain_available": true,
+      "reliability_notes": "idEstacioMeteo=102; observador=Meteoguilleries; model=Campbell Scientifics CR310; espai=P.N.del Montseny; Meteoguilleries Campbell Scientifics CR310 P.N.del Montseny",
+      "near_mc_keep": {
+        "id": "ESCAT0800000008469A",
+        "name": "Montseny - Les Arrels (Barcelona)",
+        "km": 1.18
+      },
+      "extra": {}
+    },
+    {
+      "id": "MO_160",
+      "source": "MeteOsona",
+      "name": "Lluçà",
+      "url": "https://www.meteosona.com/estacio/Lluca/",
+      "elev_m": 760.0,
+      "lat": 42.055808,
+      "lon": 2.032058,
+      "rain_available": true,
+      "reliability_notes": "id=160; dades_disponibles=True; bloquejada=False; JSON in /estacio/<slug>/ as var estacio",
+      "near_mc_keep": null,
+      "extra": {}
+    },
+    {
+      "id": "MO_142",
+      "source": "MeteOsona",
+      "name": "Olost \"Trasserra\"",
+      "url": "https://www.meteosona.com/estacio/OlostTrasserra/",
+      "elev_m": 740.0,
+      "lat": 42.012538,
+      "lon": 2.133591,
+      "rain_available": true,
+      "reliability_notes": "id=142; dades_disponibles=True; bloquejada=False; JSON in /estacio/<slug>/ as var estacio",
+      "near_mc_keep": {
+        "id": "ESCAT0800000008516C",
+        "name": "Olost - Mas Lliscàs (Barcelona)",
+        "km": 4.56
+      },
+      "extra": {}
+    },
+    {
+      "id": "MO_17",
+      "source": "MeteOsona",
+      "name": "Espinelves",
+      "url": "https://www.meteosona.com/estacio/Espinelves/",
+      "elev_m": 730.0,
+      "lat": 41.8691,
+      "lon": 2.4159,
+      "rain_available": true,
+      "reliability_notes": "id=17; dades_disponibles=True; bloquejada=False; JSON in /estacio/<slug>/ as var estacio",
+      "near_mc_keep": {
+        "id": "ESCAT1700000017405A",
+        "name": "Espinelves (Girona)",
+        "km": 0.35
+      },
+      "extra": {}
+    },
+    {
+      "id": "MO_95",
+      "source": "MeteOsona",
+      "name": "El Brull \"Vilar de la Castanya\"",
+      "url": "https://www.meteosona.com/estacio/Elbrull/",
+      "elev_m": 720.0,
+      "lat": 41.779342,
+      "lon": 2.358033,
+      "rain_available": true,
+      "reliability_notes": "id=95; dades_disponibles=False; bloquejada=False; JSON in /estacio/<slug>/ as var estacio",
+      "near_mc_keep": {
+        "id": "ESCAT0800000008469A",
+        "name": "Montseny - Les Arrels (Barcelona)",
+        "km": 4.77
+      },
+      "extra": {}
+    },
+    {
+      "id": "MO_169",
+      "source": "MeteOsona",
+      "name": "Seva \"El Montanyà\"",
+      "url": "https://www.meteosona.com/estacio/Seva_El_Montanya/",
+      "elev_m": 720.0,
+      "lat": 41.80871,
+      "lon": 2.25966,
+      "rain_available": true,
+      "reliability_notes": "id=169; dades_disponibles=True; bloquejada=False; JSON in /estacio/<slug>/ as var estacio",
+      "near_mc_keep": {
+        "id": "ESCAT0800000008540C",
+        "name": "Centelles - Oest (Barcelona)",
+        "km": 2.64
+      },
+      "extra": {}
+    },
+    {
+      "id": "MO_86",
+      "source": "MeteOsona",
+      "name": "Sora",
+      "url": "https://www.meteosona.com/estacio/Sora/",
+      "elev_m": 715.0,
+      "lat": 42.112737,
+      "lon": 2.16051,
+      "rain_available": true,
+      "reliability_notes": "id=86; dades_disponibles=True; bloquejada=False; JSON in /estacio/<slug>/ as var estacio",
+      "near_mc_keep": {
+        "id": "ESCAT0800000008588A",
+        "name": "Cussons - Sora (Barcelona)",
+        "km": 3.55
+      },
+      "extra": {}
+    },
+    {
+      "id": "MO_32",
+      "source": "MeteOsona",
+      "name": "Prats de Lluçanès Aemet",
+      "url": "https://www.meteosona.com/estacio/Pratsdellucanes/",
+      "elev_m": 700.0,
+      "lat": 42.007122,
+      "lon": 2.026648,
+      "rain_available": true,
+      "reliability_notes": "id=32; dades_disponibles=True; bloquejada=False; JSON in /estacio/<slug>/ as var estacio",
+      "near_mc_keep": {
+        "id": "ESCAT0800000008516C",
+        "name": "Olost - Mas Lliscàs (Barcelona)",
+        "km": 6.77
+      },
+      "extra": {}
+    },
+    {
+      "id": "MO_13",
+      "source": "MeteOsona",
+      "name": "L'Esquirol",
+      "url": "https://www.meteosona.com/estacio/Lesquirol/",
+      "elev_m": 691.0,
+      "lat": 42.0346,
+      "lon": 2.3701,
+      "rain_available": true,
+      "reliability_notes": "id=13; dades_disponibles=True; bloquejada=False; JSON in /estacio/<slug>/ as var estacio",
+      "near_mc_keep": {
+        "id": "ESCAT0800000008510C",
+        "name": "Sant Pere de Casserres (Barcelona)",
+        "km": 4.58
+      },
+      "extra": {}
+    },
+    {
+      "id": "MO_54",
+      "source": "MeteOsona",
+      "name": "L'Esquirol Sud",
+      "url": "https://www.meteosona.com/estacio/LesquirolSud/",
+      "elev_m": 683.0,
+      "lat": 42.030027,
+      "lon": 2.369497,
+      "rain_available": true,
+      "reliability_notes": "id=54; dades_disponibles=True; bloquejada=False; JSON in /estacio/<slug>/ as var estacio",
+      "near_mc_keep": {
+        "id": "ESCAT0800000008510C",
+        "name": "Sant Pere de Casserres (Barcelona)",
+        "km": 4.13
+      },
+      "extra": {}
+    },
+    {
+      "id": "MO_10",
+      "source": "MeteOsona",
+      "name": "Seva \"Els Sors\"",
+      "url": "https://www.meteosona.com/estacio/Seva_Els_Sors/",
+      "elev_m": 670.0,
+      "lat": 41.838,
+      "lon": 2.284,
+      "rain_available": true,
+      "reliability_notes": "id=10; dades_disponibles=True; bloquejada=False; JSON in /estacio/<slug>/ as var estacio",
+      "near_mc_keep": {
+        "id": "ESCAT0800000008553A",
+        "name": "Seva (Barcelona)",
+        "km": 0.4
+      },
+      "extra": {}
+    },
+    {
+      "id": "MO_179",
+      "source": "MeteOsona",
+      "name": "St.Martí d'Albars",
+      "url": "https://www.meteosona.com/estacio/SantMartidalbars/",
+      "elev_m": 662.0,
+      "lat": 42.044804,
+      "lon": 2.070684,
+      "rain_available": true,
+      "reliability_notes": "id=179; dades_disponibles=True; bloquejada=False; JSON in /estacio/<slug>/ as var estacio",
+      "near_mc_keep": {
+        "id": "ESCAT0800000008516C",
+        "name": "Olost - Mas Lliscàs (Barcelona)",
+        "km": 7.6
+      },
+      "extra": {}
+    },
+    {
+      "id": "MO_98",
+      "source": "MeteOsona",
+      "name": "Seva \"Els Roures\"",
+      "url": "https://www.meteosona.com/estacio/Seva_Els_Roures/",
+      "elev_m": 661.0,
+      "lat": 41.83476,
+      "lon": 2.273974,
+      "rain_available": true,
+      "reliability_notes": "id=98; dades_disponibles=True; bloquejada=False; JSON in /estacio/<slug>/ as var estacio",
+      "near_mc_keep": {
+        "id": "ESCAT0800000008553A",
+        "name": "Seva (Barcelona)",
+        "km": 0.77
+      },
+      "extra": {}
+    },
+    {
+      "id": "MO_152",
+      "source": "MeteOsona",
+      "name": "Taradell Institut IES",
+      "url": "https://www.meteosona.com/estacio/TaradellIES/",
+      "elev_m": 631.0,
+      "lat": 41.872884,
+      "lon": 2.288426,
+      "rain_available": true,
+      "reliability_notes": "id=152; dades_disponibles=True; bloquejada=False; JSON in /estacio/<slug>/ as var estacio",
+      "near_mc_keep": {
+        "id": "ESCAT0800000008552C",
+        "name": "Taradell (Dr.Fleming) (Barcelona)",
+        "km": 0.35
+      },
+      "extra": {}
+    },
+    {
+      "id": "MO_2",
+      "source": "MeteOsona",
+      "name": "Taradell",
+      "url": "https://www.meteosona.com/estacio/Taradell/",
+      "elev_m": 625.0,
+      "lat": 41.868008,
+      "lon": 2.284997,
+      "rain_available": true,
+      "reliability_notes": "id=2; dades_disponibles=True; bloquejada=False; JSON in /estacio/<slug>/ as var estacio",
+      "near_mc_keep": {
+        "id": "ESCAT0800000008552C",
+        "name": "Taradell (Dr.Fleming) (Barcelona)",
+        "km": 0.47
+      },
+      "extra": {}
+    },
+    {
+      "id": "MO_166",
+      "source": "MeteOsona",
+      "name": "St.Pere de Torelló IES",
+      "url": "https://www.meteosona.com/estacio/SantPereTorelloIES/",
+      "elev_m": 620.0,
+      "lat": 42.076065,
+      "lon": 2.294495,
+      "rain_available": true,
+      "reliability_notes": "id=166; dades_disponibles=True; bloquejada=False; JSON in /estacio/<slug>/ as var estacio",
+      "near_mc_keep": {
+        "id": "ESCAT0800000008572B",
+        "name": "Bellmunt (Barcelona)",
+        "km": 2.69
+      },
+      "extra": {}
+    },
+    {
+      "id": "MO_37",
+      "source": "MeteOsona",
+      "name": "Tona IES",
+      "url": "https://www.meteosona.com/estacio/Tona/",
+      "elev_m": 607.0,
+      "lat": 41.846856,
+      "lon": 2.222475,
+      "rain_available": true,
+      "reliability_notes": "id=37; dades_disponibles=True; bloquejada=False; JSON in /estacio/<slug>/ as var estacio",
+      "near_mc_keep": {
+        "id": "ESCAT0800000008551B",
+        "name": "Tona - IES  (Barcelona)",
+        "km": 0.71
+      },
+      "extra": {}
+    }
+  ]
+}
