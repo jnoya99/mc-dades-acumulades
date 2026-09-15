@@ -20,7 +20,6 @@ import json
 import re
 import sys
 import urllib.error
-import urllib.request
 import xml.etree.ElementTree as ET
 from datetime import datetime, timezone
 from pathlib import Path
@@ -30,9 +29,10 @@ from zoneinfo import ZoneInfo
 ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(Path(__file__).resolve().parent))
 from build_panel import build_payload, load_keep, write_panel  # noqa: E402
+from http_util import http_get  # noqa: E402
 
 CCAA = "ESCAT"
-UA = "mc-dades-acumulades/1.0 (+https://github.com/mc-dades-acumulades; daily archive)"
+UA = "mc-dades-acumulades/1.0 (+https://github.com/jnoya99/mc-dades-acumulades; daily archive)"
 XML_URL = "https://www.meteoclimatic.net/feed/xml/{id}"
 RSS_URL = "https://www.meteoclimatic.net/feed/rss/{id}"
 MADRID = ZoneInfo("Europe/Madrid")
@@ -62,17 +62,16 @@ CSV_FIELDS = [
 
 
 def _http_get(url: str, timeout: int = 90) -> bytes:
-    req = urllib.request.Request(
+    """GET with shared retries (backoff + jitter for timeouts/URLError/429/5xx)."""
+    return http_get(
         url,
+        timeout=timeout,
+        user_agent=UA,
         headers={
-            "User-Agent": UA,
             "Accept": "application/xml,text/xml,*/*",
             "Referer": "https://www.meteoclimatic.net/",
         },
-        method="GET",
     )
-    with urllib.request.urlopen(req, timeout=timeout) as resp:
-        return resp.read()
 
 
 def _local(tag: str) -> str:

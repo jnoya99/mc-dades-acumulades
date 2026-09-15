@@ -108,3 +108,16 @@ GitHub Pages serveix amb capçaleres CORS permissives per a GET estàtic.
 | `hourly-escat` | `0 * * * *` UTC | `data/hourly/` + `hourly_rain.json` + `hourly_meteo.json` |
 
 L’explorador veu hores/dies nous al proper reload.
+
+
+## Mountain (additive)
+
+Complementary mountain stations (`MO_*` / `MG_*` / `CMI_*` / `MCADI_*`) are published separately so existing ESCAT consumers keep working unchanged:
+
+```text
+https://jnoya99.github.io/mc-dades-acumulades/panel_mountain.json
+https://jnoya99.github.io/mc-dades-acumulades/hourly_rain_mountain.json
+https://jnoya99.github.io/mc-dades-acumulades/hourly_meteo_mountain.json
+```
+
+Same field names as ESCAT (`P`/`TX`/`N`/… and `Ph`); `ccaa` is `"MOUNTAIN"`. See README for per-source field gaps.
