@@ -530,366 +530,70 @@ def station_meta_list(rows: list[dict[str, Any]]) -> list[dict[str, Any]]:
     return out
 
 
+def cell_from_mountain_row(r: dict[str, Any] | None) -> dict[str, Any] | None:
+    if not r:
+        return None
+    cell = {
+        "P": _json_num(_f(r.get("Precip.diaria") if r.get("Precip.diaria") is not None else r.get("cum"))),
+        "TX": _json_num(_f(r.get("Temp.max"))),
+        "N": _json_num(_f(r.get("Temp.min"))),
+        "HX": _json_num(_f(r.get("Hum.max"))),
+        "HR": _json_num(_f(r.get("Hum.act"))),
+        "W": _json_num(_f(r.get("Vient.max") if r.get("Vient.max") is not None else r.get("Vient.act"))),
+        "WDG": _json_num(_f(r.get("Vient.dir"))),
+    }
+    if all(v is None for v in cell.values()):
+        return None
+    return cell
+
+
+def list_daily_mountain_files(daily_dir: Path) -> list[tuple[str, Path]]:
+    if not daily_dir.is_dir():
+        return []
+    out: list[tuple[str, Path]] = []
+    for path in sorted(daily_dir.glob(f"{CCAA}_????????.json")):
+        m = re.match(rf"^{CCAA}_(\d{{4}})(\d{{2}})(\d{{2}})$", path.stem)
+        if not m:
+            continue
+        y, mo, d = m.groups()
+        out.append((f"{y}-{mo}-{d}", path))
+    return out
+
+
 def build_panel_mountain(
     stations_meta: list[dict[str, Any]],
     day_iso: str,
     rows_by_id: dict[str, dict[str, Any]],
+    daily_dir: Path | None = None,
 ) -> dict[str, Any]:
-    series: dict[str, dict[str, dict[str, Any]]] = {}
-    for st in stations_meta:
-        sid = st["id"]
-        r = rows_by_id.get(sid)
-        if not r:
-            continue
-        cell = {
-            "P": _json_num(_f(r.get("Precip.diaria") if r.get("Precip.diaria") is not None else r.get("cum"))),
-            "TX": _json_num(_f(r.get("Temp.max"))),
-            "N": _json_num(_f(r.get("Temp.min"))),
-            "HX": _json_num(_f(r.get("Hum.max"))),
-            "HR": _json_num(_f(r.get("Hum.act"))),
-            "W": _json_num(_f(r.get("Vient.max") if r.get("Vient.max") is not None else r.get("Vient.act"))),
-            "WDG": _json_num(_f(r.get("Vient.dir"))),
-        }
-        # drop empty cells
-        if all(v is None for v in cell.values()):
-            continue
-        series[sid] = {day_iso: cell}
-    built = datetime.now(timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ")
-    return {
-        "version": PANEL_VERSION,
-        "built": built,
-        "ccaa": CCAA,
-        "stations": stations_meta,
-        "days": [day_iso],
-        "series": series,
-        "sources": sorted({s.get("source") for s in stations_meta if s.get("source")}),
-        "field_gaps": SOURCE_FIELD_GAPS,
-        "note": (
-            "Additive mountain panel. ESCAT consumers should keep using panel.json; "
-            "IDs are namespaced MO_/MG_/CMI_/MCADI_ and do not collide with MC_*."
-        ),
-    }
+    """Accumulate every data/daily/MOUNTAIN_YYYYMMDD.json, like ESCAT panel.json."""
+    known = {st["id"] for st in stations_meta if st.get("id")}
+    series: dict[str, dict[str, dict[str, Any]]] = {sid: {} for sid in known}
+    days: set[str] = set()
 
-
-def _ph_delta(
-    sid: str,
-    cum: float,
-    hour: str,
-    day: str,
-    prev_cum: dict[str, float],
-    prev_hour: dict[str, str],
-) -> float:
-    if sid not in prev_cum:
-        return 0.0
-    prev = prev_cum[sid]
-    prev_h = prev_hour[sid]
-    prev_day = prev_h[:10]
-    if cum >= prev and day == prev_day:
-        return max(0.0, cum - prev)
-    return max(0.0, cum)
-
-
-def list_hourly_files(hourly_dir: Path) -> list[tuple[str, Path]]:
-    if not hourly_dir.is_dir():
-        return []
-    out: list[tuple[str, Path]] = []
-    for path in sorted(hourly_dir.glob(f"{CCAA}_????????_??.json")):
-        m = re.match(rf"^{CCAA}_(\d{{4}})(\d{{2}})(\d{{2}})_(\d{{2}})$", path.stem)
-        if not m:
-            continue
-        y, mo, d, hh = m.groups()
-        out.append((f"{y}-{mo}-{d}T{hh}:00", path))
-    out.sort(key=lambda x: x[0])
-    return out
-
-
-def prune_hourly(hourly_dir: Path, keep_days: int = KEEP_HOURS_DAYS) -> int:
-    cutoff = (datetime.now(MADRID).date() - timedelta(days=keep_days - 1)).isoformat()
-    deleted = 0
-    for hour, path in list_hourly_files(hourly_dir):
-        if hour[:10] < cutoff:
-            path.unlink(missing_ok=True)
-            deleted += 1
-    return deleted
-
-
-def build_hourly_mountain(
-    stations_meta: list[dict[str, Any]],
-    hourly_dir: Path,
-) -> tuple[dict[str, Any], dict[str, Any]]:
-    files = list_hourly_files(hourly_dir)
-    hours = [h for h, _ in files]
-    ids = [s["id"] for s in stations_meta]
-    series_ph: dict[str, dict[str, Any]] = {i: {} for i in ids}
-    snap: dict[str, dict[str, dict[str, Any]]] = {
-        k: {i: {} for i in ids} for k, _ in SNAPSHOT_SERIES
-    }
-    prev_cum: dict[str, float] = {}
-    prev_hour: dict[str, str] = {}
-
-    for hour, path in files:
-        try:
-            obj = json.loads(path.read_text(encoding="utf-8"))
-        except (OSError, json.JSONDecodeError):
-            continue
-        st_list = obj.get("stations") if isinstance(obj, dict) else None
-        if not isinstance(st_list, list):
-            continue
-        day = hour[:10]
-        for st in st_list:
-            if not isinstance(st, dict):
-                continue
-            sid = (st.get("id") or "").strip()
-            if sid not in series_ph:
-                continue
-            cum = _f(st.get("cum"))
-            if cum is None:
-                cum = _f(st.get("Precip.total"))
-            if cum is None:
-                cum = _f(st.get("Precip.diaria"))
-            if cum is not None:
-                ph = _ph_delta(sid, cum, hour, day, prev_cum, prev_hour)
-                series_ph[sid][hour] = _json_num(ph)
-                prev_cum[sid] = cum
-                prev_hour[sid] = hour
-            for skey, raw_field in SNAPSHOT_SERIES:
-                val = _f(st.get(raw_field))
-                if val is None:
-                    continue
-                snap[skey][sid][hour] = _json_num(val)
-
-    def nonempty(d: dict[str, dict]) -> dict[str, dict]:
-        return {k: v for k, v in d.items() if v}
-
-    built = datetime.now(timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ")
-    rain = {
-        "version": HOURLY_VERSION,
-        "built": built,
-        "ccaa": CCAA,
-        "hours": hours,
-        "stations": stations_meta,
-        "series": nonempty(series_ph),
-        "delta_note": DELTA_NOTE,
-        "retention_days": KEEP_HOURS_DAYS,
-        "field_gaps": SOURCE_FIELD_GAPS,
-    }
-    meteo: dict[str, Any] = {
-        "version": HOURLY_VERSION,
-        "built": built,
-        "ccaa": CCAA,
-        "hours": hours,
-        "stations": stations_meta,
-        "seriesPh": nonempty(series_ph),
-        "delta_note": DELTA_NOTE,
-        "snapshot_note": SNAPSHOT_NOTE,
-        "retention_days": KEEP_HOURS_DAYS,
-        "field_gaps": SOURCE_FIELD_GAPS,
-    }
-    for skey, _ in SNAPSHOT_SERIES:
-        meteo[skey] = nonempty(snap[skey])
-    return rain, meteo
-
-
-def run_capture(
-    root: Path,
-    mode: str,
-    *,
-    force: bool = False,
-    limit: int | None = None,
-    only_ids: set[str] | None = None,
-    delay_lo: float = 0.4,
-    delay_hi: float = 0.8,
-) -> dict[str, Any]:
-    manifest_path = root / "data" / MANIFEST_NAME
-    stations = load_manifest(manifest_path)
-    if only_ids:
-        stations = [s for s in stations if s.get("id") in only_ids]
-    if mode == "hourly":
-        stations = [s for s in stations if s.get("source") in HOURLY_SOURCES]
-    if limit is not None:
-        stations = stations[:limit]
-
-    day_iso = madrid_today_iso()
-    hour = madrid_hour_stamp()
-    ymd = day_iso.replace("-", "")
-    hh = hour[11:13]
-
-    if mode == "daily":
-        out_path = root / "data" / "daily" / f"{CCAA}_{ymd}.json"
-    else:
-        out_path = root / "data" / "hourly" / f"{CCAA}_{ymd}_{hh}.json"
-
-    rows: list[dict[str, Any]] = []
-    errors: list[dict[str, str]] = []
-    fetched = False
-
-    if not force and out_path.exists() and mode == "daily":
-        # Rebuild docs from existing raw
-        try:
-            prev = json.loads(out_path.read_text(encoding="utf-8"))
-            rows = list(prev.get("stations") or [])
-        except (OSError, json.JSONDecodeError):
-            rows = []
-    else:
-        fetched = True
-        for i, meta in enumerate(stations):
-            sid = meta.get("id") or "?"
+    if daily_dir is not None:
+        for iso, path in list_daily_mountain_files(daily_dir):
             try:
-                row = capture_station(meta)
-                rows.append(row)
-            except Exception as e:  # noqa: BLE001 — per-station isolation
-                errors.append({"id": sid, "error": f"{type(e).__name__}: {e}"})
-            if i < len(stations) - 1:
-                throttle(delay_lo, delay_hi)
-
-        payload = {
-            "ccaa": CCAA,
-            "mode": mode,
-            "date" if mode == "daily" else "hour": day_iso if mode == "daily" else hour,
-            "captured_at": datetime.now(timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ"),
-            "n_stations": len(rows),
-            "n_errors": len(errors),
-            "errors": errors,
-            "stations": rows,
-            "field_gaps": SOURCE_FIELD_GAPS,
-        }
-        # fix key for hour mode — can't use conditional in dict literal like that cleanly above
-        if mode == "hourly":
-            payload.pop("date", None)
-            payload["hour"] = hour
-        else:
-            payload.pop("hour", None)
-            payload["date"] = day_iso
-        write_json(out_path, payload)
-
-    # Station meta for docs: prefer manifest coords + successful rows
-    meta_by_id = {s["id"]: s for s in load_manifest(manifest_path)}
-    docs_stations = []
-    for r in rows:
-        m = meta_by_id.get(r["id"], {})
-        docs_stations.append(
-            {
-                "id": r["id"],
-                "mc_id": r["id"],
-                "name": r.get("name") or m.get("name") or r["id"],
-                "lon": _json_num(_f(r.get("lon") if r.get("lon") is not None else m.get("lon"))),
-                "lat": _json_num(_f(r.get("lat") if r.get("lat") is not None else m.get("lat"))),
-                "elev": _json_num(_f(r.get("elev") if r.get("elev") is not None else m.get("elev_m"))),
-                "source": r.get("source") or m.get("source"),
-            }
-        )
-    # For hourly docs include all hourly-capable manifest stations (stable list)
-    if mode == "hourly":
-        docs_stations = []
-        for m in load_manifest(manifest_path):
-            if m.get("source") not in HOURLY_SOURCES:
+                obj = json.loads(path.read_text(encoding="utf-8"))
+            except (OSError, json.JSONDecodeError):
                 continue
-            docs_stations.append(
-                {
-                    "id": m["id"],
-                    "mc_id": m["id"],
-                    "name": m.get("name") or m["id"],
-                    "lon": _json_num(_f(m.get("lon"))),
-                    "lat": _json_num(_f(m.get("lat"))),
-                    "elev": _json_num(_f(m.get("elev_m"))),
-                    "source": m.get("source"),
-                }
-            )
-        docs_stations.sort(key=lambda x: x["id"])
+            st_list = obj.get("stations") if isinstance(obj, dict) else None
+            if not isinstance(st_list, list):
+                continue
+            hit = False
+            for r in st_list:
+                if not isinstance(r, dict):
+                    continue
+                sid = (r.get("id") or "").strip()
+                if sid not in series:
+                    continue
+                cell = cell_from_mountain_row(r)
+                if not cell:
+                    continue
+                series[sid][iso] = cell
+                hit = True
+            if hit:
+                days.add(iso)
 
-    docs_dir = root / "docs"
-    if mode == "daily":
-        # Use full manifest as station list for panel (stable), series only where we have data
-        all_meta = []
-        for m in load_manifest(manifest_path):
-            all_meta.append(
-                {
-                    "id": m["id"],
-                    "mc_id": m["id"],
-                    "name": m.get("name") or m["id"],
-                    "lon": _json_num(_f(m.get("lon"))),
-                    "lat": _json_num(_f(m.get("lat"))),
-                    "elev": _json_num(_f(m.get("elev_m"))),
-                    "source": m.get("source"),
-                }
-            )
-        all_meta.sort(key=lambda x: x["id"])
-        rows_by_id = {r["id"]: r for r in rows}
-        panel = build_panel_mountain(all_meta, day_iso, rows_by_id)
-        write_json(docs_dir / "panel_mountain.json", panel, compact=True)
-        return {
-            "ok": True,
-            "mode": mode,
-            "fetched": fetched,
-            "raw": str(out_path),
-            "panel": str(docs_dir / "panel_mountain.json"),
-            "n_ok": len(rows),
-            "n_errors": len(errors),
-            "errors": errors[:20],
-            "date": day_iso,
-        }
-
-    # hourly
-    hourly_dir = root / "data" / "hourly"
-    pruned = prune_hourly(hourly_dir)
-    rain, meteo = build_hourly_mountain(docs_stations, hourly_dir)
-    write_json(docs_dir / "hourly_rain_mountain.json", rain, compact=True)
-    write_json(docs_dir / "hourly_meteo_mountain.json", meteo, compact=True)
-    return {
-        "ok": True,
-        "mode": mode,
-        "fetched": fetched,
-        "raw": str(out_path),
-        "hourly_rain": str(docs_dir / "hourly_rain_mountain.json"),
-        "hourly_meteo": str(docs_dir / "hourly_meteo_mountain.json"),
-        "n_ok": len(rows),
-        "n_errors": len(errors),
-        "errors": errors[:20],
-        "hour": hour,
-        "pruned": pruned,
-        "n_hours": len(rain["hours"]),
-    }
-
-
-def main(argv: list[str] | None = None) -> int:
-    p = argparse.ArgumentParser(description=__doc__)
-    p.add_argument("--root", type=Path, default=ROOT)
-    p.add_argument("--mode", choices=("daily", "hourly"), required=True)
-    p.add_argument("--force", action="store_true")
-    p.add_argument("--limit", type=int, default=None, help="capture only first N (debug)")
-    p.add_argument(
-        "--only",
-        default=None,
-        help="comma-separated station ids (smoke test)",
-    )
-    p.add_argument("--delay-lo", type=float, default=0.4)
-    p.add_argument("--delay-hi", type=float, default=0.8)
-    args = p.parse_args(argv)
-
-    only_ids = None
-    if args.only:
-        only_ids = {x.strip() for x in args.only.split(",") if x.strip()}
-
-    try:
-        info = run_capture(
-            args.root,
-            args.mode,
-            force=args.force,
-            limit=args.limit,
-            only_ids=only_ids,
-            delay_lo=args.delay_lo,
-            delay_hi=args.delay_hi,
-        )
-    except urllib.error.HTTPError as e:
-        print(f"HTTP error: {e.code} {e.reason}", file=sys.stderr)
-        return 2
-    except urllib.error.URLError as e:
-        print(f"URL error: {e.reason}", file=sys.stderr)
-        return 2
-
-    print(json.dumps(info, ensure_ascii=False, indent=2))
-    return 0 if info.get("ok") else 1
-
-
-if __name__ == "__main__":
-    raise SystemExit(main())
+    for sid, r in rows_by_id.items():
+        if sid not 
