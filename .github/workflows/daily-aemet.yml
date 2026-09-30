@@ -42,11 +42,16 @@ jobs:
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add data/stations_aemet.json data/daily/AEMET_*.json docs/panel_aemet.json
+          # Add the directory, not a shell glob. capture_aemet.py prunes old
+          # AEMET_*.json; a glob only stages files that still exist, so those
+          # deletions stay unstaged and `git pull --rebase` exits 128.
+          # Same idea as daily-escat (`git add data/daily ...`).
+          git add -A -- data/stations_aemet.json data/daily docs/panel_aemet.json
           if git diff --staged --quiet; then
             echo "No changes to commit"
           else
+            git status --short
             git commit -m "data: daily AEMET Catalunya panel [skip ci]"
-            git pull --rebase origin main
+            git pull --rebase --autostash origin main
             git push
           fi
