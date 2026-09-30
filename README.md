@@ -20,6 +20,8 @@ La mateixa captura horària desa també snapshots d’humitat, vent i temperatur
 | **Action horària** | Cron `0 * * * *` (cada hora UTC) |
 | **`scripts/capture_hourly.py`** | Snapshot horari → `data/hourly/ESCAT_YYYYMMDD_HH.json` + `docs/hourly_rain.json` (Ph) + `docs/hourly_meteo.json` (Ph + HR/W/…) |
 | **`scripts/capture_mountain.py`** | 86 estacions muntanya (MO/MG/CMI/MCADI) → `data/{daily,hourly}/MOUNTAIN_*` + `docs/panel_mountain.json` / `hourly_*_mountain.json` |
+| **Action AEMET** | Cron `0 22 * * *` UTC → `docs/panel_aemet.json` (secret `AEMET_API_KEY`; fallback HF) |
+| **`scripts/capture_aemet.py`** | 87 estacions CAT (`AE_*`) · OpenData diari o mirall HuggingFace |
 | **`scripts/http_util.py`** | GET compartit amb reintents (backoff + jitter; timeouts, URLError, HTTP 429/5xx) |
 | **`scripts/build_panel.py`** | Fusiona `stations_keep` + dies → `docs/panel.json` |
 | **GitHub Pages** | Serveix `docs/` (`panel.json`, `hourly_rain.json`, `hourly_meteo.json`) |
@@ -129,6 +131,35 @@ Throttle: GETs seqüencials amb delay ~0.4–0.8 s (baixa concurrència). Reinte
 
 Fora d’abast d’aquest arxiu: 35 ESCAT excloses per QC, XEMA, Weather Underground (cal API key).
 
+
+## AEMET Catalunya (additive)
+
+Manifest: `data/stations_aemet.json` (**87** estacions, IDs `AE_<indicativo>` — mateix catàleg que Bolets Explorador `AEMET_ST`).
+
+| Peça | Descripció |
+|---|---|
+| **Action `daily-aemet`** | Cron `0 22 * * *` UTC + `workflow_dispatch` |
+| **`scripts/capture_aemet.py`** | OpenData climatologia diària → `data/daily/AEMET_YYYYMMDD.json` + `docs/panel_aemet.json` |
+| **Secret** | `AEMET_API_KEY` (JWT d’[AEMET OpenData](https://opendata.aemet.es/)) |
+
+```bash
+# amb clau (recomanat per dades al dia)
+export AEMET_API_KEY='…'
+python3 scripts/capture_aemet.py --source api --force
+
+# sense clau: mirall HuggingFace datania/aemet (pot anar amb retard de dies/setmanes)
+python3 scripts/capture_aemet.py --source hf --force
+```
+
+Producte (`ccaa: "AEMET-CAT"`, schema com `panel_mountain.json`):
+
+- `docs/panel_aemet.json` → Pages `…/panel_aemet.json`
+- Sèries `AE_*` amb cel·les `{P, TX, N, HX, HR, W, WDG}` (prec / tmax / tmin / hrMax / hrMedia / racha / dir)
+
+> **Secret:** `gh secret set AEMET_API_KEY -R jnoya99/mc-dades-acumulades`  
+> Sol·licitud gratuïta a https://opendata.aemet.es/ (centre de descàrregues → API Key).  
+> Sense secret, l’Action fa fallback al mirall HF (útil per bootstrap; no inventa sèries).
+
 ## Explorador
 
 ```text
@@ -138,6 +169,7 @@ https://jnoya99.github.io/mc-dades-acumulades/hourly_meteo.json
 https://jnoya99.github.io/mc-dades-acumulades/panel_mountain.json
 https://jnoya99.github.io/mc-dades-acumulades/hourly_rain_mountain.json
 https://jnoya99.github.io/mc-dades-acumulades/hourly_meteo_mountain.json
+https://jnoya99.github.io/mc-dades-acumulades/panel_aemet.json
 ```
 
 ```js

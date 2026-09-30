@@ -121,3 +121,16 @@ https://jnoya99.github.io/mc-dades-acumulades/hourly_meteo_mountain.json
 ```
 
 Same field names as ESCAT (`P`/`TX`/`N`/… and `Ph`); `ccaa` is `"MOUNTAIN"`. See README for per-source field gaps.
+
+## AEMET Catalunya
+
+```text
+https://jnoya99.github.io/mc-dades-acumulades/panel_aemet.json
+```
+
+```js
+window.__AEMET_PANEL_URL = "https://jnoya99.github.io/mc-dades-acumulades/panel_aemet.json";
+// fallback jsDelivr: …/gh/jnoya99/mc-dades-acumulades@main/docs/panel_aemet.json
+```
+
+IDs `AE_<indicativo>` (87). Schema equal to mountain/ESCAT panel (`days` + `series[sid][day] = {P,TX,N,HX,HR,W,WDG}`).

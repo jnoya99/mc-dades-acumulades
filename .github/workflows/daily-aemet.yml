@@ -1,0 +1,52 @@
+name: daily-aemet
+
+"on":
+  schedule:
+    # 22:00 UTC ≈ 00:00 Europe/Madrid in summer — after ESCAT daily.
+    - cron: "0 22 * * *"
+  workflow_dispatch:
+
+concurrency:
+  group: daily-aemet
+  cancel-in-progress: false
+
+permissions:
+  contents: write
+
+jobs:
+  capture:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Capture AEMET daily + rebuild panel_aemet.json
+        env:
+          AEMET_API_KEY: ${{ secrets.AEMET_API_KEY }}
+        run: |
+          if [ -n "${AEMET_API_KEY:-}" ]; then
+            echo "Using AEMET OpenData API (secret present)"
+            python scripts/capture_aemet.py --source api --force
+          else
+            echo "WARNING: secret AEMET_API_KEY missing — falling back to HuggingFace datania/aemet mirror (may lag)."
+            echo "Add repo secret AEMET_API_KEY from https://opendata.aemet.es/ (solicitud de API Key)."
+            python scripts/capture_aemet.py --source hf --force
+          fi
+
+      - name: Commit archive + panel
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data/stations_aemet.json data/daily/AEMET_*.json docs/panel_aemet.json
+          if git diff --staged --quiet; then
+            echo "No changes to commit"
+          else
+            git commit -m "data: daily AEMET Catalunya panel [skip ci]"
+            git pull --rebase origin main
+            git push
+          fi
