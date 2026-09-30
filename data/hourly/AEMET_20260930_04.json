@@ -2,9 +2,9 @@
   "ccaa": "AEMET-CAT",
   "mode": "hourly",
   "hour": "2026-09-30T04:00",
-  "captured_at": "2026-09-30T10:32:17Z",
+  "captured_at": "2026-09-30T12:41:04Z",
   "source": "aemet-opendata-observacion-todas",
-  "n_stations": 66,
+  "n_stations": 67,
   "stations": [
     {
       "id": "AE_0002I",
@@ -285,6 +285,26 @@
       "dv": 46.0,
       "pres": 986.0,
       "ubi": "MANRESA"
+    },
+    {
+      "id": "AE_0158X",
+      "indicativo": "0158X",
+      "name": "MONISTROL DE MONTSERRAT",
+      "lon": 1.84,
+      "lat": 41.59,
+      "elev": 738,
+      "hour": "2026-09-30T04:00",
+      "fint": "2026-09-30T02:00:00+0000",
+      "prec": 0.0,
+      "hr": 98.0,
+      "ta": 17.5,
+      "tamax": 17.9,
+      "tamin": 17.5,
+      "vmax": null,
+      "vv": null,
+      "dv": null,
+      "pres": null,
+      "ubi": "MONTSERRAT"
     },
     {
       "id": "AE_0194D",
