@@ -6,7 +6,7 @@ derive hourly mm as the non-negative delta of cumulative totals.
 
 Saves:
   data/hourly/ESCAT_YYYYMMDD_HH.json   (raw: cum + Hum/Vient/Temp snapshots)
-  docs/hourly_rain.json               (derived hour→Ph mm for keep stations)
+  docs/hourly_rain.json               (derived hour→Ph mm; zeros omitted / slim)
   docs/hourly_meteo.json              (Ph deltas + HR/HX/W/WDG/T snapshots)
 
 Retention: last ~14 calendar days of raw hourly files (Madrid).
@@ -54,8 +54,13 @@ DELTA_NOTE = (
     "and the previous cumulative is ignored (new baseline). "
     "The first sample for a station after (re)start sets Ph = 0 so we do not "
     "invent rain before the first capture. Hours before the archive starts "
-    "are absent — never fabricated."
+    "are absent — never fabricated. "
+    "v2 slim: hours with Ph==0 are omitted from series (missing key ≡ 0 mm for "
+    "peff/dipòsit; daily panel covers dry-day completeness)."
 )
+
+# Persist only non-zero Ph in published rain JSON (schema unchanged for consumers).
+OMIT_ZERO_PH = True
 
 SNAPSHOT_NOTE = (
     "seriesHR/HX/HN/W/WDG/WA/T/TX/TN are instantaneous snapshots at the "
@@ -301,9 +306,14 @@ def build_hourly_rain(
                 continue
 
             ph = _ph_delta(sid, cum, hour, day, prev_cum, prev_hour)
-            series[sid][hour] = _json_num(ph)
             prev_cum[sid] = cum
             prev_hour[sid] = hour
+            ph_num = _json_num(ph)
+            if ph_num is None:
+                continue
+            if OMIT_ZERO_PH and float(ph_num) == 0.0:
+                continue
+            series[sid][hour] = ph_num
 
     stations = _station_meta(keep_rows)
     series_out = {sid: byh for sid, byh in series.items() if byh}
@@ -317,6 +327,7 @@ def build_hourly_rain(
         "series": series_out,
         "delta_note": DELTA_NOTE,
         "retention_days": KEEP_HOURS_DAYS,
+        "zeros_omitted": bool(OMIT_ZERO_PH),
     }
 
 
@@ -361,9 +372,11 @@ def build_hourly_meteo(
                 cum = _as_float(st.get("Precip.diaria"))
             if cum is not None:
                 ph = _ph_delta(sid, cum, hour, day, prev_cum, prev_hour)
-                series_ph[sid][hour] = _json_num(ph)
                 prev_cum[sid] = cum
                 prev_hour[sid] = hour
+                ph_num = _json_num(ph)
+                if ph_num is not None and (not OMIT_ZERO_PH or float(ph_num) != 0.0):
+                    series_ph[sid][hour] = ph_num
 
             for skey, raw_field in SNAPSHOT_SERIES:
                 val = _as_float(st.get(raw_field))

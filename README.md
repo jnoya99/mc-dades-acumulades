@@ -18,7 +18,7 @@ La mateixa captura horària desa també snapshots d’humitat, vent i temperatur
 | **Action diària** | Cron `30 21 * * *` (21:30 UTC ≈ **23:30 Europe/Madrid a l’estiu**) |
 | **`scripts/capture_escat.py`** | Baixa XML+RSS → `data/daily/ESCAT_YYYYMMDD.{json,csv}` + `docs/panel.json` |
 | **Action horària** | Cron `0 * * * *` (cada hora UTC) |
-| **`scripts/capture_hourly.py`** | Snapshot horari → `data/hourly/ESCAT_YYYYMMDD_HH.json` + `docs/hourly_rain.json` (Ph) + `docs/hourly_meteo.json` (Ph + HR/W/…) |
+| **`scripts/capture_hourly.py`** | Snapshot horari → `data/hourly/ESCAT_YYYYMMDD_HH.json` + `docs/hourly_rain.json` (Ph slim: zeros omitted) + `docs/hourly_meteo.json` (Ph + HR/W/…) |
 | **`scripts/capture_mountain.py`** | 86 estacions muntanya (MO/MG/CMI/MCADI) → `data/{daily,hourly}/MOUNTAIN_*` + `docs/panel_mountain.json` / `hourly_*_mountain.json` |
 | **Action AEMET diària** | Cron `0 22 * * *` UTC → `docs/panel_aemet.json` (secret `AEMET_API_KEY`; fallback HF) |
 | **`scripts/capture_aemet.py`** | 87 estacions CAT (`AE_*`) · OpenData diari o mirall HuggingFace |
@@ -50,6 +50,7 @@ python3 scripts/capture_hourly.py --rebuild-only   # sense fetch
 # muntanya (manifest data/stations_mountain.json; throttle 0.4–0.8s entre GETs)
 python3 scripts/capture_mountain.py --mode daily --force
 python3 scripts/capture_mountain.py --mode hourly --force   # MO/MG/MCADI only
+python3 scripts/capture_mountain.py --mode hourly --rebuild-only
 python3 scripts/capture_mountain.py --mode daily --only MO_53,MG_97,CMI_CAT_23011254800
 ```
 
@@ -76,11 +77,12 @@ Camps de sèrie: **P** precipitació, **TX** temp. màx, **N** temp. mín, **HX*
 - `ccaa` — `"ESCAT"`
 - `hours` — `["YYYY-MM-DDTHH:00", …]` (segell Europe/Madrid)
 - `stations` — `[{id: MC_…, mc_id, name, lon, lat, elev}, …]`
-- `series` — `{ station_id: { "YYYY-MM-DDTHH:00": Ph_mm } }`
+- `series` — `{ station_id: { "YYYY-MM-DDTHH:00": Ph_mm } }` (**només Ph ≠ 0**; clau absent ≡ 0 mm)
 - `delta_note` — regles de delta
 - `retention_days` — ~14 dies de raw a `data/hourly/`
+- `zeros_omitted` — `true` (slim publish; mateix schema explorador)
 
-**Deltas:** `Ph = max(0, cum_ara − cum_prev)` el mateix dia; si el cumulatiu baixa (reset), `Ph = max(0, cum_ara)`. El primer mostratge d’una estació posa `Ph = 0` (baseline); no s’inventen hores anteriors.
+**Deltas:** `Ph = max(0, cum_ara − cum_prev)` el mateix dia; si el cumulatiu baixa (reset), `Ph = max(0, cum_ara)`. El primer mostratge d’una estació posa `Ph = 0` (baseline); no s’inventen hores anteriors. Els zeros no es publiquen a `series` (estalvi ~10× en `hourly_rain*.json`); peff/dipòsit tracten absència com 0 mm.
 
 ## Schema `hourly_meteo.json`
 

@@ -53,6 +53,7 @@ UTC = timezone.utc
 CCAA = "AEMET-CAT"
 KEEP_HOURS_DAYS = 14
 HOURLY_VERSION = 1
+OMIT_ZERO_PH = True  # slim rain: drop Ph==0 from published series
 HOURLY_METEO_VERSION = 1
 
 PH_NOTE = (
@@ -298,7 +299,12 @@ def build_hourly_rain(
                 continue
             if prec < 0:
                 prec = 0.0
-            series[sid][hour] = _json_num(prec)
+            ph_num = _json_num(prec)
+            if ph_num is None:
+                continue
+            if OMIT_ZERO_PH and float(ph_num) == 0.0:
+                continue
+            series[sid][hour] = ph_num
 
     series_out = {sid: byh for sid, byh in series.items() if byh}
     built = datetime.now(UTC).strftime("%Y-%m-%dT%H:%M:%SZ")
@@ -315,6 +321,7 @@ def build_hourly_rain(
         "n_stations_catalog": len(stations_meta),
         "n_stations_with_series": len(series_out),
         "n_hours": len(hours),
+        "zeros_omitted": bool(OMIT_ZERO_PH),
     }
 
 
@@ -348,7 +355,9 @@ def build_hourly_meteo(
             if prec is not None:
                 if prec < 0:
                     prec = 0.0
-                series_ph[sid][hour] = _json_num(prec)
+                ph_num = _json_num(prec)
+                if ph_num is not None and (not OMIT_ZERO_PH or float(ph_num) != 0.0):
+                    series_ph[sid][hour] = ph_num
             for skey, raw_field in SNAPSHOT_SERIES:
                 val = _as_float(st.get(raw_field))
                 if val is None:

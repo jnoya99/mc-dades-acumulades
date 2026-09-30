@@ -37,6 +37,7 @@ CCAA = "MOUNTAIN"
 KEEP_HOURS_DAYS = 14
 PANEL_VERSION = 1
 HOURLY_VERSION = 1
+OMIT_ZERO_PH = True  # slim rain: drop Ph==0 from published series
 
 # Hourly only where sub-daily rain deltas are useful (skip heavy CMI HTML hourly).
 HOURLY_SOURCES = frozenset({"MeteOsona", "Meteoguilleries", "Meteocadí"})
@@ -700,9 +701,11 @@ def build_hourly_mountain(
                 cum = _f(st.get("Precip.diaria"))
             if cum is not None:
                 ph = _ph_delta(sid, cum, hour, day, prev_cum, prev_hour)
-                series_ph[sid][hour] = _json_num(ph)
                 prev_cum[sid] = cum
                 prev_hour[sid] = hour
+                ph_num = _json_num(ph)
+                if ph_num is not None and (not OMIT_ZERO_PH or float(ph_num) != 0.0):
+                    series_ph[sid][hour] = ph_num
             for skey, raw_field in SNAPSHOT_SERIES:
                 val = _f(st.get(raw_field))
                 if val is None:
@@ -723,6 +726,7 @@ def build_hourly_mountain(
         "delta_note": DELTA_NOTE,
         "retention_days": KEEP_HOURS_DAYS,
         "field_gaps": SOURCE_FIELD_GAPS,
+        "zeros_omitted": bool(OMIT_ZERO_PH),
     }
     meteo: dict[str, Any] = {
         "version": HOURLY_VERSION,
@@ -915,7 +919,54 @@ def main(argv: list[str] | None = None) -> int:
     )
     p.add_argument("--delay-lo", type=float, default=0.4)
     p.add_argument("--delay-hi", type=float, default=0.8)
+    p.add_argument(
+        "--rebuild-only",
+        action="store_true",
+        help="do not fetch; prune + rebuild docs/hourly_*_mountain.json from existing raw files",
+    )
     args = p.parse_args(argv)
+
+    if args.rebuild_only:
+        if args.mode != "hourly":
+            print("error: --rebuild-only only applies to --mode hourly", file=sys.stderr)
+            return 2
+        root = args.root
+        manifest_path = root / "data" / MANIFEST_NAME
+        stations = load_manifest(manifest_path)
+        stations = [s for s in stations if s.get("source") in HOURLY_SOURCES]
+        docs_stations = []
+        for m in stations:
+            docs_stations.append(
+                {
+                    "id": m["id"],
+                    "mc_id": m["id"],
+                    "name": m.get("name") or m["id"],
+                    "lon": _json_num(_f(m.get("lon"))),
+                    "lat": _json_num(_f(m.get("lat"))),
+                    "elev": _json_num(_f(m.get("elev_m"))),
+                    "source": m.get("source"),
+                }
+            )
+        docs_stations.sort(key=lambda x: x["id"])
+        hourly_dir = root / "data" / "hourly"
+        pruned = prune_hourly(hourly_dir)
+        rain, meteo = build_hourly_mountain(docs_stations, hourly_dir)
+        docs_dir = root / "docs"
+        write_json(docs_dir / "hourly_rain_mountain.json", rain, compact=True)
+        write_json(docs_dir / "hourly_meteo_mountain.json", meteo, compact=True)
+        info = {
+            "ok": True,
+            "mode": "hourly",
+            "rebuild_only": True,
+            "pruned": pruned,
+            "hourly_rain": str(docs_dir / "hourly_rain_mountain.json"),
+            "hourly_meteo": str(docs_dir / "hourly_meteo_mountain.json"),
+            "n_hours": len(rain["hours"]),
+            "n_stations": len(docs_stations),
+            "zeros_omitted": rain.get("zeros_omitted"),
+        }
+        print(json.dumps(info, ensure_ascii=False, indent=2))
+        return 0
 
     only_ids = None
     if args.only:

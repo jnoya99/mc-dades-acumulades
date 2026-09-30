@@ -146,3 +146,8 @@ IDs `AE_<indicativo>` (87 catàleg; ~60–70 amb observació horària convencion
 - **Horari:** mateix schema que `hourly_rain.json` / `hourly_meteo.json` (`hours`, `series` / `seriesPh`, snapshots HR/T/W).  
   `Ph` = AEMET `prec` de l'hora (mm), convertit a segell Europe/Madrid; **no** cal delta de cumulatiu.  
   L'explorador fusiona `hourly_rain_aemet.json` dins `__MC_HOURLY` (com la muntanya) perquè `mcAttachHourlyPh` engansi `n.Ph` als nodes `AE_*` i el dipòsit `pEff` horari (intensitat / xàfec) hi arribi.
+
+
+## Slim hourly rain (`zeros_omitted`)
+
+From 2026-09-30 the published `hourly_rain.json` / `hourly_rain_mountain.json` / `hourly_rain_aemet.json` omit hours where Ph == 0. Schema unchanged for the explorador (`series[sid]` hour→mm map). Treat a missing hour as 0 mm for `peffApplyDay` / `n.Ph`; do not require a separate light URL. `hourly_meteo*` is unchanged in role (HR/W/T snapshots) and is **not** needed on the favorability / point-loading path — load on demand for station / rain UI only.
