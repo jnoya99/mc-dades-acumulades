@@ -1,0 +1,56 @@
+name: hourly-aemet
+
+"on":
+  schedule:
+    # Every 2 hours at minute 20 UTC — offsets ESCAT hourly (:00) and daily AEMET (22:00).
+    # One OpenData call (`observacion/convencional/todas`) returns the rolling ~12–24 h
+    # window for all Spain; we filter AE_* and merge. 2 h cadence keeps the 14-day
+    # archive continuous without burning the ~50 req/min quota.
+    - cron: "20 */2 * * *"
+  workflow_dispatch:
+
+concurrency:
+  group: hourly-aemet
+  cancel-in-progress: false
+
+permissions:
+  contents: write
+
+jobs:
+  capture:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Capture AEMET hourly + rebuild hourly_*_aemet.json
+        env:
+          AEMET_API_KEY: ${{ secrets.AEMET_API_KEY }}
+        run: |
+          if [ -z "${AEMET_API_KEY:-}" ]; then
+            echo "ERROR: secret AEMET_API_KEY missing — cannot capture hourly observations."
+            echo "Add repo secret AEMET_API_KEY from https://opendata.aemet.es/"
+            exit 1
+          fi
+          echo "Using AEMET OpenData API (secret present)"
+          python scripts/capture_aemet_hourly.py --force
+
+      - name: Commit archive + hourly panels
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          # Add directory (not shell glob) so pruned AEMET_* hourly deletions stage too.
+          git add -A -- data/hourly docs/hourly_rain_aemet.json docs/hourly_meteo_aemet.json
+          if git diff --staged --quiet; then
+            echo "No changes to commit"
+          else
+            git status --short
+            git commit -m "data: hourly AEMET Catalunya panel [skip ci]"
+            git pull --rebase --autostash origin main
+            git push
+          fi

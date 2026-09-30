@@ -106,6 +106,8 @@ GitHub Pages serveix amb capçaleres CORS permissives per a GET estàtic.
 |---|---|---|
 | `daily-escat` | `30 21 * * *` UTC | `data/daily/` + `panel.json` |
 | `hourly-escat` | `0 * * * *` UTC | `data/hourly/` + `hourly_rain.json` + `hourly_meteo.json` |
+| `daily-aemet` | `0 22 * * *` UTC | `data/daily/AEMET_*` + `panel_aemet.json` |
+| `hourly-aemet` | `20 */2 * * *` UTC | `data/hourly/AEMET_*` + `hourly_rain_aemet.json` + `hourly_meteo_aemet.json` |
 
 L’explorador veu hores/dies nous al proper reload.
 
@@ -126,11 +128,21 @@ Same field names as ESCAT (`P`/`TX`/`N`/… and `Ph`); `ccaa` is `"MOUNTAIN"`. S
 
 ```text
 https://jnoya99.github.io/mc-dades-acumulades/panel_aemet.json
+https://jnoya99.github.io/mc-dades-acumulades/hourly_rain_aemet.json
+https://jnoya99.github.io/mc-dades-acumulades/hourly_meteo_aemet.json
 ```
 
 ```js
 window.__AEMET_PANEL_URL = "https://jnoya99.github.io/mc-dades-acumulades/panel_aemet.json";
+window.__AEMET_HOURLY_URL = "https://jnoya99.github.io/mc-dades-acumulades/hourly_rain_aemet.json";
+window.__AEMET_HOURLY_METEO_URL = "https://jnoya99.github.io/mc-dades-acumulades/hourly_meteo_aemet.json";
 // fallback jsDelivr: …/gh/jnoya99/mc-dades-acumulades@main/docs/panel_aemet.json
+//                  …/docs/hourly_rain_aemet.json · …/docs/hourly_meteo_aemet.json
 ```
 
-IDs `AE_<indicativo>` (87). Schema equal to mountain/ESCAT panel (`days` + `series[sid][day] = {P,TX,N,HX,HR,W,WDG}`).
+IDs `AE_<indicativo>` (87 catàleg; ~60–70 amb observació horària convencional).
+
+- **Diari:** schema equal to mountain/ESCAT panel (`days` + `series[sid][day] = {P,TX,N,HX,HR,W,WDG}`).
+- **Horari:** mateix schema que `hourly_rain.json` / `hourly_meteo.json` (`hours`, `series` / `seriesPh`, snapshots HR/T/W).  
+  `Ph` = AEMET `prec` de l'hora (mm), convertit a segell Europe/Madrid; **no** cal delta de cumulatiu.  
+  L'explorador fusiona `hourly_rain_aemet.json` dins `__MC_HOURLY` (com la muntanya) perquè `mcAttachHourlyPh` engansi `n.Ph` als nodes `AE_*` i el dipòsit `pEff` horari (intensitat / xàfec) hi arribi.
