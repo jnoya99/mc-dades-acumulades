@@ -2,9 +2,9 @@
   "ccaa": "AEMET-CAT",
   "mode": "hourly",
   "hour": "2026-10-01T17:00",
-  "captured_at": "2026-10-01T20:33:00Z",
+  "captured_at": "2026-10-01T22:28:36Z",
   "source": "aemet-opendata-observacion-todas",
-  "n_stations": 65,
+  "n_stations": 66,
   "stations": [
     {
       "id": "AE_0002I",
@@ -645,6 +645,26 @@
       "dv": 120.0,
       "pres": null,
       "ubi": "VALL DE BIANYA"
+    },
+    {
+      "id": "AE_0411X",
+      "indicativo": "0411X",
+      "name": "CASTELLÓ D'EMPÚRIES",
+      "lon": 3.09,
+      "lat": 42.22,
+      "elev": 2,
+      "hour": "2026-10-01T17:00",
+      "fint": "2026-10-01T15:00:00+0000",
+      "prec": 0.0,
+      "hr": 67.0,
+      "ta": 24.6,
+      "tamax": 24.7,
+      "tamin": 24.1,
+      "vmax": 9.0,
+      "vv": 4.2,
+      "dv": 21.0,
+      "pres": null,
+      "ubi": "CASTELLO D?EMPURIES"
     },
     {
       "id": "AE_0413A",
