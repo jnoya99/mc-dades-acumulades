@@ -151,3 +151,22 @@ IDs `AE_<indicativo>` (87 catàleg; ~60–70 amb observació horària convencion
 ## Slim hourly rain (`zeros_omitted`)
 
 From 2026-09-30 the published `hourly_rain.json` / `hourly_rain_mountain.json` / `hourly_rain_aemet.json` omit hours where Ph == 0. Schema unchanged for the explorador (`series[sid]` hour→mm map). Treat a missing hour as 0 mm for `peffApplyDay` / `n.Ph`; do not require a separate light URL. `hourly_meteo*` is unchanged in role (HR/W/T snapshots) and is **not** needed on the favorability / point-loading path — load on demand for station / rain UI only.
+
+
+## XEMA horària persistent (v764)
+
+```text
+https://jnoya99.github.io/mc-dades-acumulades/hourly_rain_xema.json
+https://jnoya99.github.io/mc-dades-acumulades/hourly_meteo_xema.json
+```
+
+```js
+window.__XEMA_HOURLY_URL = "https://jnoya99.github.io/mc-dades-acumulades/hourly_rain_xema.json";
+window.__XEMA_HOURLY_METEO_URL = "https://jnoya99.github.io/mc-dades-acumulades/hourly_meteo_xema.json";
+window.__AEMET_HOURLY_URL = "https://jnoya99.github.io/mc-dades-acumulades/hourly_rain_aemet.json";
+window.__AEMET_HOURLY_METEO_URL = "https://jnoya99.github.io/mc-dades-acumulades/hourly_meteo_aemet.json";
+```
+
+IDs XEMA = `codi_estacio`. Hora Europe/Madrid. `seriesW` en km/h.
+Si el dia ja té P oficial (XEMA ≤ lastK, o cel·la del panell MC/AEMET), l'explorador
+no suma també el Ph horari. ET0, I30 i neu no surten d'aquest fitxer.

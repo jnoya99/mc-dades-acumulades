@@ -24,6 +24,8 @@ La mateixa captura horària desa també snapshots d’humitat, vent i temperatur
 | **`scripts/capture_aemet.py`** | 87 estacions CAT (`AE_*`) · OpenData diari o mirall HuggingFace |
 | **Action AEMET horària** | Cron `20 */2 * * *` UTC → `docs/hourly_rain_aemet.json` + `hourly_meteo_aemet.json` |
 | **`scripts/capture_aemet_hourly.py`** | OpenData `observacion/convencional/todas` (1 crida) · Ph = `prec` horari |
+| **Action XEMA horària** | Cron `35 * * * *` UTC → `docs/hourly_rain_xema.json` + `hourly_meteo_xema.json` |
+| **`scripts/capture_xema_hourly.py`** | Socrata `nzvn-apee` (públic, sense clau) · PPT 35 + T/HR/vent · hora Europe/Madrid |
 | **`scripts/http_util.py`** | GET compartit amb reintents (backoff + jitter; timeouts, URLError, HTTP 429/5xx) |
 | **`scripts/build_panel.py`** | Fusiona `stations_keep` + dies → `docs/panel.json` |
 | **GitHub Pages** | Serveix `docs/` (`panel.json`, `hourly_rain.json`, `hourly_meteo.json`) |
@@ -178,6 +180,30 @@ Productes horaris (schema com `hourly_rain.json` / `hourly_meteo.json`):
 > Sol·licitud gratuïta a https://opendata.aemet.es/ (centre de descàrregues → API Key).  
 > Sense secret, l'Action diària fa fallback al mirall HF; l'horària **falla** (no inventa sèries).
 
+
+## XEMA horària (provisional fins al diari oficial)
+
+El diari oficial XEMA (variables 1300, 1000, …) va ~2 dies tard. Aquesta captura
+horària cobreix el forat sense inventar hores:
+
+| Peça | Descripció |
+|---|---|
+| **Action `hourly-xema`** | Cron `35 * * * *` UTC + `workflow_dispatch` |
+| **`scripts/capture_xema_hourly.py`** | `nzvn-apee` → `data/hourly/XEMA_YYYYMMDD_HH.json` |
+| **Retenció** | ~14 dies (igual que ESCAT). El cron refresca els 3 últims dies. |
+| **Clau** | Cap. Si Socrata cau, l'Action falla i no publica sèries buides. |
+
+```bash
+python3 scripts/capture_xema_hourly.py --days 14 --force
+python3 scripts/capture_xema_hourly.py --rebuild-only
+```
+
+- IDs = `codi_estacio` (C6, …), els mateixos nodes de l'explorador.
+- `data_lectura` és UTC; l'hora publicada és Europe/Madrid.
+- `seriesW` / `seriesWA` van en **km/h** (la XEMA dona m/s; ×3.6), com el node diari.
+- Quan el diari oficial d'un dia ja és al bloc, l'explorador fa servir aquell dia
+  i no suma també el Ph horari (no es compta dues vegades). L'arxiu horari es queda.
+
 ## Explorador
 
 ```text
@@ -199,6 +225,8 @@ window.__MC_HOURLY_METEO_URL = "https://jnoya99.github.io/mc-dades-acumulades/ho
 window.__AEMET_PANEL_URL = "https://jnoya99.github.io/mc-dades-acumulades/panel_aemet.json";
 window.__AEMET_HOURLY_URL = "https://jnoya99.github.io/mc-dades-acumulades/hourly_rain_aemet.json";
 window.__AEMET_HOURLY_METEO_URL = "https://jnoya99.github.io/mc-dades-acumulades/hourly_meteo_aemet.json";
+window.__XEMA_HOURLY_URL = "https://jnoya99.github.io/mc-dades-acumulades/hourly_rain_xema.json";
+window.__XEMA_HOURLY_METEO_URL = "https://jnoya99.github.io/mc-dades-acumulades/hourly_meteo_xema.json";
 ```
 
 Vegeu [`docs/explorer-integration.md`](docs/explorer-integration.md).
