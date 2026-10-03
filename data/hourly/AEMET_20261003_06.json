@@ -2,9 +2,9 @@
   "ccaa": "AEMET-CAT",
   "mode": "hourly",
   "hour": "2026-10-03T06:00",
-  "captured_at": "2026-10-03T10:33:22Z",
+  "captured_at": "2026-10-03T15:23:29Z",
   "source": "aemet-opendata-observacion-todas",
-  "n_stations": 66,
+  "n_stations": 67,
   "stations": [
     {
       "id": "AE_0002I",
@@ -1205,6 +1205,26 @@
       "dv": 49.0,
       "pres": null,
       "ubi": "MASSALUCA"
+    },
+    {
+      "id": "AE_9961X",
+      "indicativo": "9961X",
+      "name": "CABACÉS",
+      "lon": 0.74,
+      "lat": 41.25,
+      "elev": 363,
+      "hour": "2026-10-03T06:00",
+      "fint": "2026-10-03T04:00:00+0000",
+      "prec": 0.0,
+      "hr": 83.0,
+      "ta": 18.0,
+      "tamax": 18.9,
+      "tamin": 18.0,
+      "vmax": 1.6,
+      "vv": 0.6,
+      "dv": 82.0,
+      "pres": null,
+      "ubi": "CABACÉS"
     },
     {
       "id": "AE_9975X",
