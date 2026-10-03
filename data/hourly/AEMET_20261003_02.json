@@ -2,9 +2,9 @@
   "ccaa": "AEMET-CAT",
   "mode": "hourly",
   "hour": "2026-10-03T02:00",
-  "captured_at": "2026-10-03T02:36:34Z",
+  "captured_at": "2026-10-03T04:32:58Z",
   "source": "aemet-opendata-observacion-todas",
-  "n_stations": 64,
+  "n_stations": 65,
   "stations": [
     {
       "id": "AE_0002I",
@@ -845,6 +845,26 @@
       "dv": null,
       "pres": null,
       "ubi": "TORÀ"
+    },
+    {
+      "id": "AE_9650X",
+      "indicativo": "9650X",
+      "name": "ARTESA DE SEGRE",
+      "lon": 1.11,
+      "lat": 41.88,
+      "elev": 400,
+      "hour": "2026-10-03T02:00",
+      "fint": "2026-10-03T00:00:00+0000",
+      "prec": 0.0,
+      "hr": 88.0,
+      "ta": 15.7,
+      "tamax": 16.0,
+      "tamin": 15.7,
+      "vmax": null,
+      "vv": null,
+      "dv": null,
+      "pres": null,
+      "ubi": "ARTESA DE SEGRE"
     },
     {
       "id": "AE_9657X",
