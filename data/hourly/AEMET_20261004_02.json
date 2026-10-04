@@ -2,9 +2,9 @@
   "ccaa": "AEMET-CAT",
   "mode": "hourly",
   "hour": "2026-10-04T02:00",
-  "captured_at": "2026-10-04T02:39:43Z",
+  "captured_at": "2026-10-04T06:08:43Z",
   "source": "aemet-opendata-observacion-todas",
-  "n_stations": 65,
+  "n_stations": 67,
   "stations": [
     {
       "id": "AE_0002I",
@@ -667,6 +667,26 @@
       "ubi": "VALL DE BIANYA"
     },
     {
+      "id": "AE_0411X",
+      "indicativo": "0411X",
+      "name": "CASTELLÓ D'EMPÚRIES",
+      "lon": 3.09,
+      "lat": 42.22,
+      "elev": 2,
+      "hour": "2026-10-04T02:00",
+      "fint": "2026-10-04T00:00:00+0000",
+      "prec": 0.4,
+      "hr": 93.0,
+      "ta": 22.0,
+      "tamax": 22.1,
+      "tamin": 21.8,
+      "vmax": 4.0,
+      "vv": 0.9,
+      "dv": 31.0,
+      "pres": null,
+      "ubi": "CASTELLO D?EMPURIES"
+    },
+    {
       "id": "AE_0413A",
       "indicativo": "0413A",
       "name": "MAÇANET DE CABRENYS",
@@ -845,6 +865,26 @@
       "dv": null,
       "pres": null,
       "ubi": "TORÀ"
+    },
+    {
+      "id": "AE_9650X",
+      "indicativo": "9650X",
+      "name": "ARTESA DE SEGRE",
+      "lon": 1.11,
+      "lat": 41.88,
+      "elev": 400,
+      "hour": "2026-10-04T02:00",
+      "fint": "2026-10-04T00:00:00+0000",
+      "prec": 0.0,
+      "hr": 78.0,
+      "ta": 17.0,
+      "tamax": 17.4,
+      "tamin": 17.0,
+      "vmax": null,
+      "vv": null,
+      "dv": null,
+      "pres": null,
+      "ubi": "ARTESA DE SEGRE"
     },
     {
       "id": "AE_9657X",
