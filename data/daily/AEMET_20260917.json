@@ -2,9 +2,9 @@
   "ccaa": "AEMET-CAT",
   "mode": "daily",
   "date": "2026-09-17",
-  "captured_at": "2026-10-02T22:14:08Z",
+  "captured_at": "2026-10-04T02:55:12Z",
   "source": "aemet-opendata",
-  "n_stations": 68,
+  "n_stations": 69,
   "stations": [
     {
       "id": "AE_0002I",
@@ -88,6 +88,34 @@
         "HR": 55,
         "W": 9.2,
         "WDG": 99
+      }
+    },
+    {
+      "id": "AE_0016B",
+      "indicativo": "0016B",
+      "name": "REUS (CENTRE LECTURA)",
+      "lon": 1.11,
+      "lat": 41.15,
+      "elev": 118,
+      "provincia": "TARRAGONA",
+      "prec": "0,0",
+      "tmax": "26,8",
+      "tmin": "18,3",
+      "tmed": "22,6",
+      "hrMedia": "55",
+      "hrMax": null,
+      "hrMin": null,
+      "velmedia": null,
+      "racha": null,
+      "dir": null,
+      "cell": {
+        "P": 0,
+        "TX": 26.8,
+        "N": 18.3,
+        "HX": null,
+        "HR": 55,
+        "W": null,
+        "WDG": null
       }
     },
     {
