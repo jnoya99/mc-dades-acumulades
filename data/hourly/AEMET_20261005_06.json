@@ -2,9 +2,9 @@
   "ccaa": "AEMET-CAT",
   "mode": "hourly",
   "hour": "2026-10-05T06:00",
-  "captured_at": "2026-10-05T08:35:54Z",
+  "captured_at": "2026-10-05T10:34:11Z",
   "source": "aemet-opendata-observacion-todas",
-  "n_stations": 66,
+  "n_stations": 67,
   "stations": [
     {
       "id": "AE_0002I",
@@ -145,6 +145,26 @@
       "dv": 39.0,
       "pres": null,
       "ubi": "VILAFRANCA DEL PENEDÈS"
+    },
+    {
+      "id": "AE_0073X",
+      "indicativo": "0073X",
+      "name": "SITGES",
+      "lon": 1.85,
+      "lat": 41.24,
+      "elev": 58,
+      "hour": "2026-10-05T06:00",
+      "fint": "2026-10-05T04:00:00+0000",
+      "prec": 0.0,
+      "hr": 71.0,
+      "ta": 21.1,
+      "tamax": 22.0,
+      "tamin": 21.1,
+      "vmax": 4.6,
+      "vv": 0.5,
+      "dv": 255.0,
+      "pres": null,
+      "ubi": "SITGES  VALLCARCA"
     },
     {
       "id": "AE_0076",
