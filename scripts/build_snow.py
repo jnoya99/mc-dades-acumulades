@@ -513,8 +513,19 @@ def write_day(doc: dict[str, Any], out_dir: Path = OUT_DIR) -> Path:
     text = json.dumps(doc, ensure_ascii=False, separators=(",", ":"))
     path.write_text(text, encoding="utf-8")
     latest = out_dir / "latest.json"
-    latest.write_text(text, encoding="utf-8")
-    _log(f"  wrote {path} ({len(text)} B) + latest.json")
+    update_latest = True
+    if latest.exists():
+        try:
+            prev = json.loads(latest.read_text(encoding="utf-8")).get("date")
+            if prev and date.fromisoformat(day) < date.fromisoformat(prev):
+                update_latest = False
+        except (json.JSONDecodeError, ValueError, TypeError):
+            pass
+    if update_latest:
+        latest.write_text(text, encoding="utf-8")
+        _log(f"  wrote {path} ({len(text)} B) + latest.json")
+    else:
+        _log(f"  wrote {path} ({len(text)} B) (latest unchanged)")
     return path
 
 
