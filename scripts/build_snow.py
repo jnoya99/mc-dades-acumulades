@@ -518,16 +518,27 @@ def write_day(doc: dict[str, Any], out_dir: Path = OUT_DIR) -> Path:
     return path
 
 
-def prune_old(out_dir: Path = OUT_DIR, keep_days: int = 120) -> int:
-    """Remove dated JSON older than keep_days (keeps latest.json + README)."""
+def prune_old(
+    out_dir: Path = OUT_DIR,
+    keep_days: int = 400,
+    protect: set[date] | None = None,
+) -> int:
+    """Remove dated JSON older than keep_days (keeps latest.json + README).
+
+    Never deletes dates in ``protect`` (just-built / backfill targets).
+    Default keep_days=400 covers a full winter season.
+    """
     if not out_dir.exists():
         return 0
     cutoff = date.today() - timedelta(days=keep_days)
+    protect = protect or set()
     removed = 0
     for p in sorted(out_dir.glob("????-??-??.json")):
         try:
             d = date.fromisoformat(p.stem)
         except ValueError:
+            continue
+        if d in protect:
             continue
         if d < cutoff:
             p.unlink()
@@ -561,7 +572,7 @@ def main() -> int:
     ap.add_argument("--date", help="Single day YYYY-MM-DD")
     ap.add_argument("--start", help="Backfill start YYYY-MM-DD")
     ap.add_argument("--end", help="Backfill end YYYY-MM-DD")
-    ap.add_argument("--keep-days", type=int, default=120, help="Prune dated files older than N days")
+    ap.add_argument("--keep-days", type=int, default=400, help="Prune dated files older than N days (default 400 ≈ winter+)")
     ap.add_argument("--no-prune", action="store_true")
     ap.add_argument("--skip-om", action="store_true", help="GFSC only (OM filled with nodata)")
     ap.add_argument("--out-dir", type=Path, default=OUT_DIR)
@@ -570,17 +581,19 @@ def main() -> int:
     days = parse_days(args)
     token = cdse_token()
     _log(f"CDSE token OK; building {len(days)} day(s)")
+    written: set[date] = set()
     for d in days:
         try:
             doc = build_day(d, token=token, skip_om=args.skip_om)
             write_day(doc, args.out_dir)
+            written.add(d)
         except Exception as e:
             _log(f"ERROR {d.isoformat()}: {type(e).__name__}: {e}")
             if len(days) == 1:
                 raise
             continue
     if not args.no_prune:
-        prune_old(args.out_dir, args.keep_days)
+        prune_old(args.out_dir, args.keep_days, protect=written | set(days))
     return 0
 
 

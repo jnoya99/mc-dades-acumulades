@@ -81,4 +81,4 @@ Python: `zlib.decompress(base64.b64decode(s))` then `numpy.frombuffer(..., dtype
 
 ## Size / retention
 
-Target **≪ 300 KB/day** (zlib-packed). Dated files older than **120 days** are pruned by the build script; `latest.json` always refreshed.
+Target **≪ 300 KB/day** (zlib-packed). Dated files older than **400 days** (≈ full winter; just-built/backfill dates are never pruned) are pruned by the build script; `latest.json` always refreshed.
