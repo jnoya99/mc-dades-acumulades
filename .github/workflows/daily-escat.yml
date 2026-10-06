@@ -27,7 +27,12 @@ jobs:
           python-version: "3.12"
 
       - name: Capture ESCAT + rebuild panel
-        run: python scripts/capture_escat.py --force
+        env:
+          GITHUB_EVENT_NAME: ${{ github.event_name }}
+        run: |
+          CLOSE_DATE=$(python -c "from scripts.capture_escat import intended_close_date; print(intended_close_date())")
+          echo "ESCAT intended close date (Europe/Madrid): $CLOSE_DATE"
+          python scripts/capture_escat.py --force --date "$CLOSE_DATE"
 
       - name: Capture mountain stations (throttled, all sources)
         run: python scripts/capture_mountain.py --mode daily --force

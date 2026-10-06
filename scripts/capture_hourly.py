@@ -14,6 +14,8 @@ Does not invent hours before the first capture (first sample = baseline, Ph=0).
 
 Delta rules (documented in hourly_rain.json.delta_note / hourly_meteo):
   - Same calendar day, cum non-decreasing: Ph = max(0, cum_now - cum_prev)
+  - Day change, cum unchanged: Ph = 0 (plateau carry; no phantom)
+  - Day change, cum grew without visible drop: Ph = cum (missed reset)
   - Cum drop (midnight/station reset): Ph = max(0, cum_now); prev ignored
   - First sample for a station: Ph = 0 (establish baseline only)
 
@@ -50,6 +52,9 @@ HOURLY_METEO_VERSION = 1
 
 DELTA_NOTE = (
     "Ph = max(0, cum_now - cum_prev) within the same Madrid calendar day. "
+    "If the calendar day changes and cum is unchanged (yesterday plateau), "
+    "Ph = 0 (baseline carry; no phantom). If the day changes and cum grew "
+    "without a visible drop, treat as a missed midnight reset: Ph = max(0, cum_now). "
     "If cum drops (midnight reset or station reset), Ph = max(0, cum_now) "
     "and the previous cumulative is ignored (new baseline). "
     "The first sample for a station after (re)start sets Ph = 0 so we do not "
@@ -262,9 +267,15 @@ def _ph_delta(
     if cum >= prev and day == prev_day:
         return max(0.0, cum - prev)
     if cum >= prev and day != prev_day:
-        # Crossed midnight without seeing a drop: new-day contribution = cum
-        return max(0.0, cum)
-    # Drop → reset
+        # Crossed midnight without seeing a drop:
+        # - cum == prev: still yesterday's plateau on the new day → Ph=0
+        #   (fixes phantom full-day totals at 00:00 before the station resets).
+        # - cum > prev: we missed the reset sample; cum is already the new day's
+        #   running total → Ph = cum (same as an observed reset).
+        if cum > prev:
+            return max(0.0, cum)
+        return 0.0
+    # Drop → reset (midnight/station reset): Ph = cum
     return max(0.0, cum)
 
 
