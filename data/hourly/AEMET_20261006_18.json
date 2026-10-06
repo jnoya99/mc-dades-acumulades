@@ -2,9 +2,9 @@
   "ccaa": "AEMET-CAT",
   "mode": "hourly",
   "hour": "2026-10-06T18:00",
-  "captured_at": "2026-10-06T18:35:42Z",
+  "captured_at": "2026-10-06T20:32:51Z",
   "source": "aemet-opendata-observacion-todas",
-  "n_stations": 64,
+  "n_stations": 66,
   "stations": [
     {
       "id": "AE_0002I",
@@ -847,6 +847,26 @@
       "ubi": "TORÀ"
     },
     {
+      "id": "AE_9650X",
+      "indicativo": "9650X",
+      "name": "ARTESA DE SEGRE",
+      "lon": 1.11,
+      "lat": 41.88,
+      "elev": 400,
+      "hour": "2026-10-06T18:00",
+      "fint": "2026-10-06T16:00:00+0000",
+      "prec": 0.0,
+      "hr": 60.0,
+      "ta": 22.4,
+      "tamax": 23.4,
+      "tamin": 22.4,
+      "vmax": null,
+      "vv": null,
+      "dv": null,
+      "pres": null,
+      "ubi": "ARTESA DE SEGRE"
+    },
+    {
       "id": "AE_9657X",
       "indicativo": "9657X",
       "name": "ESTERRI D'ÀNEU",
@@ -1205,6 +1225,26 @@
       "dv": 159.0,
       "pres": null,
       "ubi": "RASQUERA"
+    },
+    {
+      "id": "AE_9981A",
+      "indicativo": "9981A",
+      "name": "ESTACIÓN DE TORTOSA (ROQUETES)",
+      "lon": 0.49,
+      "lat": 40.82,
+      "elev": 50,
+      "hour": "2026-10-06T18:00",
+      "fint": "2026-10-06T16:00:00+0000",
+      "prec": 5.0,
+      "hr": 93.0,
+      "ta": 19.3,
+      "tamax": 24.3,
+      "tamin": 19.3,
+      "vmax": null,
+      "vv": null,
+      "dv": null,
+      "pres": null,
+      "ubi": "TORTOSA"
     },
     {
       "id": "AE_9987P",
