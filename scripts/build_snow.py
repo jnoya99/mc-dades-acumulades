@@ -632,7 +632,7 @@ def write_day(doc: dict[str, Any], out_dir: Path = OUT_DIR) -> Path:
 
 def prune_old(
     out_dir: Path = OUT_DIR,
-    keep_days: int = 400,
+    keep_days: int = 730,
     protect: set[date] | None = None,
 ) -> int:
     if not out_dir.exists():
@@ -681,8 +681,8 @@ def main() -> int:
     ap.add_argument(
         "--keep-days",
         type=int,
-        default=400,
-        help="Prune dated files older than N days (default 400 ≈ winter+)",
+        default=730,
+        help="Prune dated files older than N days (default 730 ≈ 2 winters)",
     )
     ap.add_argument("--no-prune", action="store_true")
     ap.add_argument("--skip-om", action="store_true", help="GFSC only (OM filled with nodata)")

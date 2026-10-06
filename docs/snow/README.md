@@ -77,4 +77,4 @@ async function loadFavSnow(base /* .../snow/2025-01-11 */) {
 
 ## Size / retention
 
-Target **a few hundred KB/day** (gzip of sparse uint8). Dated files older than **400 days** pruned; just-built/backfill dates never pruned.
+Target **a few hundred KB/day** (gzip of sparse uint8). Dated files older than **730 days** (~2 winters) pruned; just-built/backfill dates never pruned.
