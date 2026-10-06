@@ -1,0 +1,75 @@
+name: daily-snow
+
+on:
+  schedule:
+    # 07:17 UTC — after typical morning GFSC / S2 availability over Europe
+    - cron: "17 7 * * *"
+  workflow_dispatch:
+    inputs:
+      date:
+        description: "Single day YYYY-MM-DD (optional; default yesterday UTC)"
+        required: false
+        type: string
+      start:
+        description: "Backfill start YYYY-MM-DD (optional)"
+        required: false
+        type: string
+      end:
+        description: "Backfill end YYYY-MM-DD (optional)"
+        required: false
+        type: string
+
+concurrency:
+  group: daily-snow
+  cancel-in-progress: false
+
+permissions:
+  contents: write
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Install deps
+        run: pip install --quiet numpy tifffile
+
+      - name: Build snow layers
+        env:
+          CDSE_CLIENT_ID: ${{ secrets.CDSE_CLIENT_ID }}
+          CDSE_CLIENT_SECRET: ${{ secrets.CDSE_CLIENT_SECRET }}
+        run: |
+          set -euo pipefail
+          if [ -z "${CDSE_CLIENT_ID:-}" ] || [ -z "${CDSE_CLIENT_SECRET:-}" ]; then
+            echo "ERROR: CDSE_CLIENT_ID / CDSE_CLIENT_SECRET secrets missing"
+            exit 1
+          fi
+          ARGS=()
+          if [ -n "${{ inputs.date }}" ]; then
+            ARGS+=(--date "${{ inputs.date }}")
+          fi
+          if [ -n "${{ inputs.start }}" ] && [ -n "${{ inputs.end }}" ]; then
+            ARGS+=(--start "${{ inputs.start }}" --end "${{ inputs.end }}")
+          fi
+          python scripts/build_snow.py "${ARGS[@]}"
+
+      - name: Commit docs/snow
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add -A -- docs/snow
+          if git diff --staged --quiet; then
+            echo "No changes to commit"
+          else
+            git status --short
+            git commit -m "data: daily Catalonia snow GFSC+OM [skip ci]"
+            git pull --rebase --autostash origin main
+            git push
+          fi
