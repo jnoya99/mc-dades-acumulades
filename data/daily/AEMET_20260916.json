@@ -2,9 +2,9 @@
   "ccaa": "AEMET-CAT",
   "mode": "daily",
   "date": "2026-09-16",
-  "captured_at": "2026-10-05T22:14:44Z",
+  "captured_at": "2026-10-06T22:14:58Z",
   "source": "aemet-opendata",
-  "n_stations": 70,
+  "n_stations": 72,
   "stations": [
     {
       "id": "AE_0002I",
@@ -427,6 +427,34 @@
       }
     },
     {
+      "id": "AE_0158O",
+      "indicativo": "0158O",
+      "name": "MONTSERRAT",
+      "lon": 1.84,
+      "lat": 41.59,
+      "elev": 738,
+      "provincia": "BARCELONA",
+      "prec": "36,8",
+      "tmax": "24,8",
+      "tmin": "15,9",
+      "tmed": "20,4",
+      "hrMedia": "73",
+      "hrMax": "88",
+      "hrMin": "29",
+      "velmedia": null,
+      "racha": null,
+      "dir": null,
+      "cell": {
+        "P": 36.8,
+        "TX": 24.8,
+        "N": 15.9,
+        "HX": 88,
+        "HR": 73,
+        "W": null,
+        "WDG": null
+      }
+    },
+    {
       "id": "AE_0158X",
       "indicativo": "0158X",
       "name": "MONISTROL DE MONTSERRAT",
@@ -494,20 +522,20 @@
       "tmax": "27,1",
       "tmin": "16,6",
       "tmed": "21,8",
-      "hrMedia": null,
+      "hrMedia": "84",
       "hrMax": null,
       "hrMin": null,
-      "velmedia": null,
-      "racha": null,
-      "dir": null,
+      "velmedia": "3,3",
+      "racha": "12,5",
+      "dir": "33",
       "cell": {
         "P": 25,
         "TX": 27.1,
         "N": 16.6,
         "HX": null,
-        "HR": null,
-        "W": null,
-        "WDG": null
+        "HR": 84,
+        "W": 12.5,
+        "WDG": 33
       }
     },
     {
@@ -816,6 +844,34 @@
         "HR": 73,
         "W": 8.6,
         "WDG": 18
+      }
+    },
+    {
+      "id": "AE_0341",
+      "indicativo": "0341",
+      "name": "TONA (ESCOLA)",
+      "lon": 2.22,
+      "lat": 41.85,
+      "elev": 607,
+      "provincia": "BARCELONA",
+      "prec": "36,8",
+      "tmax": "25,3",
+      "tmin": "13,6",
+      "tmed": "19,4",
+      "hrMedia": "83",
+      "hrMax": "100",
+      "hrMin": "61",
+      "velmedia": "1,9",
+      "racha": "9,2",
+      "dir": "21",
+      "cell": {
+        "P": 36.8,
+        "TX": 25.3,
+        "N": 13.6,
+        "HX": 100,
+        "HR": 83,
+        "W": 9.2,
+        "WDG": 21
       }
     },
     {

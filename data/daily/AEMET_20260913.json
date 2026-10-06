@@ -2,9 +2,9 @@
   "ccaa": "AEMET-CAT",
   "mode": "daily",
   "date": "2026-09-13",
-  "captured_at": "2026-10-05T22:14:44Z",
+  "captured_at": "2026-10-06T22:14:58Z",
   "source": "aemet-opendata",
-  "n_stations": 70,
+  "n_stations": 72,
   "stations": [
     {
       "id": "AE_0002I",
@@ -427,6 +427,34 @@
       }
     },
     {
+      "id": "AE_0158O",
+      "indicativo": "0158O",
+      "name": "MONTSERRAT",
+      "lon": 1.84,
+      "lat": 41.59,
+      "elev": 738,
+      "provincia": "BARCELONA",
+      "prec": "0,0",
+      "tmax": "26,2",
+      "tmin": "16,8",
+      "tmed": "21,5",
+      "hrMedia": "53",
+      "hrMax": "83",
+      "hrMin": "33",
+      "velmedia": null,
+      "racha": null,
+      "dir": null,
+      "cell": {
+        "P": 0,
+        "TX": 26.2,
+        "N": 16.8,
+        "HX": 83,
+        "HR": 53,
+        "W": null,
+        "WDG": null
+      }
+    },
+    {
       "id": "AE_0158X",
       "indicativo": "0158X",
       "name": "MONISTROL DE MONTSERRAT",
@@ -491,23 +519,23 @@
       "elev": 408,
       "provincia": "BARCELONA",
       "prec": "0,0",
-      "tmax": "31,2",
+      "tmax": "32,2",
       "tmin": "19,6",
-      "tmed": "25,4",
-      "hrMedia": null,
+      "tmed": "25,9",
+      "hrMedia": "53",
       "hrMax": null,
       "hrMin": null,
-      "velmedia": null,
-      "racha": null,
-      "dir": null,
+      "velmedia": "3,1",
+      "racha": "8,6",
+      "dir": "22",
       "cell": {
         "P": 0,
-        "TX": 31.2,
+        "TX": 32.2,
         "N": 19.6,
         "HX": null,
-        "HR": null,
-        "W": null,
-        "WDG": null
+        "HR": 53,
+        "W": 8.6,
+        "WDG": 22
       }
     },
     {
@@ -816,6 +844,34 @@
         "HR": 61,
         "W": 5.8,
         "WDG": 17
+      }
+    },
+    {
+      "id": "AE_0341",
+      "indicativo": "0341",
+      "name": "TONA (ESCOLA)",
+      "lon": 2.22,
+      "lat": 41.85,
+      "elev": 607,
+      "provincia": "BARCELONA",
+      "prec": "0,0",
+      "tmax": "29,0",
+      "tmin": "13,5",
+      "tmed": "21,2",
+      "hrMedia": "58",
+      "hrMax": "100",
+      "hrMin": "29",
+      "velmedia": "1,4",
+      "racha": "8,6",
+      "dir": "16",
+      "cell": {
+        "P": 0,
+        "TX": 29,
+        "N": 13.5,
+        "HX": 100,
+        "HR": 58,
+        "W": 8.6,
+        "WDG": 16
       }
     },
     {

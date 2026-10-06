@@ -2,9 +2,9 @@
   "ccaa": "AEMET-CAT",
   "mode": "daily",
   "date": "2026-09-12",
-  "captured_at": "2026-10-05T22:14:44Z",
+  "captured_at": "2026-10-06T22:14:58Z",
   "source": "aemet-opendata",
-  "n_stations": 69,
+  "n_stations": 71,
   "stations": [
     {
       "id": "AE_0002I",
@@ -427,6 +427,34 @@
       }
     },
     {
+      "id": "AE_0158O",
+      "indicativo": "0158O",
+      "name": "MONTSERRAT",
+      "lon": 1.84,
+      "lat": 41.59,
+      "elev": 738,
+      "provincia": "BARCELONA",
+      "prec": "0,0",
+      "tmax": "25,0",
+      "tmin": "17,2",
+      "tmed": "21,1",
+      "hrMedia": "64",
+      "hrMax": "85",
+      "hrMin": "41",
+      "velmedia": null,
+      "racha": null,
+      "dir": null,
+      "cell": {
+        "P": 0,
+        "TX": 25,
+        "N": 17.2,
+        "HX": 85,
+        "HR": 64,
+        "W": null,
+        "WDG": null
+      }
+    },
+    {
       "id": "AE_0158X",
       "indicativo": "0158X",
       "name": "MONISTROL DE MONTSERRAT",
@@ -494,20 +522,20 @@
       "tmax": "27,8",
       "tmin": "19,3",
       "tmed": "23,6",
-      "hrMedia": null,
+      "hrMedia": "68",
       "hrMax": null,
       "hrMin": null,
-      "velmedia": null,
-      "racha": null,
-      "dir": null,
+      "velmedia": "3,1",
+      "racha": "9,4",
+      "dir": "21",
       "cell": {
         "P": 0,
         "TX": 27.8,
         "N": 19.3,
         "HX": null,
-        "HR": null,
-        "W": null,
-        "WDG": null
+        "HR": 68,
+        "W": 9.4,
+        "WDG": 21
       }
     },
     {
@@ -788,6 +816,34 @@
         "HR": 63,
         "W": 6.7,
         "WDG": 3
+      }
+    },
+    {
+      "id": "AE_0341",
+      "indicativo": "0341",
+      "name": "TONA (ESCOLA)",
+      "lon": 2.22,
+      "lat": 41.85,
+      "elev": 607,
+      "provincia": "BARCELONA",
+      "prec": "0,2",
+      "tmax": "26,5",
+      "tmin": "13,9",
+      "tmed": "20,2",
+      "hrMedia": "72",
+      "hrMax": "100",
+      "hrMin": "41",
+      "velmedia": "2,5",
+      "racha": "8,6",
+      "dir": "17",
+      "cell": {
+        "P": 0.2,
+        "TX": 26.5,
+        "N": 13.9,
+        "HX": 100,
+        "HR": 72,
+        "W": 8.6,
+        "WDG": 17
       }
     },
     {
