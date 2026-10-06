@@ -513,11 +513,14 @@ def write_day(doc: dict[str, Any], out_dir: Path = OUT_DIR) -> Path:
     text = json.dumps(doc, ensure_ascii=False, separators=(",", ":"))
     path.write_text(text, encoding="utf-8")
     latest = out_dir / "latest.json"
-    update_latest = True
-    if latest.exists():
+    day_d = date.fromisoformat(day)
+    today = datetime.now(timezone.utc).date()
+    # Only promote to latest.json for recent products (not winter backfills).
+    update_latest = day_d >= (today - timedelta(days=14))
+    if update_latest and latest.exists():
         try:
             prev = json.loads(latest.read_text(encoding="utf-8")).get("date")
-            if prev and date.fromisoformat(day) < date.fromisoformat(prev):
+            if prev and day_d < date.fromisoformat(prev):
                 update_latest = False
         except (json.JSONDecodeError, ValueError, TypeError):
             pass
