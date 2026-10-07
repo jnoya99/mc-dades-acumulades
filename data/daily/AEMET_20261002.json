@@ -2,7 +2,7 @@
   "ccaa": "AEMET-CAT",
   "mode": "daily",
   "date": "2026-10-02",
-  "captured_at": "2026-10-06T22:14:58Z",
+  "captured_at": "2026-10-07T22:13:25Z",
   "source": "aemet-opendata",
   "n_stations": 69,
   "stations": [
@@ -1106,7 +1106,7 @@
       "lat": 42.33,
       "elev": 1699,
       "provincia": "GIRONA",
-      "prec": "0,0",
+      "prec": null,
       "tmax": "13,9",
       "tmin": "9,7",
       "tmed": "11,8",
@@ -1117,7 +1117,7 @@
       "racha": "5,8",
       "dir": "14",
       "cell": {
-        "P": 0,
+        "P": null,
         "TX": 13.9,
         "N": 9.7,
         "HX": 98,

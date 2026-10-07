@@ -2,9 +2,9 @@
   "ccaa": "AEMET-CAT",
   "mode": "daily",
   "date": "2026-09-21",
-  "captured_at": "2026-10-06T22:14:58Z",
+  "captured_at": "2026-10-07T22:13:25Z",
   "source": "aemet-opendata",
-  "n_stations": 72,
+  "n_stations": 73,
   "stations": [
     {
       "id": "AE_0002I",
@@ -438,9 +438,9 @@
       "tmax": "29,1",
       "tmin": "20,1",
       "tmed": "24,6",
-      "hrMedia": "32",
+      "hrMedia": "30",
       "hrMax": "45",
-      "hrMin": "24",
+      "hrMin": "23",
       "velmedia": null,
       "racha": null,
       "dir": null,
@@ -449,7 +449,7 @@
         "TX": 29.1,
         "N": 20.1,
         "HX": 45,
-        "HR": 32,
+        "HR": 30,
         "W": null,
         "WDG": null
       }
@@ -788,6 +788,34 @@
         "HR": 44,
         "W": 6.9,
         "WDG": 10
+      }
+    },
+    {
+      "id": "AE_0321",
+      "indicativo": "0321",
+      "name": "CAMPDEVANOL",
+      "lon": 2.17,
+      "lat": 42.22,
+      "elev": 731,
+      "provincia": "GIRONA",
+      "prec": "0,0",
+      "tmax": "30,2",
+      "tmin": "9,8",
+      "tmed": "20,0",
+      "hrMedia": "56",
+      "hrMax": "93",
+      "hrMin": "24",
+      "velmedia": null,
+      "racha": null,
+      "dir": null,
+      "cell": {
+        "P": 0,
+        "TX": 30.2,
+        "N": 9.8,
+        "HX": 93,
+        "HR": 56,
+        "W": null,
+        "WDG": null
       }
     },
     {
