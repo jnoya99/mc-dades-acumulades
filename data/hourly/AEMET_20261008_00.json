@@ -2,9 +2,9 @@
   "ccaa": "AEMET-CAT",
   "mode": "hourly",
   "hour": "2026-10-08T00:00",
-  "captured_at": "2026-10-08T02:30:31Z",
+  "captured_at": "2026-10-08T04:33:32Z",
   "source": "aemet-opendata-observacion-todas",
-  "n_stations": 66,
+  "n_stations": 67,
   "stations": [
     {
       "id": "AE_0002I",
@@ -205,6 +205,26 @@
       "dv": 82.0,
       "pres": null,
       "ubi": "BERGA  INSTITUTO"
+    },
+    {
+      "id": "AE_0106X",
+      "indicativo": "0106X",
+      "name": "BALSARENY",
+      "lon": 1.87,
+      "lat": 41.87,
+      "elev": 361,
+      "hour": "2026-10-08T00:00",
+      "fint": "2026-10-07T22:00:00+0000",
+      "prec": 0.0,
+      "hr": 86.0,
+      "ta": 14.9,
+      "tamax": 14.9,
+      "tamin": 14.6,
+      "vmax": null,
+      "vv": 0.7,
+      "dv": null,
+      "pres": null,
+      "ubi": "BALSARENY"
     },
     {
       "id": "AE_0114X",
