@@ -2,9 +2,9 @@
   "ccaa": "AEMET-CAT",
   "mode": "hourly",
   "hour": "2026-10-09T03:00",
-  "captured_at": "2026-10-09T06:40:25Z",
+  "captured_at": "2026-10-09T08:35:26Z",
   "source": "aemet-opendata-observacion-todas",
-  "n_stations": 66,
+  "n_stations": 67,
   "stations": [
     {
       "id": "AE_0002I",
@@ -1225,6 +1225,26 @@
       "dv": 94.0,
       "pres": null,
       "ubi": "CABACÉS"
+    },
+    {
+      "id": "AE_9975X",
+      "indicativo": "9975X",
+      "name": "RASQUERA",
+      "lon": 0.61,
+      "lat": 41.01,
+      "elev": 112,
+      "hour": "2026-10-09T03:00",
+      "fint": "2026-10-09T01:00:00+0000",
+      "prec": 0.0,
+      "hr": 59.0,
+      "ta": 13.7,
+      "tamax": 14.0,
+      "tamin": 13.7,
+      "vmax": 7.7,
+      "vv": 2.8,
+      "dv": 273.0,
+      "pres": null,
+      "ubi": "RASQUERA"
     },
     {
       "id": "AE_9981A",
