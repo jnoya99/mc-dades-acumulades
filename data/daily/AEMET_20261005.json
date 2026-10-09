@@ -2,7 +2,7 @@
   "ccaa": "AEMET-CAT",
   "mode": "daily",
   "date": "2026-10-05",
-  "captured_at": "2026-10-08T22:15:09Z",
+  "captured_at": "2026-10-09T22:14:55Z",
   "source": "aemet-opendata",
   "n_stations": 69,
   "stations": [
@@ -1806,7 +1806,7 @@
       "lat": 40.82,
       "elev": 50,
       "provincia": "TARRAGONA",
-      "prec": "Ip",
+      "prec": "0,0",
       "tmax": "28,6",
       "tmin": "19,6",
       "tmed": "24,1",
