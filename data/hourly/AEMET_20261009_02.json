@@ -2,9 +2,9 @@
   "ccaa": "AEMET-CAT",
   "mode": "hourly",
   "hour": "2026-10-09T02:00",
-  "captured_at": "2026-10-09T04:34:08Z",
+  "captured_at": "2026-10-09T06:40:25Z",
   "source": "aemet-opendata-observacion-todas",
-  "n_stations": 66,
+  "n_stations": 67,
   "stations": [
     {
       "id": "AE_0002I",
@@ -305,6 +305,26 @@
       "dv": null,
       "pres": null,
       "ubi": "CORBERA  PUIG D?AGULLES"
+    },
+    {
+      "id": "AE_0201D",
+      "indicativo": "0201D",
+      "name": "BARCELONA, PORT OLÍMPIC",
+      "lon": 2.2,
+      "lat": 41.39,
+      "elev": 26,
+      "hour": "2026-10-09T02:00",
+      "fint": "2026-10-09T00:00:00+0000",
+      "prec": 0.0,
+      "hr": 49.0,
+      "ta": 17.0,
+      "tamax": 17.8,
+      "tamin": 17.0,
+      "vmax": 6.4,
+      "vv": 3.8,
+      "dv": 291.0,
+      "pres": null,
+      "ubi": "BARCELONA  PORT OLÍMPIC"
     },
     {
       "id": "AE_0201X",
