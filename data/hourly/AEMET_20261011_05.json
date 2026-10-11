@@ -2,9 +2,9 @@
   "ccaa": "AEMET-CAT",
   "mode": "hourly",
   "hour": "2026-10-11T05:00",
-  "captured_at": "2026-10-11T05:51:04Z",
+  "captured_at": "2026-10-11T12:54:32Z",
   "source": "aemet-opendata-observacion-todas",
-  "n_stations": 64,
+  "n_stations": 66,
   "stations": [
     {
       "id": "AE_0002I",
@@ -85,6 +85,26 @@
       "dv": null,
       "pres": null,
       "ubi": "VALLS"
+    },
+    {
+      "id": "AE_0042Y",
+      "indicativo": "0042Y",
+      "name": "TARRAGONA",
+      "lon": 1.25,
+      "lat": 41.12,
+      "elev": 55,
+      "hour": "2026-10-11T05:00",
+      "fint": "2026-10-11T03:00:00+0000",
+      "prec": 0.0,
+      "hr": 76.0,
+      "ta": 14.4,
+      "tamax": 14.9,
+      "tamin": 14.4,
+      "vmax": 2.5,
+      "vv": 0.3,
+      "dv": 296.0,
+      "pres": null,
+      "ubi": "TARRAGONA  FAC. GEOGRAFIA"
     },
     {
       "id": "AE_0061X",
@@ -365,6 +385,26 @@
       "dv": 344.0,
       "pres": 1006.4,
       "ubi": "ARENYS DE MAR"
+    },
+    {
+      "id": "AE_0260X",
+      "indicativo": "0260X",
+      "name": "FOGARS DE MONTCLÚS",
+      "lon": 2.43,
+      "lat": 41.76,
+      "elev": 936,
+      "hour": "2026-10-11T05:00",
+      "fint": "2026-10-11T03:00:00+0000",
+      "prec": 0.0,
+      "hr": 69.0,
+      "ta": 11.7,
+      "tamax": 11.8,
+      "tamin": 11.7,
+      "vmax": null,
+      "vv": null,
+      "dv": null,
+      "pres": null,
+      "ubi": "FONTMARTINA"
     },
     {
       "id": "AE_0281Y",
