@@ -2,7 +2,7 @@
   "ccaa": "AEMET-CAT",
   "mode": "hourly",
   "hour": "2026-10-12T13:00",
-  "captured_at": "2026-10-12T15:31:22Z",
+  "captured_at": "2026-10-12T23:01:09Z",
   "source": "aemet-opendata-observacion-todas",
   "n_stations": 66,
   "stations": [
