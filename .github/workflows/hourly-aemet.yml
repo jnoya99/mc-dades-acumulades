@@ -40,12 +40,16 @@ jobs:
           echo "Using AEMET OpenData API (secret present)"
           python scripts/capture_aemet_hourly.py --force
 
+      - name: Rebuild effective-rain fractions (AEMET, 07-07 UTC day)
+        run: python scripts/build_rain_intensity_aux.py --source aemet --retain 400
+        continue-on-error: true   # never block the hourly panels
+
       - name: Commit archive + hourly panels
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           # Add directory (not shell glob) so pruned AEMET_* hourly deletions stage too.
-          git add -A -- data/hourly docs/hourly_rain_aemet.json docs/hourly_meteo_aemet.json
+          git add -A -- data/hourly docs/hourly_rain_aemet.json docs/hourly_meteo_aemet.json docs/rain_intensity_aemet.json
           if git diff --staged --quiet; then
             echo "No changes to commit"
           else
