@@ -2,9 +2,9 @@
   "ccaa": "AEMET-CAT",
   "mode": "hourly",
   "hour": "2026-10-15T17:00",
-  "captured_at": "2026-10-15T21:25:40Z",
+  "captured_at": "2026-10-16T00:25:59Z",
   "source": "aemet-opendata-observacion-todas",
-  "n_stations": 63,
+  "n_stations": 65,
   "stations": [
     {
       "id": "AE_0002I",
@@ -647,6 +647,26 @@
       "ubi": "VALL DE BIANYA"
     },
     {
+      "id": "AE_0411X",
+      "indicativo": "0411X",
+      "name": "CASTELLÓ D'EMPÚRIES",
+      "lon": 3.09,
+      "lat": 42.22,
+      "elev": 2,
+      "hour": "2026-10-15T17:00",
+      "fint": "2026-10-15T15:00:00+0000",
+      "prec": 0.0,
+      "hr": 85.0,
+      "ta": 22.1,
+      "tamax": 22.1,
+      "tamin": 21.8,
+      "vmax": 5.1,
+      "vv": 2.0,
+      "dv": 115.0,
+      "pres": null,
+      "ubi": "CASTELLO D?EMPURIES"
+    },
+    {
       "id": "AE_0413A",
       "indicativo": "0413A",
       "name": "MAÇANET DE CABRENYS",
@@ -1085,6 +1105,26 @@
       "dv": null,
       "pres": null,
       "ubi": "LA POBLA DE CERVOLES"
+    },
+    {
+      "id": "AE_9776D",
+      "indicativo": "9776D",
+      "name": "ELS TORMS",
+      "lon": 0.73,
+      "lat": 41.39,
+      "elev": 495,
+      "hour": "2026-10-15T17:00",
+      "fint": "2026-10-15T15:00:00+0000",
+      "prec": 0.0,
+      "hr": 45.0,
+      "ta": 29.0,
+      "tamax": 29.0,
+      "tamin": 26.3,
+      "vmax": 6.1,
+      "vv": 2.7,
+      "dv": 262.0,
+      "pres": 966.1,
+      "ubi": "EVC_ELS TORMS"
     },
     {
       "id": "AE_9946X",
