@@ -2,9 +2,9 @@
   "ccaa": "AEMET-CAT",
   "mode": "hourly",
   "hour": "2026-10-15T21:00",
-  "captured_at": "2026-10-16T00:25:59Z",
+  "captured_at": "2026-10-16T07:13:05Z",
   "source": "aemet-opendata-observacion-todas",
-  "n_stations": 65,
+  "n_stations": 66,
   "stations": [
     {
       "id": "AE_0002I",
@@ -1105,6 +1105,26 @@
       "dv": null,
       "pres": null,
       "ubi": "LA POBLA DE CERVOLES"
+    },
+    {
+      "id": "AE_9775X",
+      "indicativo": "9775X",
+      "name": "EL SOLERÀS",
+      "lon": 0.68,
+      "lat": 41.41,
+      "elev": 392,
+      "hour": "2026-10-15T21:00",
+      "fint": "2026-10-15T19:00:00+0000",
+      "prec": 0.0,
+      "hr": 82.0,
+      "ta": 19.5,
+      "tamax": 20.5,
+      "tamin": 19.5,
+      "vmax": null,
+      "vv": null,
+      "dv": null,
+      "pres": null,
+      "ubi": "EL SOLERÀS"
     },
     {
       "id": "AE_9776D",
