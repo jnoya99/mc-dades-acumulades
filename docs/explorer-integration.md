@@ -170,3 +170,17 @@ window.__AEMET_HOURLY_METEO_URL = "https://jnoya99.github.io/mc-dades-acumulades
 IDs XEMA = `codi_estacio`. Hora Europe/Madrid. `seriesW` en km/h.
 Si el dia ja té P oficial (XEMA ≤ lastK, o cel·la del panell MC/AEMET), l'explorador
 no suma també el Ph horari. ET0, I30 i neu no surten d'aquest fitxer.
+
+### `rain_intensity_xema.json` (diari · intensitat de la pluja)
+
+Per estació XEMA (`codi_estacio`) i dia de calendari (Europe/Madrid) amb pluja, la **fracció de pluja
+efectiva** `peff/P` que dona el model horari de l'Explorador (`pEff` hora a hora, k = Ph/(Ph+20),
+dipòsit T-M de 60 mm, PET 2 mm/dia repartida per hores) si el dia comença amb humitat del sòl
+θ = 0 · 0,25 · 0,5 · 0,75 · 1. L'app interpola linealment a la seva θ i ja no necessita la sèrie horària.
+
+```text
+series: { codi_estacio: [[day_index, P_x10, f0, f25, f50, f75, f100], ...] }   // f* ×1000, day_index des de d0
+```
+
+Script: `scripts/build_rain_intensity.py` (pas horari del workflow `hourly-xema`, refà els 3 últims dies;
+arxiu de 400 dies). Validació: `python tests/validate_keq.py docs/hourly_rain_xema.json`.
