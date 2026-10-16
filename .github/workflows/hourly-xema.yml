@@ -32,11 +32,18 @@ jobs:
         # daily lag plus today). Raw files outside that window stay until the
         # 14-day prune. No API key: Socrata nzvn-apee is public.
 
+      - name: Rebuild per-day effective-rain fractions (rain intensity)
+        run: python scripts/build_rain_intensity.py --days 3 --retain 400
+        continue-on-error: true   # never block the existing hourly panels
+        # Merges the last 3 Madrid days into docs/rain_intensity_xema.json
+        # (variable 35 only, one Socrata page). Read by Bolets Explorador so it
+        # no longer downloads hourly rain at startup.
+
       - name: Commit archive + hourly panels
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add -- docs/hourly_rain_xema.json docs/hourly_meteo_xema.json
+          git add -- docs/hourly_rain_xema.json docs/hourly_meteo_xema.json docs/rain_intensity_xema.json
           git status --porcelain -- data/hourly | while read -r line; do
             f=$(printf '%s' "$line" | cut -c4-)
             case "$f" in
