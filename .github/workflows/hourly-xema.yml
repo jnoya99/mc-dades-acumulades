@@ -34,6 +34,7 @@ jobs:
 
       - name: Rebuild per-day effective-rain fractions (rain intensity)
         run: python scripts/build_rain_intensity.py --days 3 --retain 400
+        continue-on-error: true   # never block the existing hourly panels
         # Merges the last 3 Madrid days into docs/rain_intensity_xema.json
         # (variable 35 only, one Socrata page). Read by Bolets Explorador so it
         # no longer downloads hourly rain at startup.
