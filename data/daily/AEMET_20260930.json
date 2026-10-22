@@ -2,9 +2,9 @@
   "ccaa": "AEMET-CAT",
   "mode": "daily",
   "date": "2026-09-30",
-  "captured_at": "2026-10-21T00:27:23Z",
+  "captured_at": "2026-10-22T00:30:30Z",
   "source": "aemet-opendata",
-  "n_stations": 73,
+  "n_stations": 74,
   "stations": [
     {
       "id": "AE_0002I",
@@ -732,6 +732,34 @@
         "HR": 89,
         "W": 6.1,
         "WDG": 20
+      }
+    },
+    {
+      "id": "AE_0294B",
+      "indicativo": "0294B",
+      "name": "LA BISBAL (D'EMPORDA 3)",
+      "lon": 3.04,
+      "lat": 41.97,
+      "elev": 51,
+      "provincia": "GIRONA",
+      "prec": "0,1",
+      "tmax": "26,4",
+      "tmin": "18,3",
+      "tmed": "22,4",
+      "hrMedia": "93",
+      "hrMax": "100",
+      "hrMin": "74",
+      "velmedia": null,
+      "racha": null,
+      "dir": null,
+      "cell": {
+        "P": 0.1,
+        "TX": 26.4,
+        "N": 18.3,
+        "HX": 100,
+        "HR": 93,
+        "W": null,
+        "WDG": null
       }
     },
     {
