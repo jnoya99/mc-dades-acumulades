@@ -2,9 +2,9 @@
   "ccaa": "AEMET-CAT",
   "mode": "hourly",
   "hour": "2026-10-25T20:00",
-  "captured_at": "2026-10-26T00:24:50Z",
+  "captured_at": "2026-10-26T07:50:04Z",
   "source": "aemet-opendata-observacion-todas",
-  "n_stations": 64,
+  "n_stations": 66,
   "stations": [
     {
       "id": "AE_0002I",
@@ -305,6 +305,26 @@
       "dv": null,
       "pres": null,
       "ubi": "CORBERA  PUIG D?AGULLES"
+    },
+    {
+      "id": "AE_0201D",
+      "indicativo": "0201D",
+      "name": "BARCELONA, PORT OLÍMPIC",
+      "lon": 2.2,
+      "lat": 41.39,
+      "elev": 26,
+      "hour": "2026-10-25T20:00",
+      "fint": "2026-10-25T19:00:00+0000",
+      "prec": 0.0,
+      "hr": 55.0,
+      "ta": 19.4,
+      "tamax": 19.6,
+      "tamin": 19.4,
+      "vmax": 2.8,
+      "vv": 1.6,
+      "dv": 67.0,
+      "pres": null,
+      "ubi": "BARCELONA  PORT OLÍMPIC"
     },
     {
       "id": "AE_0201X",
@@ -925,6 +945,26 @@
       "dv": 347.0,
       "pres": 927.3,
       "ubi": "TALARN"
+    },
+    {
+      "id": "AE_9707",
+      "indicativo": "9707",
+      "name": "LLIMIANA",
+      "lon": 0.91,
+      "lat": 42.07,
+      "elev": 515,
+      "hour": "2026-10-25T20:00",
+      "fint": "2026-10-25T19:00:00+0000",
+      "prec": 0.0,
+      "hr": 53.0,
+      "ta": 14.1,
+      "tamax": 15.3,
+      "tamin": 14.1,
+      "vmax": 1.9,
+      "vv": 0.8,
+      "dv": 28.0,
+      "pres": null,
+      "ubi": "LLIMIANA"
     },
     {
       "id": "AE_9718X",
