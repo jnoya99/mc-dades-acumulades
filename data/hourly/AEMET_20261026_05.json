@@ -2,9 +2,9 @@
   "ccaa": "AEMET-CAT",
   "mode": "hourly",
   "hour": "2026-10-26T05:00",
-  "captured_at": "2026-10-26T07:50:04Z",
+  "captured_at": "2026-10-26T15:13:49Z",
   "source": "aemet-opendata-observacion-todas",
-  "n_stations": 65,
+  "n_stations": 67,
   "stations": [
     {
       "id": "AE_0002I",
@@ -787,6 +787,26 @@
       "ubi": "MARTINET"
     },
     {
+      "id": "AE_9590D",
+      "indicativo": "9590D",
+      "name": "CAP DE REC",
+      "lon": 1.67,
+      "lat": 42.43,
+      "elev": 1940,
+      "hour": "2026-10-26T05:00",
+      "fint": "2026-10-26T04:00:00+0000",
+      "prec": null,
+      "hr": 76.0,
+      "ta": 5.4,
+      "tamax": 6.3,
+      "tamin": 5.2,
+      "vmax": 2.9,
+      "vv": 0.6,
+      "dv": 44.0,
+      "pres": 809.5,
+      "ubi": "CAP DE REC"
+    },
+    {
       "id": "AE_9632X",
       "indicativo": "9632X",
       "name": "TUIXENT",
@@ -945,6 +965,26 @@
       "dv": 198.0,
       "pres": 927.8,
       "ubi": "TALARN"
+    },
+    {
+      "id": "AE_9707",
+      "indicativo": "9707",
+      "name": "LLIMIANA",
+      "lon": 0.91,
+      "lat": 42.07,
+      "elev": 515,
+      "hour": "2026-10-26T05:00",
+      "fint": "2026-10-26T04:00:00+0000",
+      "prec": 0.0,
+      "hr": null,
+      "ta": null,
+      "tamax": null,
+      "tamin": null,
+      "vmax": null,
+      "vv": null,
+      "dv": null,
+      "pres": null,
+      "ubi": "LLIMIANA"
     },
     {
       "id": "AE_9718X",
