@@ -2,7 +2,7 @@
   "ccaa": "AEMET-CAT",
   "mode": "daily",
   "date": "2026-10-13",
-  "captured_at": "2026-10-25T23:57:44Z",
+  "captured_at": "2026-10-27T01:18:21Z",
   "source": "aemet-opendata",
   "n_stations": 69,
   "stations": [
@@ -406,7 +406,7 @@
       "lat": 41.41,
       "elev": 647,
       "provincia": "BARCELONA",
-      "prec": null,
+      "prec": "0,0",
       "tmax": null,
       "tmin": null,
       "tmed": null,
@@ -417,7 +417,7 @@
       "racha": null,
       "dir": null,
       "cell": {
-        "P": null,
+        "P": 0,
         "TX": null,
         "N": null,
         "HX": null,
