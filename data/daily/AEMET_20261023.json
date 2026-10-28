@@ -2,9 +2,9 @@
   "ccaa": "AEMET-CAT",
   "mode": "daily",
   "date": "2026-10-23",
-  "captured_at": "2026-10-27T01:18:21Z",
+  "captured_at": "2026-10-28T01:03:05Z",
   "source": "aemet-opendata",
-  "n_stations": 68,
+  "n_stations": 69,
   "stations": [
     {
       "id": "AE_0002I",
@@ -490,7 +490,7 @@
       "lat": 41.38,
       "elev": 11,
       "provincia": "BARCELONA",
-      "prec": "0,4",
+      "prec": "0,0",
       "tmax": "23,3",
       "tmin": "16,4",
       "tmed": "19,8",
@@ -501,7 +501,7 @@
       "racha": null,
       "dir": null,
       "cell": {
-        "P": 0.4,
+        "P": 0,
         "TX": 23.3,
         "N": 16.4,
         "HX": 78,
@@ -1152,6 +1152,34 @@
         "HR": 65,
         "W": 7.5,
         "WDG": 23
+      }
+    },
+    {
+      "id": "AE_9590D",
+      "indicativo": "9590D",
+      "name": "CAP DE REC",
+      "lon": 1.67,
+      "lat": 42.43,
+      "elev": 1940,
+      "provincia": "LLEIDA",
+      "prec": null,
+      "tmax": "9,4",
+      "tmin": "1,1",
+      "tmed": "5,2",
+      "hrMedia": "63",
+      "hrMax": "79",
+      "hrMin": "40",
+      "velmedia": "2,5",
+      "racha": "6,7",
+      "dir": "99",
+      "cell": {
+        "P": null,
+        "TX": 9.4,
+        "N": 1.1,
+        "HX": 79,
+        "HR": 63,
+        "W": 6.7,
+        "WDG": 99
       }
     },
     {
@@ -1890,7 +1918,7 @@
       "lat": 42.78,
       "elev": 722,
       "provincia": "LLEIDA",
-      "prec": "0,0",
+      "prec": null,
       "tmax": "14,2",
       "tmin": "6,6",
       "tmed": "10,4",
@@ -1901,7 +1929,7 @@
       "racha": "9,7",
       "dir": "20",
       "cell": {
-        "P": 0,
+        "P": null,
         "TX": 14.2,
         "N": 6.6,
         "HX": 93,

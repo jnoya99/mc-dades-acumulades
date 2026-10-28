@@ -2,7 +2,7 @@
   "ccaa": "AEMET-CAT",
   "mode": "daily",
   "date": "2026-10-02",
-  "captured_at": "2026-10-27T01:18:21Z",
+  "captured_at": "2026-10-28T01:03:05Z",
   "source": "aemet-opendata",
   "n_stations": 69,
   "stations": [
@@ -1918,7 +1918,7 @@
       "lat": 42.78,
       "elev": 722,
       "provincia": "LLEIDA",
-      "prec": "0,0",
+      "prec": null,
       "tmax": "18,9",
       "tmin": "13,2",
       "tmed": "16,0",
@@ -1929,7 +1929,7 @@
       "racha": "4,2",
       "dir": "22",
       "cell": {
-        "P": 0,
+        "P": null,
         "TX": 18.9,
         "N": 13.2,
         "HX": 97,
