@@ -2,9 +2,9 @@
   "ccaa": "AEMET-CAT",
   "mode": "daily",
   "date": "2026-10-10",
-  "captured_at": "2026-10-30T01:44:14Z",
+  "captured_at": "2026-10-31T01:27:37Z",
   "source": "aemet-opendata",
-  "n_stations": 68,
+  "n_stations": 69,
   "stations": [
     {
       "id": "AE_0002I",
@@ -396,6 +396,34 @@
         "HR": 59,
         "W": 4.7,
         "WDG": 26
+      }
+    },
+    {
+      "id": "AE_0158X",
+      "indicativo": "0158X",
+      "name": "MONISTROL DE MONTSERRAT",
+      "lon": 1.84,
+      "lat": 41.59,
+      "elev": 738,
+      "provincia": "BARCELONA",
+      "prec": "0,0",
+      "tmax": "18,6",
+      "tmin": "10,5",
+      "tmed": "14,6",
+      "hrMedia": "56",
+      "hrMax": "76",
+      "hrMin": "42",
+      "velmedia": null,
+      "racha": null,
+      "dir": null,
+      "cell": {
+        "P": 0,
+        "TX": 18.6,
+        "N": 10.5,
+        "HX": 76,
+        "HR": 56,
+        "W": null,
+        "WDG": null
       }
     },
     {
