@@ -2,9 +2,9 @@
   "ccaa": "AEMET-CAT",
   "mode": "hourly",
   "hour": "2026-11-02T04:00",
-  "captured_at": "2026-11-02T06:11:09Z",
+  "captured_at": "2026-11-02T15:59:57Z",
   "source": "aemet-opendata-observacion-todas",
-  "n_stations": 66,
+  "n_stations": 68,
   "stations": [
     {
       "id": "AE_0002I",
@@ -85,6 +85,26 @@
       "dv": null,
       "pres": null,
       "ubi": "VALLS"
+    },
+    {
+      "id": "AE_0042Y",
+      "indicativo": "0042Y",
+      "name": "TARRAGONA",
+      "lon": 1.25,
+      "lat": 41.12,
+      "elev": 55,
+      "hour": "2026-11-02T04:00",
+      "fint": "2026-11-02T03:00:00+0000",
+      "prec": 0.0,
+      "hr": 71.0,
+      "ta": 16.0,
+      "tamax": 16.7,
+      "tamin": 16.0,
+      "vmax": 4.6,
+      "vv": 1.0,
+      "dv": 1.0,
+      "pres": null,
+      "ubi": "TARRAGONA  FAC. GEOGRAFIA"
     },
     {
       "id": "AE_0061X",
@@ -305,6 +325,26 @@
       "dv": null,
       "pres": null,
       "ubi": "CORBERA  PUIG D?AGULLES"
+    },
+    {
+      "id": "AE_0201D",
+      "indicativo": "0201D",
+      "name": "BARCELONA, PORT OLÍMPIC",
+      "lon": 2.2,
+      "lat": 41.39,
+      "elev": 26,
+      "hour": "2026-11-02T04:00",
+      "fint": "2026-11-02T03:00:00+0000",
+      "prec": 0.0,
+      "hr": 65.0,
+      "ta": 14.9,
+      "tamax": 15.6,
+      "tamin": 14.9,
+      "vmax": 11.3,
+      "vv": 2.4,
+      "dv": 26.0,
+      "pres": null,
+      "ubi": "BARCELONA  PORT OLÍMPIC"
     },
     {
       "id": "AE_0201X",
