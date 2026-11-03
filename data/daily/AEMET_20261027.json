@@ -2,7 +2,7 @@
   "ccaa": "AEMET-CAT",
   "mode": "daily",
   "date": "2026-10-27",
-  "captured_at": "2026-11-02T01:22:57Z",
+  "captured_at": "2026-11-03T03:24:46Z",
   "source": "aemet-opendata",
   "n_stations": 69,
   "stations": [
@@ -158,7 +158,7 @@
       "tmax": "23,6",
       "tmin": "9,3",
       "tmed": "16,4",
-      "hrMedia": "77",
+      "hrMedia": "76",
       "hrMax": "89",
       "hrMin": "53",
       "velmedia": "2,2",
@@ -169,7 +169,7 @@
         "TX": 23.6,
         "N": 9.3,
         "HX": 89,
-        "HR": 77,
+        "HR": 76,
         "W": 6.1,
         "WDG": 12
       }
@@ -383,7 +383,7 @@
       "tmin": "8,7",
       "tmed": "16,8",
       "hrMedia": "80",
-      "hrMax": "98",
+      "hrMax": "99",
       "hrMin": "53",
       "velmedia": "1,4",
       "racha": "6,4",
@@ -392,7 +392,7 @@
         "P": 0,
         "TX": 24.8,
         "N": 8.7,
-        "HX": 98,
+        "HX": 99,
         "HR": 80,
         "W": 6.4,
         "WDG": 18
@@ -410,7 +410,7 @@
       "tmax": "21,3",
       "tmin": "14,9",
       "tmed": "18,1",
-      "hrMedia": "73",
+      "hrMedia": "72",
       "hrMax": "97",
       "hrMin": "54",
       "velmedia": null,
@@ -421,7 +421,7 @@
         "TX": 21.3,
         "N": 14.9,
         "HX": 97,
-        "HR": 73,
+        "HR": 72,
         "W": null,
         "WDG": null
       }
@@ -438,7 +438,7 @@
       "tmax": "22,0",
       "tmin": "13,5",
       "tmed": "17,8",
-      "hrMedia": "90",
+      "hrMedia": "89",
       "hrMax": "100",
       "hrMin": "70",
       "velmedia": null,
@@ -449,7 +449,7 @@
         "TX": 22,
         "N": 13.5,
         "HX": 100,
-        "HR": 90,
+        "HR": 89,
         "W": null,
         "WDG": null
       }
@@ -606,7 +606,7 @@
       "tmax": "20,7",
       "tmin": "13,3",
       "tmed": "17,0",
-      "hrMedia": "73",
+      "hrMedia": "71",
       "hrMax": "93",
       "hrMin": "58",
       "velmedia": null,
@@ -617,7 +617,7 @@
         "TX": 20.7,
         "N": 13.3,
         "HX": 93,
-        "HR": 73,
+        "HR": 71,
         "W": null,
         "WDG": null
       }
@@ -718,7 +718,7 @@
       "tmax": "21,6",
       "tmin": "8,3",
       "tmed": "15,0",
-      "hrMedia": "73",
+      "hrMedia": "71",
       "hrMax": "88",
       "hrMin": "50",
       "velmedia": "1,7",
@@ -729,7 +729,7 @@
         "TX": 21.6,
         "N": 8.3,
         "HX": 88,
-        "HR": 73,
+        "HR": 71,
         "W": 6.9,
         "WDG": 10
       }
@@ -830,7 +830,7 @@
       "tmax": "21,2",
       "tmin": "10,1",
       "tmed": "15,6",
-      "hrMedia": "82",
+      "hrMedia": "81",
       "hrMax": "96",
       "hrMin": "65",
       "velmedia": "1,1",
@@ -841,7 +841,7 @@
         "TX": 21.2,
         "N": 10.1,
         "HX": 96,
-        "HR": 82,
+        "HR": 81,
         "W": 7.2,
         "WDG": 34
       }
@@ -1138,7 +1138,7 @@
       "tmax": "24,1",
       "tmin": "4,6",
       "tmed": "14,4",
-      "hrMedia": "65",
+      "hrMedia": "64",
       "hrMax": "99",
       "hrMin": "33",
       "velmedia": "1,1",
@@ -1149,7 +1149,7 @@
         "TX": 24.1,
         "N": 4.6,
         "HX": 99,
-        "HR": 65,
+        "HR": 64,
         "W": 8.6,
         "WDG": 8
       }
@@ -1166,9 +1166,9 @@
       "tmax": "16,1",
       "tmin": "5,9",
       "tmed": "11,0",
-      "hrMedia": "53",
+      "hrMedia": "48",
       "hrMax": "83",
-      "hrMin": "38",
+      "hrMin": "37",
       "velmedia": "1,1",
       "racha": "5,0",
       "dir": "16",
@@ -1177,7 +1177,7 @@
         "TX": 16.1,
         "N": 5.9,
         "HX": 83,
-        "HR": 53,
+        "HR": 48,
         "W": 5,
         "WDG": 16
       }
@@ -1194,9 +1194,9 @@
       "tmax": "22,4",
       "tmin": "6,6",
       "tmed": "14,5",
-      "hrMedia": "71",
+      "hrMedia": "69",
       "hrMax": "97",
-      "hrMin": "37",
+      "hrMin": "36",
       "velmedia": "0,6",
       "racha": "3,9",
       "dir": "22",
@@ -1205,7 +1205,7 @@
         "TX": 22.4,
         "N": 6.6,
         "HX": 97,
-        "HR": 71,
+        "HR": 69,
         "W": 3.9,
         "WDG": 22
       }
@@ -1222,7 +1222,7 @@
       "tmax": "25,3",
       "tmin": "7,1",
       "tmed": "16,2",
-      "hrMedia": "74",
+      "hrMedia": "73",
       "hrMax": "100",
       "hrMin": "43",
       "velmedia": "3,6",
@@ -1233,7 +1233,7 @@
         "TX": 25.3,
         "N": 7.1,
         "HX": 100,
-        "HR": 74,
+        "HR": 73,
         "W": 11.4,
         "WDG": 16
       }
@@ -1250,7 +1250,7 @@
       "tmax": "24,0",
       "tmin": "5,8",
       "tmed": "14,9",
-      "hrMedia": "77",
+      "hrMedia": "76",
       "hrMax": "99",
       "hrMin": "48",
       "velmedia": null,
@@ -1261,7 +1261,7 @@
         "TX": 24,
         "N": 5.8,
         "HX": 99,
-        "HR": 77,
+        "HR": 76,
         "W": null,
         "WDG": null
       }
@@ -1278,7 +1278,7 @@
       "tmax": "23,7",
       "tmin": "7,5",
       "tmed": "15,6",
-      "hrMedia": "70",
+      "hrMedia": "69",
       "hrMax": "90",
       "hrMin": "47",
       "velmedia": null,
@@ -1289,7 +1289,7 @@
         "TX": 23.7,
         "N": 7.5,
         "HX": 90,
-        "HR": 70,
+        "HR": 69,
         "W": null,
         "WDG": null
       }
@@ -1306,7 +1306,7 @@
       "tmax": "23,3",
       "tmin": "3,1",
       "tmed": "13,2",
-      "hrMedia": "64",
+      "hrMedia": "63",
       "hrMax": "100",
       "hrMin": "30",
       "velmedia": "0,8",
@@ -1317,7 +1317,7 @@
         "TX": 23.3,
         "N": 3.1,
         "HX": 100,
-        "HR": 64,
+        "HR": 63,
         "W": 7.5,
         "WDG": 35
       }
@@ -1334,7 +1334,7 @@
       "tmax": "13,3",
       "tmin": "3,7",
       "tmed": "8,5",
-      "hrMedia": "40",
+      "hrMedia": null,
       "hrMax": null,
       "hrMin": null,
       "velmedia": "2,2",
@@ -1345,7 +1345,7 @@
         "TX": 13.3,
         "N": 3.7,
         "HX": null,
-        "HR": 40,
+        "HR": null,
         "W": 8.9,
         "WDG": 34
       }
@@ -1362,7 +1362,7 @@
       "tmax": "21,6",
       "tmin": "6,2",
       "tmed": "13,9",
-      "hrMedia": "63",
+      "hrMedia": "61",
       "hrMax": "86",
       "hrMin": "36",
       "velmedia": null,
@@ -1373,7 +1373,7 @@
         "TX": 21.6,
         "N": 6.2,
         "HX": 86,
-        "HR": 63,
+        "HR": 61,
         "W": null,
         "WDG": null
       }
@@ -1390,7 +1390,7 @@
       "tmax": "21,9",
       "tmin": "9,0",
       "tmed": "15,4",
-      "hrMedia": "69",
+      "hrMedia": "68",
       "hrMax": "97",
       "hrMin": "46",
       "velmedia": "1,4",
@@ -1401,7 +1401,7 @@
         "TX": 21.9,
         "N": 9,
         "HX": 97,
-        "HR": 69,
+        "HR": 68,
         "W": 4.2,
         "WDG": 99
       }
@@ -1418,7 +1418,7 @@
       "tmax": null,
       "tmin": null,
       "tmed": null,
-      "hrMedia": "57",
+      "hrMedia": "56",
       "hrMax": null,
       "hrMin": null,
       "velmedia": "0,6",
@@ -1429,7 +1429,7 @@
         "TX": null,
         "N": null,
         "HX": null,
-        "HR": 57,
+        "HR": 56,
         "W": 10.3,
         "WDG": 13
       }
@@ -1502,7 +1502,7 @@
       "tmax": "23,2",
       "tmin": "3,4",
       "tmed": "13,3",
-      "hrMedia": "80",
+      "hrMedia": "79",
       "hrMax": "100",
       "hrMin": "44",
       "velmedia": "1,9",
@@ -1513,7 +1513,7 @@
         "TX": 23.2,
         "N": 3.4,
         "HX": 100,
-        "HR": 80,
+        "HR": 79,
         "W": 5.8,
         "WDG": 30
       }
@@ -1558,7 +1558,7 @@
       "tmax": "23,2",
       "tmin": "1,7",
       "tmed": "12,4",
-      "hrMedia": "69",
+      "hrMedia": "68",
       "hrMax": "97",
       "hrMin": "32",
       "velmedia": "0,8",
@@ -1569,7 +1569,7 @@
         "TX": 23.2,
         "N": 1.7,
         "HX": 97,
-        "HR": 69,
+        "HR": 68,
         "W": 6.9,
         "WDG": 24
       }
@@ -1614,7 +1614,7 @@
       "tmax": "25,1",
       "tmin": "8,4",
       "tmed": "16,8",
-      "hrMedia": "69",
+      "hrMedia": "68",
       "hrMax": "93",
       "hrMin": "45",
       "velmedia": null,
@@ -1625,7 +1625,7 @@
         "TX": 25.1,
         "N": 8.4,
         "HX": 93,
-        "HR": 69,
+        "HR": 68,
         "W": null,
         "WDG": null
       }
@@ -1642,7 +1642,7 @@
       "tmax": "22,9",
       "tmin": "8,5",
       "tmed": "15,7",
-      "hrMedia": "75",
+      "hrMedia": "74",
       "hrMax": "98",
       "hrMin": "47",
       "velmedia": null,
@@ -1653,7 +1653,7 @@
         "TX": 22.9,
         "N": 8.5,
         "HX": 98,
-        "HR": 75,
+        "HR": 74,
         "W": null,
         "WDG": null
       }
@@ -1698,7 +1698,7 @@
       "tmax": "25,0",
       "tmin": "10,2",
       "tmed": "17,6",
-      "hrMedia": "59",
+      "hrMedia": "58",
       "hrMax": "95",
       "hrMin": "33",
       "velmedia": null,
@@ -1709,7 +1709,7 @@
         "TX": 25,
         "N": 10.2,
         "HX": 95,
-        "HR": 59,
+        "HR": 58,
         "W": null,
         "WDG": null
       }
@@ -1726,7 +1726,7 @@
       "tmax": "24,1",
       "tmin": "11,9",
       "tmed": "18,0",
-      "hrMedia": "70",
+      "hrMedia": "69",
       "hrMax": "100",
       "hrMin": "41",
       "velmedia": "1,9",
@@ -1737,7 +1737,7 @@
         "TX": 24.1,
         "N": 11.9,
         "HX": 100,
-        "HR": 70,
+        "HR": 69,
         "W": 8.6,
         "WDG": 27
       }
@@ -1866,7 +1866,7 @@
       "tmax": "12,4",
       "tmin": "3,6",
       "tmed": "8,0",
-      "hrMedia": "44",
+      "hrMedia": null,
       "hrMax": "99",
       "hrMin": "4",
       "velmedia": "1,4",
@@ -1877,7 +1877,7 @@
         "TX": 12.4,
         "N": 3.6,
         "HX": 99,
-        "HR": 44,
+        "HR": 4,
         "W": 6.1,
         "WDG": 18
       }
@@ -1894,7 +1894,7 @@
       "tmax": "19,9",
       "tmin": "6,2",
       "tmed": "13,0",
-      "hrMedia": "56",
+      "hrMedia": "54",
       "hrMax": "93",
       "hrMin": "28",
       "velmedia": "1,9",
@@ -1905,7 +1905,7 @@
         "TX": 19.9,
         "N": 6.2,
         "HX": 93,
-        "HR": 56,
+        "HR": 54,
         "W": 7.8,
         "WDG": 22
       }
@@ -1922,7 +1922,7 @@
       "tmax": "22,3",
       "tmin": "6,2",
       "tmed": "14,2",
-      "hrMedia": "69",
+      "hrMedia": "68",
       "hrMax": "100",
       "hrMin": "42",
       "velmedia": "1,7",
@@ -1933,7 +1933,7 @@
         "TX": 22.3,
         "N": 6.2,
         "HX": 100,
-        "HR": 69,
+        "HR": 68,
         "W": 5.8,
         "WDG": 2
       }
