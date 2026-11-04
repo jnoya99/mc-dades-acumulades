@@ -1,0 +1,9 @@
+{
+  "ccaa": "AEMET-CAT",
+  "mode": "daily",
+  "date": "2026-11-03",
+  "captured_at": "2026-11-04T02:01:32Z",
+  "source": "aemet-opendata",
+  "n_stations": 0,
+  "stations": []
+}

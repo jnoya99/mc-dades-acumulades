@@ -2,9 +2,9 @@
   "ccaa": "AEMET-CAT",
   "mode": "daily",
   "date": "2026-10-07",
-  "captured_at": "2026-11-03T03:24:46Z",
+  "captured_at": "2026-11-04T02:01:32Z",
   "source": "aemet-opendata",
-  "n_stations": 70,
+  "n_stations": 72,
   "stations": [
     {
       "id": "AE_0002I",
@@ -88,6 +88,34 @@
         "HR": 69,
         "W": 10.8,
         "WDG": 25
+      }
+    },
+    {
+      "id": "AE_0016B",
+      "indicativo": "0016B",
+      "name": "REUS (CENTRE LECTURA)",
+      "lon": 1.11,
+      "lat": 41.15,
+      "elev": 118,
+      "provincia": "TARRAGONA",
+      "prec": "0,0",
+      "tmax": "27,0",
+      "tmin": "18,6",
+      "tmed": "22,8",
+      "hrMedia": "55",
+      "hrMax": null,
+      "hrMin": null,
+      "velmedia": null,
+      "racha": null,
+      "dir": null,
+      "cell": {
+        "P": 0,
+        "TX": 27,
+        "N": 18.6,
+        "HX": null,
+        "HR": 55,
+        "W": null,
+        "WDG": null
       }
     },
     {
@@ -788,6 +816,34 @@
         "HR": 85,
         "W": 7.8,
         "WDG": 18
+      }
+    },
+    {
+      "id": "AE_0341",
+      "indicativo": "0341",
+      "name": "TONA (ESCOLA)",
+      "lon": 2.22,
+      "lat": 41.85,
+      "elev": 607,
+      "provincia": "BARCELONA",
+      "prec": "0,0",
+      "tmax": "22,4",
+      "tmin": "12,7",
+      "tmed": "17,6",
+      "hrMedia": "82",
+      "hrMax": "100",
+      "hrMin": "58",
+      "velmedia": "0,6",
+      "racha": "8,3",
+      "dir": "27",
+      "cell": {
+        "P": 0,
+        "TX": 22.4,
+        "N": 12.7,
+        "HX": 100,
+        "HR": 82,
+        "W": 8.3,
+        "WDG": 27
       }
     },
     {
@@ -1894,7 +1950,7 @@
       "tmax": "8,2",
       "tmin": "2,0",
       "tmed": "5,1",
-      "hrMedia": "94",
+      "hrMedia": "95",
       "hrMax": "99",
       "hrMin": "77",
       "velmedia": "1,9",
@@ -1905,7 +1961,7 @@
         "TX": 8.2,
         "N": 2,
         "HX": 99,
-        "HR": 94,
+        "HR": 95,
         "W": 8.6,
         "WDG": 31
       }

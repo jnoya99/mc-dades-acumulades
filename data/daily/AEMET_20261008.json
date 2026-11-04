@@ -2,9 +2,9 @@
   "ccaa": "AEMET-CAT",
   "mode": "daily",
   "date": "2026-10-08",
-  "captured_at": "2026-11-03T03:24:46Z",
+  "captured_at": "2026-11-04T02:01:32Z",
   "source": "aemet-opendata",
-  "n_stations": 70,
+  "n_stations": 72,
   "stations": [
     {
       "id": "AE_0002I",
@@ -88,6 +88,34 @@
         "HR": 42,
         "W": 18.9,
         "WDG": 30
+      }
+    },
+    {
+      "id": "AE_0016B",
+      "indicativo": "0016B",
+      "name": "REUS (CENTRE LECTURA)",
+      "lon": 1.11,
+      "lat": 41.15,
+      "elev": 118,
+      "provincia": "TARRAGONA",
+      "prec": "0,0",
+      "tmax": "23,9",
+      "tmin": "14,2",
+      "tmed": "19,0",
+      "hrMedia": "42",
+      "hrMax": null,
+      "hrMin": null,
+      "velmedia": null,
+      "racha": null,
+      "dir": null,
+      "cell": {
+        "P": 0,
+        "TX": 23.9,
+        "N": 14.2,
+        "HX": null,
+        "HR": 42,
+        "W": null,
+        "WDG": null
       }
     },
     {
@@ -788,6 +816,34 @@
         "HR": 66,
         "W": 8.9,
         "WDG": 30
+      }
+    },
+    {
+      "id": "AE_0341",
+      "indicativo": "0341",
+      "name": "TONA (ESCOLA)",
+      "lon": 2.22,
+      "lat": 41.85,
+      "elev": 607,
+      "provincia": "BARCELONA",
+      "prec": "0,2",
+      "tmax": "20,0",
+      "tmin": "8,8",
+      "tmed": "14,4",
+      "hrMedia": "89",
+      "hrMax": "100",
+      "hrMin": "48",
+      "velmedia": "1,7",
+      "racha": "10,3",
+      "dir": "17",
+      "cell": {
+        "P": 0.2,
+        "TX": 20,
+        "N": 8.8,
+        "HX": 100,
+        "HR": 89,
+        "W": 10.3,
+        "WDG": 17
       }
     },
     {
@@ -1895,7 +1951,7 @@
       "tmin": "-5,5",
       "tmed": "-1,3",
       "hrMedia": "99",
-      "hrMax": "100",
+      "hrMax": "99",
       "hrMin": "97",
       "velmedia": "4,7",
       "racha": "11,7",
@@ -1904,7 +1960,7 @@
         "P": null,
         "TX": 2.9,
         "N": -5.5,
-        "HX": 100,
+        "HX": 99,
         "HR": 99,
         "W": 11.7,
         "WDG": 31

@@ -2,9 +2,9 @@
   "ccaa": "AEMET-CAT",
   "mode": "daily",
   "date": "2026-10-12",
-  "captured_at": "2026-11-03T03:24:46Z",
+  "captured_at": "2026-11-04T02:01:32Z",
   "source": "aemet-opendata",
-  "n_stations": 70,
+  "n_stations": 72,
   "stations": [
     {
       "id": "AE_0002I",
@@ -88,6 +88,34 @@
         "HR": 78,
         "W": 6.7,
         "WDG": 13
+      }
+    },
+    {
+      "id": "AE_0016B",
+      "indicativo": "0016B",
+      "name": "REUS (CENTRE LECTURA)",
+      "lon": 1.11,
+      "lat": 41.15,
+      "elev": 118,
+      "provincia": "TARRAGONA",
+      "prec": "0,0",
+      "tmax": "26,2",
+      "tmin": "17,3",
+      "tmed": "21,8",
+      "hrMedia": "67",
+      "hrMax": null,
+      "hrMin": null,
+      "velmedia": null,
+      "racha": null,
+      "dir": null,
+      "cell": {
+        "P": 0,
+        "TX": 26.2,
+        "N": 17.3,
+        "HX": null,
+        "HR": 67,
+        "W": null,
+        "WDG": null
       }
     },
     {
@@ -787,6 +815,34 @@
         "HX": 100,
         "HR": 78,
         "W": 4.4,
+        "WDG": 18
+      }
+    },
+    {
+      "id": "AE_0341",
+      "indicativo": "0341",
+      "name": "TONA (ESCOLA)",
+      "lon": 2.22,
+      "lat": 41.85,
+      "elev": 607,
+      "provincia": "BARCELONA",
+      "prec": "0,2",
+      "tmax": "22,3",
+      "tmin": "10,7",
+      "tmed": "16,5",
+      "hrMedia": "88",
+      "hrMax": "100",
+      "hrMin": "67",
+      "velmedia": "0,6",
+      "racha": "6,4",
+      "dir": "18",
+      "cell": {
+        "P": 0.2,
+        "TX": 22.3,
+        "N": 10.7,
+        "HX": 100,
+        "HR": 88,
+        "W": 6.4,
         "WDG": 18
       }
     },
@@ -1894,7 +1950,7 @@
       "tmax": "9,9",
       "tmin": "4,6",
       "tmed": "7,2",
-      "hrMedia": "85",
+      "hrMedia": "87",
       "hrMax": "99",
       "hrMin": "57",
       "velmedia": "2,8",
@@ -1905,7 +1961,7 @@
         "TX": 9.9,
         "N": 4.6,
         "HX": 99,
-        "HR": 85,
+        "HR": 87,
         "W": 7.5,
         "WDG": 31
       }

@@ -2,9 +2,9 @@
   "ccaa": "AEMET-CAT",
   "mode": "daily",
   "date": "2026-10-21",
-  "captured_at": "2026-11-03T03:24:46Z",
+  "captured_at": "2026-11-04T02:01:32Z",
   "source": "aemet-opendata",
-  "n_stations": 70,
+  "n_stations": 72,
   "stations": [
     {
       "id": "AE_0002I",
@@ -88,6 +88,34 @@
         "HR": 46,
         "W": 15.3,
         "WDG": 27
+      }
+    },
+    {
+      "id": "AE_0016B",
+      "indicativo": "0016B",
+      "name": "REUS (CENTRE LECTURA)",
+      "lon": 1.11,
+      "lat": 41.15,
+      "elev": 118,
+      "provincia": "TARRAGONA",
+      "prec": "0,0",
+      "tmax": "22,8",
+      "tmin": "14,6",
+      "tmed": "18,7",
+      "hrMedia": "41",
+      "hrMax": null,
+      "hrMin": null,
+      "velmedia": null,
+      "racha": null,
+      "dir": null,
+      "cell": {
+        "P": 0,
+        "TX": 22.8,
+        "N": 14.6,
+        "HX": null,
+        "HR": 41,
+        "W": null,
+        "WDG": null
       }
     },
     {
@@ -788,6 +816,34 @@
         "HR": 82,
         "W": 6.1,
         "WDG": 14
+      }
+    },
+    {
+      "id": "AE_0341",
+      "indicativo": "0341",
+      "name": "TONA (ESCOLA)",
+      "lon": 2.22,
+      "lat": 41.85,
+      "elev": 607,
+      "provincia": "BARCELONA",
+      "prec": "0,0",
+      "tmax": "17,4",
+      "tmin": "6,1",
+      "tmed": "11,8",
+      "hrMedia": "81",
+      "hrMax": "100",
+      "hrMin": "56",
+      "velmedia": "0,6",
+      "racha": "6,1",
+      "dir": "27",
+      "cell": {
+        "P": 0,
+        "TX": 17.4,
+        "N": 6.1,
+        "HX": 100,
+        "HR": 81,
+        "W": 6.1,
+        "WDG": 27
       }
     },
     {
@@ -1894,8 +1950,8 @@
       "tmax": "-0,1",
       "tmin": "-3,9",
       "tmed": "-2,0",
-      "hrMedia": "98",
-      "hrMax": "100",
+      "hrMedia": "99",
+      "hrMax": "99",
       "hrMin": "93",
       "velmedia": "1,9",
       "racha": "8,3",
@@ -1904,8 +1960,8 @@
         "P": null,
         "TX": -0.1,
         "N": -3.9,
-        "HX": 100,
-        "HR": 98,
+        "HX": 99,
+        "HR": 99,
         "W": 8.3,
         "WDG": 32
       }
