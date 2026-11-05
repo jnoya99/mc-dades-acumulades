@@ -2,9 +2,9 @@
   "ccaa": "AEMET-CAT",
   "mode": "hourly",
   "hour": "2026-11-05T17:00",
-  "captured_at": "2026-11-05T18:02:39Z",
+  "captured_at": "2026-11-05T23:39:47Z",
   "source": "aemet-opendata-observacion-todas",
-  "n_stations": 65,
+  "n_stations": 67,
   "stations": [
     {
       "id": "AE_0002I",
@@ -85,6 +85,26 @@
       "dv": null,
       "pres": null,
       "ubi": "VALLS"
+    },
+    {
+      "id": "AE_0042Y",
+      "indicativo": "0042Y",
+      "name": "TARRAGONA",
+      "lon": 1.25,
+      "lat": 41.12,
+      "elev": 55,
+      "hour": "2026-11-05T17:00",
+      "fint": "2026-11-05T16:00:00+0000",
+      "prec": 0.0,
+      "hr": 82.0,
+      "ta": 15.9,
+      "tamax": 16.2,
+      "tamin": 15.9,
+      "vmax": 1.7,
+      "vv": 0.2,
+      "dv": 301.0,
+      "pres": null,
+      "ubi": "TARRAGONA  FAC. GEOGRAFIA"
     },
     {
       "id": "AE_0061X",
@@ -845,6 +865,26 @@
       "dv": null,
       "pres": null,
       "ubi": "TORÀ"
+    },
+    {
+      "id": "AE_9650X",
+      "indicativo": "9650X",
+      "name": "ARTESA DE SEGRE",
+      "lon": 1.11,
+      "lat": 41.88,
+      "elev": 400,
+      "hour": "2026-11-05T17:00",
+      "fint": "2026-11-05T16:00:00+0000",
+      "prec": 0.0,
+      "hr": 52.0,
+      "ta": 14.9,
+      "tamax": 15.8,
+      "tamin": 14.9,
+      "vmax": null,
+      "vv": null,
+      "dv": null,
+      "pres": null,
+      "ubi": "ARTESA DE SEGRE"
     },
     {
       "id": "AE_9657X",
