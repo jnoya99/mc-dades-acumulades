@@ -2,9 +2,9 @@
   "ccaa": "AEMET-CAT",
   "mode": "hourly",
   "hour": "2026-11-06T04:00",
-  "captured_at": "2026-11-06T06:51:47Z",
+  "captured_at": "2026-11-06T15:56:41Z",
   "source": "aemet-opendata-observacion-todas",
-  "n_stations": 65,
+  "n_stations": 68,
   "stations": [
     {
       "id": "AE_0002I",
@@ -25,6 +25,26 @@
       "dv": 239.0,
       "pres": 1016.0,
       "ubi": "VANDELLÓS"
+    },
+    {
+      "id": "AE_0009X",
+      "indicativo": "0009X",
+      "name": "ALFORJA",
+      "lon": 0.96,
+      "lat": 41.21,
+      "elev": 406,
+      "hour": "2026-11-06T04:00",
+      "fint": "2026-11-06T03:00:00+0000",
+      "prec": 0.0,
+      "hr": 95.0,
+      "ta": 9.8,
+      "tamax": 9.9,
+      "tamin": 9.4,
+      "vmax": 3.7,
+      "vv": 2.0,
+      "dv": 279.0,
+      "pres": null,
+      "ubi": "ALFORJA"
     },
     {
       "id": "AE_0016A",
@@ -125,6 +145,26 @@
       "dv": 6.0,
       "pres": null,
       "ubi": "VILAFRANCA DEL PENEDÈS"
+    },
+    {
+      "id": "AE_0073X",
+      "indicativo": "0073X",
+      "name": "SITGES",
+      "lon": 1.85,
+      "lat": 41.24,
+      "elev": 58,
+      "hour": "2026-11-06T04:00",
+      "fint": "2026-11-06T03:00:00+0000",
+      "prec": 0.0,
+      "hr": 78.0,
+      "ta": 13.1,
+      "tamax": 13.4,
+      "tamin": 13.1,
+      "vmax": 4.8,
+      "vv": 1.3,
+      "dv": 314.0,
+      "pres": null,
+      "ubi": "SITGES  VALLCARCA"
     },
     {
       "id": "AE_0076",
@@ -285,6 +325,26 @@
       "dv": null,
       "pres": null,
       "ubi": "CORBERA  PUIG D?AGULLES"
+    },
+    {
+      "id": "AE_0201D",
+      "indicativo": "0201D",
+      "name": "BARCELONA, PORT OLÍMPIC",
+      "lon": 2.2,
+      "lat": 41.39,
+      "elev": 26,
+      "hour": "2026-11-06T04:00",
+      "fint": "2026-11-06T03:00:00+0000",
+      "prec": 0.0,
+      "hr": 74.0,
+      "ta": 12.7,
+      "tamax": 12.8,
+      "tamin": 12.6,
+      "vmax": 3.7,
+      "vv": 2.3,
+      "dv": 359.0,
+      "pres": null,
+      "ubi": "BARCELONA  PORT OLÍMPIC"
     },
     {
       "id": "AE_0201X",
