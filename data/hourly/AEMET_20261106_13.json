@@ -2,9 +2,9 @@
   "ccaa": "AEMET-CAT",
   "mode": "hourly",
   "hour": "2026-11-06T13:00",
-  "captured_at": "2026-11-06T15:56:41Z",
+  "captured_at": "2026-11-06T21:30:59Z",
   "source": "aemet-opendata-observacion-todas",
-  "n_stations": 67,
+  "n_stations": 68,
   "stations": [
     {
       "id": "AE_0002I",
@@ -985,6 +985,26 @@
       "dv": 195.0,
       "pres": 928.8,
       "ubi": "TALARN"
+    },
+    {
+      "id": "AE_9707",
+      "indicativo": "9707",
+      "name": "LLIMIANA",
+      "lon": 0.91,
+      "lat": 42.07,
+      "elev": 515,
+      "hour": "2026-11-06T13:00",
+      "fint": "2026-11-06T12:00:00+0000",
+      "prec": 0.0,
+      "hr": 91.0,
+      "ta": 8.6,
+      "tamax": 8.6,
+      "tamin": 5.9,
+      "vmax": null,
+      "vv": null,
+      "dv": 230.0,
+      "pres": null,
+      "ubi": "LLIMIANA"
     },
     {
       "id": "AE_9718X",
