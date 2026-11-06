@@ -2,9 +2,9 @@
   "ccaa": "AEMET-CAT",
   "mode": "daily",
   "date": "2026-10-11",
-  "captured_at": "2026-11-05T02:03:53Z",
+  "captured_at": "2026-11-06T02:05:51Z",
   "source": "aemet-opendata",
-  "n_stations": 72,
+  "n_stations": 73,
   "stations": [
     {
       "id": "AE_0002I",
@@ -424,6 +424,34 @@
         "HR": 70,
         "W": 6.4,
         "WDG": 23
+      }
+    },
+    {
+      "id": "AE_0158O",
+      "indicativo": "0158O",
+      "name": "MONTSERRAT",
+      "lon": 1.84,
+      "lat": 41.59,
+      "elev": 738,
+      "provincia": "BARCELONA",
+      "prec": "0,0",
+      "tmax": "18,4",
+      "tmin": "13,2",
+      "tmed": "15,8",
+      "hrMedia": "60",
+      "hrMax": "70",
+      "hrMin": "39",
+      "velmedia": null,
+      "racha": null,
+      "dir": null,
+      "cell": {
+        "P": 0,
+        "TX": 18.4,
+        "N": 13.2,
+        "HX": 70,
+        "HR": 60,
+        "W": null,
+        "WDG": null
       }
     },
     {
@@ -1502,7 +1530,7 @@
       "tmax": "27,1",
       "tmin": "7,8",
       "tmed": "17,4",
-      "hrMedia": "50",
+      "hrMedia": "51",
       "hrMax": "83",
       "hrMin": "24",
       "velmedia": "1,9",
@@ -1513,7 +1541,7 @@
         "TX": 27.1,
         "N": 7.8,
         "HX": 83,
-        "HR": 50,
+        "HR": 51,
         "W": 6.7,
         "WDG": 24
       }
