@@ -2,9 +2,9 @@
   "ccaa": "AEMET-CAT",
   "mode": "daily",
   "date": "2026-10-29",
-  "captured_at": "2026-11-06T02:05:51Z",
+  "captured_at": "2026-11-07T01:43:35Z",
   "source": "aemet-opendata",
-  "n_stations": 73,
+  "n_stations": 74,
   "stations": [
     {
       "id": "AE_0002I",
@@ -438,7 +438,7 @@
       "tmax": "16,1",
       "tmin": "12,7",
       "tmed": "14,4",
-      "hrMedia": "85",
+      "hrMedia": "84",
       "hrMax": "98",
       "hrMin": "59",
       "velmedia": null,
@@ -449,7 +449,7 @@
         "TX": 16.1,
         "N": 12.7,
         "HX": 98,
-        "HR": 85,
+        "HR": 84,
         "W": null,
         "WDG": null
       }
@@ -462,22 +462,22 @@
       "lat": 41.59,
       "elev": 738,
       "provincia": "BARCELONA",
-      "prec": null,
+      "prec": "0,0",
       "tmax": null,
       "tmin": null,
       "tmed": null,
-      "hrMedia": "85",
+      "hrMedia": "86",
       "hrMax": null,
       "hrMin": null,
       "velmedia": null,
       "racha": null,
       "dir": null,
       "cell": {
-        "P": null,
+        "P": 0,
         "TX": null,
         "N": null,
         "HX": null,
-        "HR": 85,
+        "HR": 86,
         "W": null,
         "WDG": null
       }
@@ -760,6 +760,34 @@
         "HR": 79,
         "W": 5.6,
         "WDG": 10
+      }
+    },
+    {
+      "id": "AE_0294B",
+      "indicativo": "0294B",
+      "name": "LA BISBAL (D'EMPORDA 3)",
+      "lon": 3.04,
+      "lat": 41.97,
+      "elev": 51,
+      "provincia": "GIRONA",
+      "prec": "0,0",
+      "tmax": "20,9",
+      "tmin": "11,9",
+      "tmed": "16,4",
+      "hrMedia": "81",
+      "hrMax": "99",
+      "hrMin": "57",
+      "velmedia": null,
+      "racha": null,
+      "dir": null,
+      "cell": {
+        "P": 0,
+        "TX": 20.9,
+        "N": 11.9,
+        "HX": 99,
+        "HR": 81,
+        "W": null,
+        "WDG": null
       }
     },
     {
@@ -1530,7 +1558,7 @@
       "tmax": "22,1",
       "tmin": "7,0",
       "tmed": "14,6",
-      "hrMedia": "62",
+      "hrMedia": "61",
       "hrMax": "88",
       "hrMin": "38",
       "velmedia": "0,6",
@@ -1541,7 +1569,7 @@
         "TX": 22.1,
         "N": 7,
         "HX": 88,
-        "HR": 62,
+        "HR": 61,
         "W": 5,
         "WDG": 20
       }

@@ -2,9 +2,9 @@
   "ccaa": "AEMET-CAT",
   "mode": "daily",
   "date": "2026-10-27",
-  "captured_at": "2026-11-06T02:05:51Z",
+  "captured_at": "2026-11-07T01:43:35Z",
   "source": "aemet-opendata",
-  "n_stations": 72,
+  "n_stations": 73,
   "stations": [
     {
       "id": "AE_0002I",
@@ -438,7 +438,7 @@
       "tmax": "21,9",
       "tmin": "15,0",
       "tmed": "18,4",
-      "hrMedia": "77",
+      "hrMedia": "76",
       "hrMax": "97",
       "hrMin": "54",
       "velmedia": null,
@@ -449,7 +449,7 @@
         "TX": 21.9,
         "N": 15,
         "HX": 97,
-        "HR": 77,
+        "HR": 76,
         "W": null,
         "WDG": null
       }
@@ -735,6 +735,34 @@
       }
     },
     {
+      "id": "AE_0294B",
+      "indicativo": "0294B",
+      "name": "LA BISBAL (D'EMPORDA 3)",
+      "lon": 3.04,
+      "lat": 41.97,
+      "elev": 51,
+      "provincia": "GIRONA",
+      "prec": "0,0",
+      "tmax": "22,1",
+      "tmin": "11,5",
+      "tmed": "16,8",
+      "hrMedia": "90",
+      "hrMax": "100",
+      "hrMin": "74",
+      "velmedia": null,
+      "racha": null,
+      "dir": null,
+      "cell": {
+        "P": 0,
+        "TX": 22.1,
+        "N": 11.5,
+        "HX": 100,
+        "HR": 90,
+        "W": null,
+        "WDG": null
+      }
+    },
+    {
       "id": "AE_0312X",
       "indicativo": "0312X",
       "name": "SANT PAU DE SEGÚRIES",
@@ -742,7 +770,7 @@
       "lat": 42.26,
       "elev": 851,
       "provincia": "GIRONA",
-      "prec": null,
+      "prec": "0,0",
       "tmax": null,
       "tmin": null,
       "tmed": null,
@@ -753,7 +781,7 @@
       "racha": null,
       "dir": null,
       "cell": {
-        "P": null,
+        "P": 0,
         "TX": null,
         "N": null,
         "HX": null,
@@ -882,7 +910,7 @@
       "lat": 42.05,
       "elev": 337,
       "provincia": "GIRONA",
-      "prec": null,
+      "prec": "0,0",
       "tmax": "22,8",
       "tmin": "6,8",
       "tmed": "14,8",
@@ -893,7 +921,7 @@
       "racha": "3,6",
       "dir": "22",
       "cell": {
-        "P": null,
+        "P": 0,
         "TX": 22.8,
         "N": 6.8,
         "HX": 100,

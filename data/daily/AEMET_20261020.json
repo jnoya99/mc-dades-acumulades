@@ -2,9 +2,9 @@
   "ccaa": "AEMET-CAT",
   "mode": "daily",
   "date": "2026-10-20",
-  "captured_at": "2026-11-06T02:05:51Z",
+  "captured_at": "2026-11-07T01:43:35Z",
   "source": "aemet-opendata",
-  "n_stations": 72,
+  "n_stations": 73,
   "stations": [
     {
       "id": "AE_0002I",
@@ -410,7 +410,7 @@
       "tmax": "12,1",
       "tmin": "9,0",
       "tmed": "10,6",
-      "hrMedia": "75",
+      "hrMedia": "74",
       "hrMax": "89",
       "hrMin": "41",
       "velmedia": null,
@@ -421,7 +421,7 @@
         "TX": 12.1,
         "N": 9,
         "HX": 89,
-        "HR": 75,
+        "HR": 74,
         "W": null,
         "WDG": null
       }
@@ -732,6 +732,34 @@
         "HR": 95,
         "W": 6.9,
         "WDG": 36
+      }
+    },
+    {
+      "id": "AE_0294B",
+      "indicativo": "0294B",
+      "name": "LA BISBAL (D'EMPORDA 3)",
+      "lon": 3.04,
+      "lat": 41.97,
+      "elev": 51,
+      "provincia": "GIRONA",
+      "prec": "5,0",
+      "tmax": "17,5",
+      "tmin": "11,0",
+      "tmed": "14,2",
+      "hrMedia": "99",
+      "hrMax": "100",
+      "hrMin": "94",
+      "velmedia": null,
+      "racha": null,
+      "dir": null,
+      "cell": {
+        "P": 5,
+        "TX": 17.5,
+        "N": 11,
+        "HX": 100,
+        "HR": 99,
+        "W": null,
+        "WDG": null
       }
     },
     {
@@ -1502,7 +1530,7 @@
       "tmax": "19,5",
       "tmin": "7,6",
       "tmed": "13,6",
-      "hrMedia": "65",
+      "hrMedia": "64",
       "hrMax": "87",
       "hrMin": "34",
       "velmedia": "1,4",
@@ -1513,7 +1541,7 @@
         "TX": 19.5,
         "N": 7.6,
         "HX": 87,
-        "HR": 65,
+        "HR": 64,
         "W": 8.3,
         "WDG": 20
       }
