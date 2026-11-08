@@ -2,9 +2,9 @@
   "ccaa": "AEMET-CAT",
   "mode": "daily",
   "date": "2026-11-03",
-  "captured_at": "2026-11-07T01:43:35Z",
+  "captured_at": "2026-11-08T01:12:12Z",
   "source": "aemet-opendata",
-  "n_stations": 66,
+  "n_stations": 67,
   "stations": [
     {
       "id": "AE_0002I",
@@ -1519,6 +1519,34 @@
       }
     },
     {
+      "id": "AE_9771C",
+      "indicativo": "9771C",
+      "name": "LLEIDA",
+      "lon": 0.6,
+      "lat": 41.63,
+      "elev": 186,
+      "provincia": "LLEIDA",
+      "prec": "7,0",
+      "tmax": null,
+      "tmin": null,
+      "tmed": null,
+      "hrMedia": null,
+      "hrMax": null,
+      "hrMin": null,
+      "velmedia": null,
+      "racha": null,
+      "dir": null,
+      "cell": {
+        "P": 7,
+        "TX": null,
+        "N": null,
+        "HX": null,
+        "HR": null,
+        "W": null,
+        "WDG": null
+      }
+    },
+    {
       "id": "AE_9772X",
       "indicativo": "9772X",
       "name": "LA POBLA DE CÉRVOLES",
@@ -1726,7 +1754,7 @@
       "tmax": "15,6",
       "tmin": "8,2",
       "tmed": "11,9",
-      "hrMedia": "64",
+      "hrMedia": "63",
       "hrMax": "95",
       "hrMin": "33",
       "velmedia": "3,1",
@@ -1737,7 +1765,7 @@
         "TX": 15.6,
         "N": 8.2,
         "HX": 95,
-        "HR": 64,
+        "HR": 63,
         "W": 11.7,
         "WDG": 31
       }
