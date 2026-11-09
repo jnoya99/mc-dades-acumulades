@@ -2,9 +2,9 @@
   "ccaa": "AEMET-CAT",
   "mode": "hourly",
   "hour": "2026-11-09T00:00",
-  "captured_at": "2026-11-09T01:44:36Z",
+  "captured_at": "2026-11-09T09:51:01Z",
   "source": "aemet-opendata-observacion-todas",
-  "n_stations": 64,
+  "n_stations": 67,
   "stations": [
     {
       "id": "AE_0002I",
@@ -65,6 +65,26 @@
       "dv": null,
       "pres": null,
       "ubi": "VALLS"
+    },
+    {
+      "id": "AE_0042Y",
+      "indicativo": "0042Y",
+      "name": "TARRAGONA",
+      "lon": 1.25,
+      "lat": 41.12,
+      "elev": 55,
+      "hour": "2026-11-09T00:00",
+      "fint": "2026-11-08T23:00:00+0000",
+      "prec": 0.0,
+      "hr": 89.0,
+      "ta": 17.9,
+      "tamax": 18.4,
+      "tamin": 17.9,
+      "vmax": 1.1,
+      "vv": 0.0,
+      "dv": 17.0,
+      "pres": null,
+      "ubi": "TARRAGONA  FAC. GEOGRAFIA"
     },
     {
       "id": "AE_0061X",
@@ -285,6 +305,26 @@
       "dv": null,
       "pres": null,
       "ubi": "CORBERA  PUIG D?AGULLES"
+    },
+    {
+      "id": "AE_0201D",
+      "indicativo": "0201D",
+      "name": "BARCELONA, PORT OLÍMPIC",
+      "lon": 2.2,
+      "lat": 41.39,
+      "elev": 26,
+      "hour": "2026-11-09T00:00",
+      "fint": "2026-11-08T23:00:00+0000",
+      "prec": 0.0,
+      "hr": 83.0,
+      "ta": 17.3,
+      "tamax": 17.8,
+      "tamin": 17.3,
+      "vmax": 2.0,
+      "vv": 1.2,
+      "dv": 359.0,
+      "pres": null,
+      "ubi": "BARCELONA  PORT OLÍMPIC"
     },
     {
       "id": "AE_0201X",
@@ -925,6 +965,26 @@
       "dv": 339.0,
       "pres": 927.6,
       "ubi": "TALARN"
+    },
+    {
+      "id": "AE_9707",
+      "indicativo": "9707",
+      "name": "LLIMIANA",
+      "lon": 0.91,
+      "lat": 42.07,
+      "elev": 515,
+      "hour": "2026-11-09T00:00",
+      "fint": "2026-11-08T23:00:00+0000",
+      "prec": 0.0,
+      "hr": 72.0,
+      "ta": 9.4,
+      "tamax": 9.8,
+      "tamin": 9.3,
+      "vmax": null,
+      "vv": null,
+      "dv": 66.0,
+      "pres": null,
+      "ubi": "LLIMIANA"
     },
     {
       "id": "AE_9718X",
