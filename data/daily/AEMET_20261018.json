@@ -2,9 +2,9 @@
   "ccaa": "AEMET-CAT",
   "mode": "daily",
   "date": "2026-10-18",
-  "captured_at": "2026-11-09T01:30:45Z",
+  "captured_at": "2026-11-10T03:59:58Z",
   "source": "aemet-opendata",
-  "n_stations": 72,
+  "n_stations": 73,
   "stations": [
     {
       "id": "AE_0002I",
@@ -1432,6 +1432,34 @@
         "HR": 75,
         "W": 7.5,
         "WDG": 3
+      }
+    },
+    {
+      "id": "AE_9660",
+      "indicativo": "9660",
+      "name": "SANT MAURICI (LLAC)",
+      "lon": 1.01,
+      "lat": 42.58,
+      "elev": 1907,
+      "provincia": "LLEIDA",
+      "prec": "8,6",
+      "tmax": "7,5",
+      "tmin": "3,5",
+      "tmed": "5,5",
+      "hrMedia": "91",
+      "hrMax": "96",
+      "hrMin": "86",
+      "velmedia": null,
+      "racha": null,
+      "dir": null,
+      "cell": {
+        "P": 8.6,
+        "TX": 7.5,
+        "N": 3.5,
+        "HX": 96,
+        "HR": 91,
+        "W": null,
+        "WDG": null
       }
     },
     {
