@@ -2,9 +2,9 @@
   "ccaa": "AEMET-CAT",
   "mode": "hourly",
   "hour": "2026-11-10T01:00",
-  "captured_at": "2026-11-10T04:08:14Z",
+  "captured_at": "2026-11-10T12:41:29Z",
   "source": "aemet-opendata-observacion-todas",
-  "n_stations": 62,
+  "n_stations": 65,
   "stations": [
     {
       "id": "AE_0002I",
@@ -287,6 +287,26 @@
       "ubi": "CORBERA  PUIG D?AGULLES"
     },
     {
+      "id": "AE_0201D",
+      "indicativo": "0201D",
+      "name": "BARCELONA, PORT OLÍMPIC",
+      "lon": 2.2,
+      "lat": 41.39,
+      "elev": 26,
+      "hour": "2026-11-10T01:00",
+      "fint": "2026-11-10T00:00:00+0000",
+      "prec": 0.2,
+      "hr": 84.0,
+      "ta": 18.7,
+      "tamax": 19.2,
+      "tamin": 18.7,
+      "vmax": 4.7,
+      "vv": 2.6,
+      "dv": 269.0,
+      "pres": null,
+      "ubi": "BARCELONA  PORT OLÍMPIC"
+    },
+    {
       "id": "AE_0201X",
       "indicativo": "0201X",
       "name": "BARCELONA, DRASSANES",
@@ -365,6 +385,26 @@
       "dv": 252.0,
       "pres": 1003.7,
       "ubi": "ARENYS DE MAR"
+    },
+    {
+      "id": "AE_0260X",
+      "indicativo": "0260X",
+      "name": "FOGARS DE MONTCLÚS",
+      "lon": 2.43,
+      "lat": 41.76,
+      "elev": 936,
+      "hour": "2026-11-10T01:00",
+      "fint": "2026-11-10T00:00:00+0000",
+      "prec": 0.0,
+      "hr": 78.0,
+      "ta": 13.5,
+      "tamax": 13.5,
+      "tamin": 12.8,
+      "vmax": null,
+      "vv": null,
+      "dv": null,
+      "pres": null,
+      "ubi": "FONTMARTINA"
     },
     {
       "id": "AE_0281Y",
@@ -905,6 +945,26 @@
       "dv": 330.0,
       "pres": 922.4,
       "ubi": "TALARN"
+    },
+    {
+      "id": "AE_9707",
+      "indicativo": "9707",
+      "name": "LLIMIANA",
+      "lon": 0.91,
+      "lat": 42.07,
+      "elev": 515,
+      "hour": "2026-11-10T01:00",
+      "fint": "2026-11-10T00:00:00+0000",
+      "prec": 0.0,
+      "hr": 86.0,
+      "ta": 10.0,
+      "tamax": 10.0,
+      "tamin": 9.6,
+      "vmax": null,
+      "vv": null,
+      "dv": 135.0,
+      "pres": null,
+      "ubi": "LLIMIANA"
     },
     {
       "id": "AE_9724X",
