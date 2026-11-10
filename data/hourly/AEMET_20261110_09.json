@@ -2,9 +2,9 @@
   "ccaa": "AEMET-CAT",
   "mode": "hourly",
   "hour": "2026-11-10T09:00",
-  "captured_at": "2026-11-10T12:41:29Z",
+  "captured_at": "2026-11-10T20:50:46Z",
   "source": "aemet-opendata-observacion-todas",
-  "n_stations": 64,
+  "n_stations": 66,
   "stations": [
     {
       "id": "AE_0002I",
@@ -25,6 +25,26 @@
       "dv": 323.0,
       "pres": 1009.1,
       "ubi": "VANDELLÓS"
+    },
+    {
+      "id": "AE_0009X",
+      "indicativo": "0009X",
+      "name": "ALFORJA",
+      "lon": 0.96,
+      "lat": 41.21,
+      "elev": 406,
+      "hour": "2026-11-10T09:00",
+      "fint": "2026-11-10T08:00:00+0000",
+      "prec": 0.0,
+      "hr": 80.0,
+      "ta": 15.8,
+      "tamax": 15.8,
+      "tamin": 14.7,
+      "vmax": 5.1,
+      "vv": 2.4,
+      "dv": 280.0,
+      "pres": null,
+      "ubi": "ALFORJA"
     },
     {
       "id": "AE_0016A",
@@ -385,6 +405,26 @@
       "dv": 198.0,
       "pres": 1002.5,
       "ubi": "ARENYS DE MAR"
+    },
+    {
+      "id": "AE_0260X",
+      "indicativo": "0260X",
+      "name": "FOGARS DE MONTCLÚS",
+      "lon": 2.43,
+      "lat": 41.76,
+      "elev": 936,
+      "hour": "2026-11-10T09:00",
+      "fint": "2026-11-10T08:00:00+0000",
+      "prec": 0.0,
+      "hr": 68.0,
+      "ta": 13.6,
+      "tamax": 13.6,
+      "tamin": 12.6,
+      "vmax": null,
+      "vv": null,
+      "dv": null,
+      "pres": null,
+      "ubi": "FONTMARTINA"
     },
     {
       "id": "AE_0281Y",
