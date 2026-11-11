@@ -2,9 +2,9 @@
   "ccaa": "AEMET-CAT",
   "mode": "daily",
   "date": "2026-11-05",
-  "captured_at": "2026-11-10T03:59:58Z",
+  "captured_at": "2026-11-11T01:45:33Z",
   "source": "aemet-opendata",
-  "n_stations": 69,
+  "n_stations": 70,
   "stations": [
     {
       "id": "AE_0002I",
@@ -210,7 +210,7 @@
       "lat": 41.24,
       "elev": 58,
       "provincia": "BARCELONA",
-      "prec": null,
+      "prec": "0,0",
       "tmax": null,
       "tmin": null,
       "tmed": null,
@@ -221,7 +221,7 @@
       "racha": null,
       "dir": null,
       "cell": {
-        "P": null,
+        "P": 0,
         "TX": null,
         "N": null,
         "HX": null,
@@ -760,6 +760,34 @@
         "HR": 83,
         "W": 5.3,
         "WDG": 17
+      }
+    },
+    {
+      "id": "AE_0349",
+      "indicativo": "0349",
+      "name": "SANT JULIÀ  DE VILATORTA",
+      "lon": 2.32,
+      "lat": 41.93,
+      "elev": 578,
+      "provincia": "BARCELONA",
+      "prec": "0,1",
+      "tmax": null,
+      "tmin": null,
+      "tmed": null,
+      "hrMedia": null,
+      "hrMax": null,
+      "hrMin": null,
+      "velmedia": "0,6",
+      "racha": "3,1",
+      "dir": "29",
+      "cell": {
+        "P": 0.1,
+        "TX": null,
+        "N": null,
+        "HX": null,
+        "HR": null,
+        "W": 3.1,
+        "WDG": 29
       }
     },
     {
