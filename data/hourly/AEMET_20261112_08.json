@@ -2,9 +2,9 @@
   "ccaa": "AEMET-CAT",
   "mode": "hourly",
   "hour": "2026-11-12T08:00",
-  "captured_at": "2026-11-12T09:52:44Z",
+  "captured_at": "2026-11-12T18:21:01Z",
   "source": "aemet-opendata-observacion-todas",
-  "n_stations": 64,
+  "n_stations": 67,
   "stations": [
     {
       "id": "AE_0002I",
@@ -85,6 +85,26 @@
       "dv": null,
       "pres": null,
       "ubi": "VALLS"
+    },
+    {
+      "id": "AE_0042Y",
+      "indicativo": "0042Y",
+      "name": "TARRAGONA",
+      "lon": 1.25,
+      "lat": 41.12,
+      "elev": 55,
+      "hour": "2026-11-12T08:00",
+      "fint": "2026-11-12T07:00:00+0000",
+      "prec": 0.0,
+      "hr": 96.0,
+      "ta": 16.8,
+      "tamax": 16.8,
+      "tamin": 16.7,
+      "vmax": 1.1,
+      "vv": 0.0,
+      "dv": 282.0,
+      "pres": null,
+      "ubi": "TARRAGONA  FAC. GEOGRAFIA"
     },
     {
       "id": "AE_0061X",
@@ -647,6 +667,26 @@
       "ubi": "VALL DE BIANYA"
     },
     {
+      "id": "AE_0411X",
+      "indicativo": "0411X",
+      "name": "CASTELLÓ D'EMPÚRIES",
+      "lon": 3.09,
+      "lat": 42.22,
+      "elev": 2,
+      "hour": "2026-11-12T08:00",
+      "fint": "2026-11-12T07:00:00+0000",
+      "prec": 0.6000000000000001,
+      "hr": 100.0,
+      "ta": 16.0,
+      "tamax": 16.1,
+      "tamin": 16.0,
+      "vmax": 2.4,
+      "vv": 0.4,
+      "dv": 347.0,
+      "pres": null,
+      "ubi": "CASTELLO D?EMPURIES"
+    },
+    {
       "id": "AE_0413A",
       "indicativo": "0413A",
       "name": "MAÇANET DE CABRENYS",
@@ -925,6 +965,26 @@
       "dv": 252.0,
       "pres": 901.6,
       "ubi": "TALARN"
+    },
+    {
+      "id": "AE_9707",
+      "indicativo": "9707",
+      "name": "LLIMIANA",
+      "lon": 0.91,
+      "lat": 42.07,
+      "elev": 515,
+      "hour": "2026-11-12T08:00",
+      "fint": "2026-11-12T07:00:00+0000",
+      "prec": 0.0,
+      "hr": 89.0,
+      "ta": 13.1,
+      "tamax": 13.1,
+      "tamin": 13.0,
+      "vmax": null,
+      "vv": null,
+      "dv": 111.0,
+      "pres": null,
+      "ubi": "LLIMIANA"
     },
     {
       "id": "AE_9718X",
