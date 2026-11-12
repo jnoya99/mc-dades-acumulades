@@ -2,9 +2,9 @@
   "ccaa": "AEMET-CAT",
   "mode": "hourly",
   "hour": "2026-11-11T16:00",
-  "captured_at": "2026-11-11T17:54:31Z",
+  "captured_at": "2026-11-12T00:45:56Z",
   "source": "aemet-opendata-observacion-todas",
-  "n_stations": 66,
+  "n_stations": 67,
   "stations": [
     {
       "id": "AE_0002I",
@@ -85,6 +85,26 @@
       "dv": null,
       "pres": null,
       "ubi": "VALLS"
+    },
+    {
+      "id": "AE_0042Y",
+      "indicativo": "0042Y",
+      "name": "TARRAGONA",
+      "lon": 1.25,
+      "lat": 41.12,
+      "elev": 55,
+      "hour": "2026-11-11T16:00",
+      "fint": "2026-11-11T15:00:00+0000",
+      "prec": 0.0,
+      "hr": 82.0,
+      "ta": 21.0,
+      "tamax": 21.3,
+      "tamin": 21.0,
+      "vmax": 4.2,
+      "vv": 1.3,
+      "dv": 147.0,
+      "pres": null,
+      "ubi": "TARRAGONA  FAC. GEOGRAFIA"
     },
     {
       "id": "AE_0061X",
