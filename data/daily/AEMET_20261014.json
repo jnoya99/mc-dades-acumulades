@@ -2,7 +2,7 @@
   "ccaa": "AEMET-CAT",
   "mode": "daily",
   "date": "2026-10-14",
-  "captured_at": "2026-11-12T02:45:24Z",
+  "captured_at": "2026-11-13T02:28:59Z",
   "source": "aemet-opendata",
   "n_stations": 76,
   "stations": [
@@ -858,7 +858,7 @@
       "tmax": "23,8",
       "tmin": "8,8",
       "tmed": "16,3",
-      "hrMedia": "76",
+      "hrMedia": "75",
       "hrMax": "98",
       "hrMin": "40",
       "velmedia": null,
@@ -869,7 +869,7 @@
         "TX": 23.8,
         "N": 8.8,
         "HX": 98,
-        "HR": 76,
+        "HR": 75,
         "W": null,
         "WDG": null
       }
