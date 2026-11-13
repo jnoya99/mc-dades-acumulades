@@ -2,9 +2,9 @@
   "ccaa": "AEMET-CAT",
   "mode": "hourly",
   "hour": "2026-11-13T13:00",
-  "captured_at": "2026-11-13T17:45:34Z",
+  "captured_at": "2026-11-13T23:36:12Z",
   "source": "aemet-opendata-observacion-todas",
-  "n_stations": 67,
+  "n_stations": 68,
   "stations": [
     {
       "id": "AE_0002I",
@@ -745,6 +745,26 @@
       "dv": 318.0,
       "pres": null,
       "ubi": "ESPOLLA  LES ALBERES"
+    },
+    {
+      "id": "AE_0429X",
+      "indicativo": "0429X",
+      "name": "FIGUERES",
+      "lon": 2.96,
+      "lat": 42.26,
+      "elev": 45,
+      "hour": "2026-11-13T13:00",
+      "fint": "2026-11-13T12:00:00+0000",
+      "prec": 0.0,
+      "hr": 63.0,
+      "ta": 20.2,
+      "tamax": 20.5,
+      "tamin": 20.1,
+      "vmax": 3.5,
+      "vv": 0.9,
+      "dv": 19.0,
+      "pres": null,
+      "ubi": "FIGUERES  ELS ASPRES"
     },
     {
       "id": "AE_9585",

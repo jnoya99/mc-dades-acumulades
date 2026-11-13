@@ -2,9 +2,9 @@
   "ccaa": "AEMET-CAT",
   "mode": "hourly",
   "hour": "2026-11-13T16:00",
-  "captured_at": "2026-11-13T17:45:34Z",
+  "captured_at": "2026-11-13T23:36:12Z",
   "source": "aemet-opendata-observacion-todas",
-  "n_stations": 66,
+  "n_stations": 68,
   "stations": [
     {
       "id": "AE_0002I",
@@ -85,6 +85,26 @@
       "dv": null,
       "pres": null,
       "ubi": "VALLS"
+    },
+    {
+      "id": "AE_0042Y",
+      "indicativo": "0042Y",
+      "name": "TARRAGONA",
+      "lon": 1.25,
+      "lat": 41.12,
+      "elev": 55,
+      "hour": "2026-11-13T16:00",
+      "fint": "2026-11-13T15:00:00+0000",
+      "prec": 0.0,
+      "hr": 50.0,
+      "ta": 23.2,
+      "tamax": 23.8,
+      "tamin": 23.2,
+      "vmax": 6.2,
+      "vv": 1.9,
+      "dv": 292.0,
+      "pres": null,
+      "ubi": "TARRAGONA  FAC. GEOGRAFIA"
     },
     {
       "id": "AE_0061X",
@@ -725,6 +745,26 @@
       "dv": 197.0,
       "pres": null,
       "ubi": "ESPOLLA  LES ALBERES"
+    },
+    {
+      "id": "AE_0429X",
+      "indicativo": "0429X",
+      "name": "FIGUERES",
+      "lon": 2.96,
+      "lat": 42.26,
+      "elev": 45,
+      "hour": "2026-11-13T16:00",
+      "fint": "2026-11-13T15:00:00+0000",
+      "prec": 0.0,
+      "hr": 69.0,
+      "ta": 19.4,
+      "tamax": 19.9,
+      "tamin": 19.4,
+      "vmax": 3.7,
+      "vv": 1.5,
+      "dv": 157.0,
+      "pres": null,
+      "ubi": "FIGUERES  ELS ASPRES"
     },
     {
       "id": "AE_9585",
