@@ -2,9 +2,9 @@
   "ccaa": "AEMET-CAT",
   "mode": "daily",
   "date": "2026-10-25",
-  "captured_at": "2026-11-14T02:04:18Z",
+  "captured_at": "2026-11-15T01:36:13Z",
   "source": "aemet-opendata",
-  "n_stations": 76,
+  "n_stations": 77,
   "stations": [
     {
       "id": "AE_0002I",
@@ -1208,6 +1208,34 @@
         "HR": 80,
         "W": 4.7,
         "WDG": 8
+      }
+    },
+    {
+      "id": "AE_0421E",
+      "indicativo": "0421E",
+      "name": "ESPOLLA 'LES ALBERES'",
+      "lon": 3.01,
+      "lat": 42.39,
+      "elev": 100,
+      "provincia": "GIRONA",
+      "prec": null,
+      "tmax": "21,4",
+      "tmin": "9,9",
+      "tmed": "15,6",
+      "hrMedia": "69",
+      "hrMax": "91",
+      "hrMin": "49",
+      "velmedia": null,
+      "racha": null,
+      "dir": null,
+      "cell": {
+        "P": null,
+        "TX": 21.4,
+        "N": 9.9,
+        "HX": 91,
+        "HR": 69,
+        "W": null,
+        "WDG": null
       }
     },
     {
