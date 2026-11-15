@@ -2,9 +2,9 @@
   "ccaa": "AEMET-CAT",
   "mode": "hourly",
   "hour": "2026-11-15T00:00",
-  "captured_at": "2026-11-15T01:57:08Z",
+  "captured_at": "2026-11-15T09:29:24Z",
   "source": "aemet-opendata-observacion-todas",
-  "n_stations": 65,
+  "n_stations": 67,
   "stations": [
     {
       "id": "AE_0002I",
@@ -85,6 +85,26 @@
       "dv": null,
       "pres": null,
       "ubi": "VALLS"
+    },
+    {
+      "id": "AE_0042Y",
+      "indicativo": "0042Y",
+      "name": "TARRAGONA",
+      "lon": 1.25,
+      "lat": 41.12,
+      "elev": 55,
+      "hour": "2026-11-15T00:00",
+      "fint": "2026-11-14T23:00:00+0000",
+      "prec": 0.0,
+      "hr": 94.0,
+      "ta": 12.5,
+      "tamax": 12.7,
+      "tamin": 12.5,
+      "vmax": 1.8,
+      "vv": 0.7,
+      "dv": 315.0,
+      "pres": null,
+      "ubi": "TARRAGONA  FAC. GEOGRAFIA"
     },
     {
       "id": "AE_0061X",
@@ -945,6 +965,26 @@
       "dv": 182.0,
       "pres": 923.1,
       "ubi": "TALARN"
+    },
+    {
+      "id": "AE_9707",
+      "indicativo": "9707",
+      "name": "LLIMIANA",
+      "lon": 0.91,
+      "lat": 42.07,
+      "elev": 515,
+      "hour": "2026-11-15T00:00",
+      "fint": "2026-11-14T23:00:00+0000",
+      "prec": 0.0,
+      "hr": 86.0,
+      "ta": 11.1,
+      "tamax": 11.6,
+      "tamin": 11.1,
+      "vmax": null,
+      "vv": null,
+      "dv": 114.0,
+      "pres": null,
+      "ubi": "LLIMIANA"
     },
     {
       "id": "AE_9718X",
