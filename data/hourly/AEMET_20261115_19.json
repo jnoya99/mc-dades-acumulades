@@ -2,9 +2,9 @@
   "ccaa": "AEMET-CAT",
   "mode": "hourly",
   "hour": "2026-11-15T19:00",
-  "captured_at": "2026-11-15T22:51:16Z",
+  "captured_at": "2026-11-16T06:34:28Z",
   "source": "aemet-opendata-observacion-todas",
-  "n_stations": 64,
+  "n_stations": 66,
   "stations": [
     {
       "id": "AE_0002I",
@@ -385,6 +385,26 @@
       "dv": 295.0,
       "pres": 1006.6,
       "ubi": "ARENYS DE MAR"
+    },
+    {
+      "id": "AE_0260X",
+      "indicativo": "0260X",
+      "name": "FOGARS DE MONTCLÚS",
+      "lon": 2.43,
+      "lat": 41.76,
+      "elev": 936,
+      "hour": "2026-11-15T19:00",
+      "fint": "2026-11-15T18:00:00+0000",
+      "prec": 0.0,
+      "hr": 82.0,
+      "ta": 10.1,
+      "tamax": 10.2,
+      "tamin": 10.1,
+      "vmax": null,
+      "vv": null,
+      "dv": null,
+      "pres": null,
+      "ubi": "FONTMARTINA"
     },
     {
       "id": "AE_0281Y",
@@ -925,6 +945,26 @@
       "dv": 319.0,
       "pres": 923.7,
       "ubi": "TALARN"
+    },
+    {
+      "id": "AE_9707",
+      "indicativo": "9707",
+      "name": "LLIMIANA",
+      "lon": 0.91,
+      "lat": 42.07,
+      "elev": 515,
+      "hour": "2026-11-15T19:00",
+      "fint": "2026-11-15T18:00:00+0000",
+      "prec": 0.6000000000000001,
+      "hr": 80.0,
+      "ta": 11.9,
+      "tamax": 12.6,
+      "tamin": 11.9,
+      "vmax": null,
+      "vv": null,
+      "dv": 92.0,
+      "pres": null,
+      "ubi": "LLIMIANA"
     },
     {
       "id": "AE_9718X",
