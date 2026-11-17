@@ -2,7 +2,7 @@
   "ccaa": "AEMET-CAT",
   "mode": "daily",
   "date": "2026-11-12",
-  "captured_at": "2026-11-16T01:39:46Z",
+  "captured_at": "2026-11-17T04:22:47Z",
   "source": "aemet-opendata",
   "n_stations": 70,
   "stations": [
@@ -380,8 +380,8 @@
       "provincia": "BARCELONA",
       "prec": "0,2",
       "tmax": "20,3",
-      "tmin": null,
-      "tmed": null,
+      "tmin": "14,4",
+      "tmed": "17,4",
       "hrMedia": "75",
       "hrMax": "97",
       "hrMin": "55",
@@ -391,7 +391,7 @@
       "cell": {
         "P": 0.2,
         "TX": 20.3,
-        "N": null,
+        "N": 14.4,
         "HX": 97,
         "HR": 75,
         "W": 17.5,
@@ -1701,8 +1701,8 @@
       "hrMedia": "77",
       "hrMax": "98",
       "hrMin": "54",
-      "velmedia": "5,3",
-      "racha": "18,9",
+      "velmedia": null,
+      "racha": null,
       "dir": "29",
       "cell": {
         "P": 0.1,
@@ -1710,7 +1710,7 @@
         "N": 14,
         "HX": 98,
         "HR": 77,
-        "W": 18.9,
+        "W": null,
         "WDG": 29
       }
     },
