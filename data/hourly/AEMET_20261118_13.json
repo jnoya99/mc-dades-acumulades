@@ -2,9 +2,9 @@
   "ccaa": "AEMET-CAT",
   "mode": "hourly",
   "hour": "2026-11-18T13:00",
-  "captured_at": "2026-11-18T17:16:46Z",
+  "captured_at": "2026-11-19T00:25:41Z",
   "source": "aemet-opendata-observacion-todas",
-  "n_stations": 66,
+  "n_stations": 67,
   "stations": [
     {
       "id": "AE_0002I",
@@ -405,6 +405,26 @@
       "dv": 180.0,
       "pres": 998.0,
       "ubi": "ARENYS DE MAR"
+    },
+    {
+      "id": "AE_0260X",
+      "indicativo": "0260X",
+      "name": "FOGARS DE MONTCLÚS",
+      "lon": 2.43,
+      "lat": 41.76,
+      "elev": 936,
+      "hour": "2026-11-18T13:00",
+      "fint": "2026-11-18T12:00:00+0000",
+      "prec": 0.0,
+      "hr": 67.0,
+      "ta": 18.5,
+      "tamax": 18.5,
+      "tamin": 17.4,
+      "vmax": null,
+      "vv": null,
+      "dv": null,
+      "pres": null,
+      "ubi": "FONTMARTINA"
     },
     {
       "id": "AE_0281Y",
