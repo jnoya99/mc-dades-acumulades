@@ -2,9 +2,9 @@
   "ccaa": "AEMET-CAT",
   "mode": "hourly",
   "hour": "2026-11-19T17:00",
-  "captured_at": "2026-11-19T20:40:31Z",
+  "captured_at": "2026-11-20T03:20:42Z",
   "source": "aemet-opendata-observacion-todas",
-  "n_stations": 64,
+  "n_stations": 66,
   "stations": [
     {
       "id": "AE_0002I",
@@ -647,6 +647,26 @@
       "ubi": "VALL DE BIANYA"
     },
     {
+      "id": "AE_0411X",
+      "indicativo": "0411X",
+      "name": "CASTELLÓ D'EMPÚRIES",
+      "lon": 3.09,
+      "lat": 42.22,
+      "elev": 2,
+      "hour": "2026-11-19T17:00",
+      "fint": "2026-11-19T16:00:00+0000",
+      "prec": 0.0,
+      "hr": 64.0,
+      "ta": 17.1,
+      "tamax": 19.7,
+      "tamin": 17.1,
+      "vmax": 7.5,
+      "vv": 3.8,
+      "dv": 352.0,
+      "pres": null,
+      "ubi": "CASTELLO D?EMPURIES"
+    },
+    {
       "id": "AE_0413A",
       "indicativo": "0413A",
       "name": "MAÇANET DE CABRENYS",
@@ -925,6 +945,26 @@
       "dv": 284.0,
       "pres": 918.5,
       "ubi": "TALARN"
+    },
+    {
+      "id": "AE_9707",
+      "indicativo": "9707",
+      "name": "LLIMIANA",
+      "lon": 0.91,
+      "lat": 42.07,
+      "elev": 515,
+      "hour": "2026-11-19T17:00",
+      "fint": "2026-11-19T16:00:00+0000",
+      "prec": 0.0,
+      "hr": 37.0,
+      "ta": 14.7,
+      "tamax": 17.4,
+      "tamin": 14.7,
+      "vmax": null,
+      "vv": null,
+      "dv": 301.0,
+      "pres": null,
+      "ubi": "LLIMIANA"
     },
     {
       "id": "AE_9718X",
