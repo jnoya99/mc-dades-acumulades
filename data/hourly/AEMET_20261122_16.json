@@ -2,9 +2,9 @@
   "ccaa": "AEMET-CAT",
   "mode": "hourly",
   "hour": "2026-11-22T16:00",
-  "captured_at": "2026-11-22T17:50:59Z",
+  "captured_at": "2026-11-22T23:37:48Z",
   "source": "aemet-opendata-observacion-todas",
-  "n_stations": 61,
+  "n_stations": 64,
   "stations": [
     {
       "id": "AE_0002I",
@@ -85,6 +85,26 @@
       "dv": null,
       "pres": null,
       "ubi": "VALLS"
+    },
+    {
+      "id": "AE_0042Y",
+      "indicativo": "0042Y",
+      "name": "TARRAGONA",
+      "lon": 1.25,
+      "lat": 41.12,
+      "elev": 55,
+      "hour": "2026-11-22T16:00",
+      "fint": "2026-11-22T15:00:00+0000",
+      "prec": 0.0,
+      "hr": 41.0,
+      "ta": 18.4,
+      "tamax": 19.3,
+      "tamin": 18.4,
+      "vmax": 12.4,
+      "vv": 4.6,
+      "dv": 300.0,
+      "pres": null,
+      "ubi": "TARRAGONA  FAC. GEOGRAFIA"
     },
     {
       "id": "AE_0061X",
@@ -367,6 +387,26 @@
       "ubi": "ARENYS DE MAR"
     },
     {
+      "id": "AE_0260X",
+      "indicativo": "0260X",
+      "name": "FOGARS DE MONTCLÚS",
+      "lon": 2.43,
+      "lat": 41.76,
+      "elev": 936,
+      "hour": "2026-11-22T16:00",
+      "fint": "2026-11-22T15:00:00+0000",
+      "prec": 0.0,
+      "hr": 60.0,
+      "ta": 11.9,
+      "tamax": 13.3,
+      "tamin": 11.9,
+      "vmax": null,
+      "vv": null,
+      "dv": null,
+      "pres": null,
+      "ubi": "FONTMARTINA"
+    },
+    {
       "id": "AE_0281Y",
       "indicativo": "0281Y",
       "name": "BLANES",
@@ -625,6 +665,26 @@
       "dv": 332.0,
       "pres": null,
       "ubi": "ESPOLLA  LES ALBERES"
+    },
+    {
+      "id": "AE_0429X",
+      "indicativo": "0429X",
+      "name": "FIGUERES",
+      "lon": 2.96,
+      "lat": 42.26,
+      "elev": 45,
+      "hour": "2026-11-22T16:00",
+      "fint": "2026-11-22T15:00:00+0000",
+      "prec": 0.0,
+      "hr": 59.0,
+      "ta": 18.8,
+      "tamax": 20.5,
+      "tamin": 18.8,
+      "vmax": 4.4,
+      "vv": 0.9,
+      "dv": 146.0,
+      "pres": null,
+      "ubi": "FIGUERES  ELS ASPRES"
     },
     {
       "id": "AE_9585",
