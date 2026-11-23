@@ -2,7 +2,7 @@
   "ccaa": "AEMET-CAT",
   "mode": "daily",
   "date": "2026-11-17",
-  "captured_at": "2026-11-22T01:58:16Z",
+  "captured_at": "2026-11-23T02:24:18Z",
   "source": "aemet-opendata",
   "n_stations": 69,
   "stations": [
@@ -1798,17 +1798,25 @@
       "lat": 40.82,
       "elev": 50,
       "provincia": "TARRAGONA",
-      "prec": null,
-      "tmax": null,
-      "tmin": null,
-      "tmed": null,
-      "hrMedia": null,
-      "hrMax": null,
-      "hrMin": null,
+      "prec": "0,0",
+      "tmax": "21,1",
+      "tmin": "10,8",
+      "tmed": "16,0",
+      "hrMedia": "81",
+      "hrMax": "99",
+      "hrMin": "62",
       "velmedia": null,
       "racha": null,
       "dir": null,
-      "cell": null
+      "cell": {
+        "P": 0,
+        "TX": 21.1,
+        "N": 10.8,
+        "HX": 99,
+        "HR": 81,
+        "W": null,
+        "WDG": null
+      }
     },
     {
       "id": "AE_9987P",
