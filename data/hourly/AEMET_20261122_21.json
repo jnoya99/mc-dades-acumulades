@@ -2,9 +2,9 @@
   "ccaa": "AEMET-CAT",
   "mode": "hourly",
   "hour": "2026-11-22T21:00",
-  "captured_at": "2026-11-22T23:37:48Z",
+  "captured_at": "2026-11-23T07:43:08Z",
   "source": "aemet-opendata-observacion-todas",
-  "n_stations": 62,
+  "n_stations": 64,
   "stations": [
     {
       "id": "AE_0002I",
@@ -25,6 +25,26 @@
       "dv": 226.0,
       "pres": 1019.3,
       "ubi": "VANDELLÓS"
+    },
+    {
+      "id": "AE_0009X",
+      "indicativo": "0009X",
+      "name": "ALFORJA",
+      "lon": 0.96,
+      "lat": 41.21,
+      "elev": 406,
+      "hour": "2026-11-22T21:00",
+      "fint": "2026-11-22T20:00:00+0000",
+      "prec": 0.0,
+      "hr": 54.0,
+      "ta": 11.9,
+      "tamax": 12.3,
+      "tamin": 11.9,
+      "vmax": 12.1,
+      "vv": 4.2,
+      "dv": 257.0,
+      "pres": null,
+      "ubi": "ALFORJA"
     },
     {
       "id": "AE_0016A",
@@ -885,6 +905,26 @@
       "dv": 261.0,
       "pres": 928.7,
       "ubi": "TALARN"
+    },
+    {
+      "id": "AE_9707",
+      "indicativo": "9707",
+      "name": "LLIMIANA",
+      "lon": 0.91,
+      "lat": 42.07,
+      "elev": 515,
+      "hour": "2026-11-22T21:00",
+      "fint": "2026-11-22T20:00:00+0000",
+      "prec": 0.0,
+      "hr": 51.0,
+      "ta": 8.8,
+      "tamax": 10.0,
+      "tamin": 8.8,
+      "vmax": null,
+      "vv": null,
+      "dv": 67.0,
+      "pres": null,
+      "ubi": "LLIMIANA"
     },
     {
       "id": "AE_9718X",
