@@ -2,9 +2,9 @@
   "ccaa": "AEMET-CAT",
   "mode": "hourly",
   "hour": "2026-11-23T17:00",
-  "captured_at": "2026-11-23T20:16:15Z",
+  "captured_at": "2026-11-24T04:49:03Z",
   "source": "aemet-opendata-observacion-todas",
-  "n_stations": 66,
+  "n_stations": 67,
   "stations": [
     {
       "id": "AE_0002I",
@@ -25,6 +25,26 @@
       "dv": 165.0,
       "pres": 1019.8,
       "ubi": "VANDELLÓS"
+    },
+    {
+      "id": "AE_0009X",
+      "indicativo": "0009X",
+      "name": "ALFORJA",
+      "lon": 0.96,
+      "lat": 41.21,
+      "elev": 406,
+      "hour": "2026-11-23T17:00",
+      "fint": "2026-11-23T16:00:00+0000",
+      "prec": 0.0,
+      "hr": 69.0,
+      "ta": 12.3,
+      "tamax": 15.1,
+      "tamin": 12.3,
+      "vmax": 2.6,
+      "vv": 1.0,
+      "dv": 255.0,
+      "pres": null,
+      "ubi": "ALFORJA"
     },
     {
       "id": "AE_0016A",
