@@ -2,9 +2,9 @@
   "ccaa": "AEMET-CAT",
   "mode": "hourly",
   "hour": "2026-11-26T20:00",
-  "captured_at": "2026-11-26T21:36:45Z",
+  "captured_at": "2026-11-27T04:17:07Z",
   "source": "aemet-opendata-observacion-todas",
-  "n_stations": 65,
+  "n_stations": 67,
   "stations": [
     {
       "id": "AE_0002I",
@@ -85,6 +85,26 @@
       "dv": null,
       "pres": null,
       "ubi": "VALLS"
+    },
+    {
+      "id": "AE_0042Y",
+      "indicativo": "0042Y",
+      "name": "TARRAGONA",
+      "lon": 1.25,
+      "lat": 41.12,
+      "elev": 55,
+      "hour": "2026-11-26T20:00",
+      "fint": "2026-11-26T19:00:00+0000",
+      "prec": 0.0,
+      "hr": 68.0,
+      "ta": 10.9,
+      "tamax": 12.2,
+      "tamin": 10.9,
+      "vmax": 1.9,
+      "vv": 0.3,
+      "dv": 323.0,
+      "pres": null,
+      "ubi": "TARRAGONA  FAC. GEOGRAFIA"
     },
     {
       "id": "AE_0061X",
@@ -805,6 +825,26 @@
       "dv": 274.0,
       "pres": 799.7,
       "ubi": "CAP DE REC"
+    },
+    {
+      "id": "AE_9632X",
+      "indicativo": "9632X",
+      "name": "TUIXENT",
+      "lon": 1.57,
+      "lat": 42.23,
+      "elev": 1196,
+      "hour": "2026-11-26T20:00",
+      "fint": "2026-11-26T19:00:00+0000",
+      "prec": 0.0,
+      "hr": 75.0,
+      "ta": 2.7,
+      "tamax": 3.9,
+      "tamin": 2.7,
+      "vmax": 4.3,
+      "vv": 0.3,
+      "dv": 146.0,
+      "pres": null,
+      "ubi": "TUIXENT"
     },
     {
       "id": "AE_9638D",
