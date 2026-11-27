@@ -2,9 +2,9 @@
   "ccaa": "AEMET-CAT",
   "mode": "hourly",
   "hour": "2026-11-27T11:00",
-  "captured_at": "2026-11-27T13:57:08Z",
+  "captured_at": "2026-11-27T22:43:53Z",
   "source": "aemet-opendata-observacion-todas",
-  "n_stations": 66,
+  "n_stations": 68,
   "stations": [
     {
       "id": "AE_0002I",
@@ -427,6 +427,26 @@
       "ubi": "ARENYS DE MAR"
     },
     {
+      "id": "AE_0260X",
+      "indicativo": "0260X",
+      "name": "FOGARS DE MONTCLÚS",
+      "lon": 2.43,
+      "lat": 41.76,
+      "elev": 936,
+      "hour": "2026-11-27T11:00",
+      "fint": "2026-11-27T10:00:00+0000",
+      "prec": 0.0,
+      "hr": 72.0,
+      "ta": 8.2,
+      "tamax": 8.2,
+      "tamin": 6.8,
+      "vmax": null,
+      "vv": null,
+      "dv": null,
+      "pres": null,
+      "ubi": "FONTMARTINA"
+    },
+    {
       "id": "AE_0281Y",
       "indicativo": "0281Y",
       "name": "BLANES",
@@ -805,6 +825,26 @@
       "dv": 0.0,
       "pres": 802.7,
       "ubi": "CAP DE REC"
+    },
+    {
+      "id": "AE_9632X",
+      "indicativo": "9632X",
+      "name": "TUIXENT",
+      "lon": 1.57,
+      "lat": 42.23,
+      "elev": 1196,
+      "hour": "2026-11-27T11:00",
+      "fint": "2026-11-27T10:00:00+0000",
+      "prec": 0.0,
+      "hr": 80.0,
+      "ta": 2.4,
+      "tamax": 2.4,
+      "tamin": 0.1,
+      "vmax": 0.8,
+      "vv": 0.2,
+      "dv": 174.0,
+      "pres": null,
+      "ubi": "TUIXENT"
     },
     {
       "id": "AE_9638D",
