@@ -2,9 +2,9 @@
   "ccaa": "AEMET-CAT",
   "mode": "hourly",
   "hour": "2026-11-27T21:00",
-  "captured_at": "2026-11-27T22:43:53Z",
+  "captured_at": "2026-11-28T07:53:31Z",
   "source": "aemet-opendata-observacion-todas",
-  "n_stations": 66,
+  "n_stations": 68,
   "stations": [
     {
       "id": "AE_0002I",
@@ -25,6 +25,26 @@
       "dv": 306.0,
       "pres": 1015.6,
       "ubi": "VANDELLÓS"
+    },
+    {
+      "id": "AE_0009X",
+      "indicativo": "0009X",
+      "name": "ALFORJA",
+      "lon": 0.96,
+      "lat": 41.21,
+      "elev": 406,
+      "hour": "2026-11-27T21:00",
+      "fint": "2026-11-27T20:00:00+0000",
+      "prec": 0.0,
+      "hr": 79.0,
+      "ta": 6.2,
+      "tamax": 9.5,
+      "tamin": 6.2,
+      "vmax": 6.0,
+      "vv": 0.8,
+      "dv": 23.0,
+      "pres": null,
+      "ubi": "ALFORJA"
     },
     {
       "id": "AE_0016A",
@@ -865,6 +885,26 @@
       "dv": null,
       "pres": null,
       "ubi": "TORÀ"
+    },
+    {
+      "id": "AE_9650X",
+      "indicativo": "9650X",
+      "name": "ARTESA DE SEGRE",
+      "lon": 1.11,
+      "lat": 41.88,
+      "elev": 400,
+      "hour": "2026-11-27T21:00",
+      "fint": "2026-11-27T20:00:00+0000",
+      "prec": 0.0,
+      "hr": 88.0,
+      "ta": 2.0,
+      "tamax": 2.2,
+      "tamin": 2.0,
+      "vmax": null,
+      "vv": null,
+      "dv": null,
+      "pres": null,
+      "ubi": "ARTESA DE SEGRE"
     },
     {
       "id": "AE_9657X",
